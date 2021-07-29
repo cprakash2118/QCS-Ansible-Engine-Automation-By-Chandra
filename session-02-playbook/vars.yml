@@ -1,0 +1,11 @@
+---
+- group_list:
+    - unixadm
+    - middleware 
+    - networkadm 
+    - dbadm 
+    - app1_grp
+    - app2_grp
+
+#- group_list: ['unixadm', 'middleware' , 'networkadm' , 'dbadm' , 'app1_grp' , 'app2_grp' ]
+...

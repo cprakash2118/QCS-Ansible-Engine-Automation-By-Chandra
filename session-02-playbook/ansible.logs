@@ -1,0 +1,3486 @@
+2021-07-29 10:09:54,689 p=2272 u=student |  playbook: playbook.yml
+2021-07-29 10:10:10,276 p=2278 u=student |  PLAY [User and Group management] **************************************************************
+2021-07-29 10:10:10,283 p=2278 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 10:10:11,710 p=2278 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:10:11,715 p=2278 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:10:11,729 p=2278 u=student |  TASK [Group Creation.] ************************************************************************
+2021-07-29 10:10:12,233 p=2278 u=student |  changed: [servere.lab.example.com] => (item=unixadm)
+2021-07-29 10:10:12,241 p=2278 u=student |  changed: [serverf.lab.example.com] => (item=unixadm)
+2021-07-29 10:10:12,581 p=2278 u=student |  changed: [servere.lab.example.com] => (item=middleware)
+2021-07-29 10:10:12,586 p=2278 u=student |  changed: [serverf.lab.example.com] => (item=middleware)
+2021-07-29 10:10:12,918 p=2278 u=student |  changed: [servere.lab.example.com] => (item=networkadm)
+2021-07-29 10:10:12,941 p=2278 u=student |  changed: [serverf.lab.example.com] => (item=networkadm)
+2021-07-29 10:10:13,268 p=2278 u=student |  changed: [servere.lab.example.com] => (item=dbadm)
+2021-07-29 10:10:13,292 p=2278 u=student |  changed: [serverf.lab.example.com] => (item=dbadm)
+2021-07-29 10:10:13,623 p=2278 u=student |  changed: [servere.lab.example.com] => (item=app1_grp)
+2021-07-29 10:10:13,637 p=2278 u=student |  changed: [serverf.lab.example.com] => (item=app1_grp)
+2021-07-29 10:10:13,967 p=2278 u=student |  changed: [servere.lab.example.com] => (item=app2_grp)
+2021-07-29 10:10:13,978 p=2278 u=student |  changed: [serverf.lab.example.com] => (item=app2_grp)
+2021-07-29 10:10:13,981 p=2278 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 10:10:13,981 p=2278 u=student |  servere.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:10:13,982 p=2278 u=student |  serverf.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:10:24,440 p=2408 u=student |  PLAY [User and Group management] ************************************************************************************************
+2021-07-29 10:10:24,447 p=2408 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-29 10:10:25,534 p=2408 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:10:25,547 p=2408 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:10:25,561 p=2408 u=student |  TASK [Group Creation.] **********************************************************************************************************
+2021-07-29 10:10:26,341 p=2408 u=student |  changed: [serverf.lab.example.com] => (item=unixadm)
+2021-07-29 10:10:26,360 p=2408 u=student |  changed: [servere.lab.example.com] => (item=unixadm)
+2021-07-29 10:10:27,457 p=2408 u=student |  changed: [serverf.lab.example.com] => (item=middleware)
+2021-07-29 10:10:27,463 p=2408 u=student |  changed: [servere.lab.example.com] => (item=middleware)
+2021-07-29 10:10:28,079 p=2408 u=student |  changed: [serverf.lab.example.com] => (item=networkadm)
+2021-07-29 10:10:28,088 p=2408 u=student |  changed: [servere.lab.example.com] => (item=networkadm)
+2021-07-29 10:10:28,707 p=2408 u=student |  changed: [servere.lab.example.com] => (item=dbadm)
+2021-07-29 10:10:28,707 p=2408 u=student |  changed: [serverf.lab.example.com] => (item=dbadm)
+2021-07-29 10:10:29,317 p=2408 u=student |  changed: [serverf.lab.example.com] => (item=app1_grp)
+2021-07-29 10:10:29,321 p=2408 u=student |  changed: [servere.lab.example.com] => (item=app1_grp)
+2021-07-29 10:10:29,958 p=2408 u=student |  changed: [serverf.lab.example.com] => (item=app2_grp)
+2021-07-29 10:10:29,974 p=2408 u=student |  changed: [servere.lab.example.com] => (item=app2_grp)
+2021-07-29 10:10:29,977 p=2408 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-29 10:10:29,977 p=2408 u=student |  servere.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:10:29,977 p=2408 u=student |  serverf.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:11:35,251 p=2541 u=student |  PLAY [User and Group management] ************************************************************************************************
+2021-07-29 10:11:35,258 p=2541 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-29 10:11:36,670 p=2541 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:11:36,708 p=2541 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:11:36,722 p=2541 u=student |  TASK [Group Creation.] **********************************************************************************************************
+2021-07-29 10:11:37,541 p=2541 u=student |  changed: [servere.lab.example.com] => (item=unixadm)
+2021-07-29 10:11:37,553 p=2541 u=student |  changed: [serverf.lab.example.com] => (item=unixadm)
+2021-07-29 10:11:38,439 p=2541 u=student |  changed: [servere.lab.example.com] => (item=middleware)
+2021-07-29 10:11:38,446 p=2541 u=student |  changed: [serverf.lab.example.com] => (item=middleware)
+2021-07-29 10:11:39,053 p=2541 u=student |  changed: [servere.lab.example.com] => (item=networkadm)
+2021-07-29 10:11:39,063 p=2541 u=student |  changed: [serverf.lab.example.com] => (item=networkadm)
+2021-07-29 10:11:39,677 p=2541 u=student |  changed: [servere.lab.example.com] => (item=dbadm)
+2021-07-29 10:11:39,680 p=2541 u=student |  changed: [serverf.lab.example.com] => (item=dbadm)
+2021-07-29 10:11:40,283 p=2541 u=student |  changed: [serverf.lab.example.com] => (item=app1_grp)
+2021-07-29 10:11:40,299 p=2541 u=student |  changed: [servere.lab.example.com] => (item=app1_grp)
+2021-07-29 10:11:40,888 p=2541 u=student |  changed: [serverf.lab.example.com] => (item=app2_grp)
+2021-07-29 10:11:40,902 p=2541 u=student |  changed: [servere.lab.example.com] => (item=app2_grp)
+2021-07-29 10:11:40,904 p=2541 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-29 10:11:40,905 p=2541 u=student |  servere.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:11:40,905 p=2541 u=student |  serverf.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:24:22,292 p=2796 u=student |  playbook: playbook.yml
+2021-07-29 10:24:28,057 p=2802 u=student |  PLAY [User and Group management] **************************************************************
+2021-07-29 10:24:28,064 p=2802 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 10:24:29,524 p=2802 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:24:29,527 p=2802 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:24:29,539 p=2802 u=student |  TASK [Group Creation.] ************************************************************************
+2021-07-29 10:24:30,085 p=2802 u=student |  changed: [servere.lab.example.com] => (item=unixadm)
+2021-07-29 10:24:30,086 p=2802 u=student |  changed: [serverf.lab.example.com] => (item=unixadm)
+2021-07-29 10:24:30,423 p=2802 u=student |  changed: [servere.lab.example.com] => (item=middleware)
+2021-07-29 10:24:30,443 p=2802 u=student |  changed: [serverf.lab.example.com] => (item=middleware)
+2021-07-29 10:24:30,776 p=2802 u=student |  changed: [servere.lab.example.com] => (item=networkadm)
+2021-07-29 10:24:30,790 p=2802 u=student |  changed: [serverf.lab.example.com] => (item=networkadm)
+2021-07-29 10:24:31,127 p=2802 u=student |  changed: [servere.lab.example.com] => (item=dbadm)
+2021-07-29 10:24:31,142 p=2802 u=student |  changed: [serverf.lab.example.com] => (item=dbadm)
+2021-07-29 10:24:31,479 p=2802 u=student |  changed: [servere.lab.example.com] => (item=app1_grp)
+2021-07-29 10:24:31,481 p=2802 u=student |  changed: [serverf.lab.example.com] => (item=app1_grp)
+2021-07-29 10:24:31,805 p=2802 u=student |  changed: [serverf.lab.example.com] => (item=app2_grp)
+2021-07-29 10:24:31,815 p=2802 u=student |  changed: [servere.lab.example.com] => (item=app2_grp)
+2021-07-29 10:24:31,827 p=2802 u=student |  TASK [User creation.] *************************************************************************
+2021-07-29 10:24:32,421 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user1', 'group_1': 'unixadm'})
+2021-07-29 10:24:32,424 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user1', 'group_1': 'unixadm'})
+2021-07-29 10:24:32,782 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user2', 'group_1': 'unixadm'})
+2021-07-29 10:24:32,799 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user2', 'group_1': 'unixadm'})
+2021-07-29 10:24:33,158 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user3', 'group_1': 'middleware'})
+2021-07-29 10:24:33,167 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user3', 'group_1': 'middleware'})
+2021-07-29 10:24:33,525 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user4', 'group_1': 'middleware'})
+2021-07-29 10:24:33,542 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user4', 'group_1': 'middleware'})
+2021-07-29 10:24:33,890 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user5', 'group_1': 'networkadm'})
+2021-07-29 10:24:33,916 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user5', 'group_1': 'networkadm'})
+2021-07-29 10:24:34,259 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user6', 'group_1': 'networkadm'})
+2021-07-29 10:24:34,293 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user6', 'group_1': 'networkadm'})
+2021-07-29 10:24:34,626 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user7', 'group_1': 'dbadm'})
+2021-07-29 10:24:34,661 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user7', 'group_1': 'dbadm'})
+2021-07-29 10:24:34,988 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user8', 'group_1': 'dbadm'})
+2021-07-29 10:24:35,022 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user8', 'group_1': 'dbadm'})
+2021-07-29 10:24:35,366 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user9', 'group_1': 'app1_grp'})
+2021-07-29 10:24:35,395 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user9', 'group_1': 'app1_grp'})
+2021-07-29 10:24:35,729 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user10', 'group_1': 'app1_grp'})
+2021-07-29 10:24:35,773 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user10', 'group_1': 'app1_grp'})
+2021-07-29 10:24:36,100 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user11', 'group_1': 'app2_grp'})
+2021-07-29 10:24:36,136 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user11', 'group_1': 'app2_grp'})
+2021-07-29 10:24:36,464 p=2802 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user12', 'group_1': 'app2_grp'})
+2021-07-29 10:24:36,491 p=2802 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user12', 'group_1': 'app2_grp'})
+2021-07-29 10:24:36,497 p=2802 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 10:24:36,497 p=2802 u=student |  servere.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:24:36,497 p=2802 u=student |  serverf.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:24:41,479 p=3096 u=student |  PLAY [User and Group management] ************************************************************************************************
+2021-07-29 10:24:41,487 p=3096 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-29 10:24:42,561 p=3096 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:24:42,572 p=3096 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:24:42,588 p=3096 u=student |  TASK [Group Creation.] **********************************************************************************************************
+2021-07-29 10:24:43,389 p=3096 u=student |  changed: [serverf.lab.example.com] => (item=unixadm)
+2021-07-29 10:24:43,391 p=3096 u=student |  changed: [servere.lab.example.com] => (item=unixadm)
+2021-07-29 10:24:44,414 p=3096 u=student |  changed: [serverf.lab.example.com] => (item=middleware)
+2021-07-29 10:24:44,416 p=3096 u=student |  changed: [servere.lab.example.com] => (item=middleware)
+2021-07-29 10:24:45,006 p=3096 u=student |  changed: [servere.lab.example.com] => (item=networkadm)
+2021-07-29 10:24:45,017 p=3096 u=student |  changed: [serverf.lab.example.com] => (item=networkadm)
+2021-07-29 10:24:45,627 p=3096 u=student |  changed: [servere.lab.example.com] => (item=dbadm)
+2021-07-29 10:24:45,638 p=3096 u=student |  changed: [serverf.lab.example.com] => (item=dbadm)
+2021-07-29 10:24:46,239 p=3096 u=student |  changed: [serverf.lab.example.com] => (item=app1_grp)
+2021-07-29 10:24:46,240 p=3096 u=student |  changed: [servere.lab.example.com] => (item=app1_grp)
+2021-07-29 10:24:46,831 p=3096 u=student |  changed: [servere.lab.example.com] => (item=app2_grp)
+2021-07-29 10:24:46,837 p=3096 u=student |  changed: [serverf.lab.example.com] => (item=app2_grp)
+2021-07-29 10:24:46,850 p=3096 u=student |  TASK [User creation.] ***********************************************************************************************************
+2021-07-29 10:24:48,027 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user1', 'group_1': 'unixadm'})
+2021-07-29 10:24:48,033 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user1', 'group_1': 'unixadm'})
+2021-07-29 10:24:48,724 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user2', 'group_1': 'unixadm'})
+2021-07-29 10:24:48,770 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user2', 'group_1': 'unixadm'})
+2021-07-29 10:24:49,396 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user3', 'group_1': 'middleware'})
+2021-07-29 10:24:49,449 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user3', 'group_1': 'middleware'})
+2021-07-29 10:24:50,078 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user4', 'group_1': 'middleware'})
+2021-07-29 10:24:50,123 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user4', 'group_1': 'middleware'})
+2021-07-29 10:24:50,766 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user5', 'group_1': 'networkadm'})
+2021-07-29 10:24:50,794 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user5', 'group_1': 'networkadm'})
+2021-07-29 10:24:51,437 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user6', 'group_1': 'networkadm'})
+2021-07-29 10:24:51,480 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user6', 'group_1': 'networkadm'})
+2021-07-29 10:24:52,122 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user7', 'group_1': 'dbadm'})
+2021-07-29 10:24:52,177 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user7', 'group_1': 'dbadm'})
+2021-07-29 10:24:52,825 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user8', 'group_1': 'dbadm'})
+2021-07-29 10:24:52,881 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user8', 'group_1': 'dbadm'})
+2021-07-29 10:24:53,519 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user9', 'group_1': 'app1_grp'})
+2021-07-29 10:24:53,559 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user9', 'group_1': 'app1_grp'})
+2021-07-29 10:24:54,225 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user10', 'group_1': 'app1_grp'})
+2021-07-29 10:24:54,286 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user10', 'group_1': 'app1_grp'})
+2021-07-29 10:24:54,931 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user11', 'group_1': 'app2_grp'})
+2021-07-29 10:24:54,975 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user11', 'group_1': 'app2_grp'})
+2021-07-29 10:24:55,635 p=3096 u=student |  changed: [serverf.lab.example.com] => (item={'user_1': 'user12', 'group_1': 'app2_grp'})
+2021-07-29 10:24:55,662 p=3096 u=student |  changed: [servere.lab.example.com] => (item={'user_1': 'user12', 'group_1': 'app2_grp'})
+2021-07-29 10:24:55,668 p=3096 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-29 10:24:55,669 p=3096 u=student |  servere.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:24:55,669 p=3096 u=student |  serverf.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:25:40,650 p=3392 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+uid=1002(user1) gid=1002(unixadm) groups=1002(unixadm)
+
+2021-07-29 10:25:40,655 p=3392 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+uid=1002(user1) gid=1002(unixadm) groups=1002(unixadm)
+
+2021-07-29 10:26:22,181 p=3443 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+
+2021-07-29 10:26:22,185 p=3443 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+
+2021-07-29 10:28:22,821 p=3492 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+
+
+2021-07-29 10:28:22,827 p=3492 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+
+
+2021-07-29 10:28:38,772 p=3529 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+-rwxr-xr-x. 1 root root 37 Jul 29 10:28 /tmp/a.sh
+
+2021-07-29 10:28:38,778 p=3529 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+-rwxr-xr-x. 1 root root 37 Jul 29 10:28 /tmp/a.sh
+
+2021-07-29 10:29:03,911 p=3560 u=student |  servere.lab.example.com | FAILED | rc=127 >>
+/bin/sh: ./tmp/a.sh: No such file or directorynon-zero return code
+
+2021-07-29 10:29:03,917 p=3560 u=student |  serverf.lab.example.com | FAILED | rc=127 >>
+/bin/sh: ./tmp/a.sh: No such file or directorynon-zero return code
+
+2021-07-29 10:29:15,389 p=3591 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+
+2021-07-29 10:29:15,409 p=3591 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+uid=1013(user12) gid=1007(app2_grp) groups=1007(app2_grp)
+
+2021-07-29 10:29:42,652 p=3630 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+uid=1011(user10) gid=1006(app1_grp) groups=1006(app1_grp)
+
+2021-07-29 10:29:42,663 p=3630 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+uid=1011(user10) gid=1006(app1_grp) groups=1006(app1_grp)
+
+2021-07-29 10:29:52,840 p=3661 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+uid=1007(user6) gid=1004(networkadm) groups=1004(networkadm)
+
+2021-07-29 10:29:52,848 p=3661 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+uid=1007(user6) gid=1004(networkadm) groups=1004(networkadm)
+
+2021-07-29 10:39:15,085 p=3808 u=student |  playbook: stat_example.yml
+2021-07-29 10:39:18,547 p=3814 u=student |  PLAY [Stat example] *****************************************************************************************
+2021-07-29 10:39:18,555 p=3814 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-29 10:39:19,999 p=3814 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:39:20,021 p=3814 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:39:20,037 p=3814 u=student |  TASK [Check directory] **************************************************************************************
+2021-07-29 10:39:20,538 p=3814 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:39:20,539 p=3814 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:39:20,554 p=3814 u=student |  TASK [Display the output] ***********************************************************************************
+2021-07-29 10:39:20,581 p=3814 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "exists": false
+        }
+    }
+}
+2021-07-29 10:39:20,592 p=3814 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "exists": false
+        }
+    }
+}
+2021-07-29 10:39:20,594 p=3814 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-29 10:39:20,594 p=3814 u=student |  servere.lab.example.com    : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:39:20,594 p=3814 u=student |  serverf.lab.example.com    : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:44:08,203 p=3934 u=student |  playbook: stat_example.yml
+2021-07-29 10:44:11,713 p=3940 u=student |  PLAY [Stat example] *****************************************************************************************
+2021-07-29 10:44:11,720 p=3940 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-29 10:44:13,157 p=3940 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:44:13,161 p=3940 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:44:13,174 p=3940 u=student |  TASK [Check directory] **************************************************************************************
+2021-07-29 10:44:13,666 p=3940 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:44:13,667 p=3940 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:44:13,680 p=3940 u=student |  TASK [Display the output] ***********************************************************************************
+2021-07-29 10:44:13,703 p=3940 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "exists": false
+        }
+    }
+}
+2021-07-29 10:44:13,715 p=3940 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "exists": false
+        }
+    }
+}
+2021-07-29 10:44:13,730 p=3940 u=student |  TASK [Creating directory] ***********************************************************************************
+2021-07-29 10:44:13,750 p=3940 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"msg": "The conditional check 'output.stat.exists = false' failed. The error was: template error while templating string: expected token 'end of statement block', got '='. String: {% if output.stat.exists = false %} True {% else %} False {% endif %}\n\nThe error appears to be in '/home/student/work/session-01-playbook/stat_example.yml': line 16, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: Creating directory\n      ^ here\n"}
+2021-07-29 10:44:13,760 p=3940 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"msg": "The conditional check 'output.stat.exists = false' failed. The error was: template error while templating string: expected token 'end of statement block', got '='. String: {% if output.stat.exists = false %} True {% else %} False {% endif %}\n\nThe error appears to be in '/home/student/work/session-01-playbook/stat_example.yml': line 16, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: Creating directory\n      ^ here\n"}
+2021-07-29 10:44:13,761 p=3940 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-29 10:44:13,762 p=3940 u=student |  servere.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:44:13,762 p=3940 u=student |  serverf.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:44:48,825 p=4008 u=student |  playbook: stat_example.yml
+2021-07-29 10:45:37,016 p=4025 u=student |  playbook: stat_example.yml
+2021-07-29 10:45:40,052 p=4031 u=student |  PLAY [Stat example] *****************************************************************************************
+2021-07-29 10:45:40,060 p=4031 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-29 10:45:41,491 p=4031 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:45:41,494 p=4031 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:45:41,507 p=4031 u=student |  TASK [Check directory] **************************************************************************************
+2021-07-29 10:45:42,019 p=4031 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:45:42,032 p=4031 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:45:42,048 p=4031 u=student |  TASK [Display the output] ***********************************************************************************
+2021-07-29 10:45:42,068 p=4031 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "exists": false
+        }
+    }
+}
+2021-07-29 10:45:42,081 p=4031 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "exists": false
+        }
+    }
+}
+2021-07-29 10:45:42,094 p=4031 u=student |  TASK [Creating directory] ***********************************************************************************
+2021-07-29 10:45:42,619 p=4031 u=student |  changed: [serverf.lab.example.com]
+2021-07-29 10:45:42,622 p=4031 u=student |  changed: [servere.lab.example.com]
+2021-07-29 10:45:42,624 p=4031 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-29 10:45:42,624 p=4031 u=student |  servere.lab.example.com    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:45:42,624 p=4031 u=student |  serverf.lab.example.com    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 10:46:15,627 p=4106 u=student |  PLAY [Stat example] *****************************************************************************************
+2021-07-29 10:46:15,634 p=4106 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-29 10:46:16,744 p=4106 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:46:16,755 p=4106 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:46:16,768 p=4106 u=student |  TASK [Check directory] **************************************************************************************
+2021-07-29 10:46:17,265 p=4106 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:46:17,267 p=4106 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:46:17,280 p=4106 u=student |  TASK [Display the output] ***********************************************************************************
+2021-07-29 10:46:17,299 p=4106 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5719109,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5719109,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 4318237,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5719109,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "763895584",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 10:46:17,311 p=4106 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5738971,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5738971,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 8758507,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5738971,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "3845647196",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 10:46:17,325 p=4106 u=student |  TASK [Creating directory] ***********************************************************************************
+2021-07-29 10:46:17,346 p=4106 u=student |  skipping: [serverf.lab.example.com]
+2021-07-29 10:46:17,356 p=4106 u=student |  skipping: [servere.lab.example.com]
+2021-07-29 10:46:17,358 p=4106 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-29 10:46:17,358 p=4106 u=student |  servere.lab.example.com    : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-29 10:46:17,358 p=4106 u=student |  serverf.lab.example.com    : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-29 10:48:25,055 p=4188 u=student |  PLAY [Stat example] *****************************************************************************************
+2021-07-29 10:48:25,062 p=4188 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-29 10:48:26,495 p=4188 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:48:26,500 p=4188 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:48:26,513 p=4188 u=student |  TASK [Check directory] **************************************************************************************
+2021-07-29 10:48:27,015 p=4188 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:48:27,017 p=4188 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:48:27,031 p=4188 u=student |  TASK [Display the output] ***********************************************************************************
+2021-07-29 10:48:27,054 p=4188 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5719109,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5719109,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 4318237,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5719109,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "763895584",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 10:48:27,065 p=4188 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5738971,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5738971,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 8758507,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5738971,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "3845647196",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 10:48:27,078 p=4188 u=student |  TASK [Creating directory] ***********************************************************************************
+2021-07-29 10:48:27,104 p=4188 u=student |  skipping: [serverf.lab.example.com]
+2021-07-29 10:48:27,114 p=4188 u=student |  skipping: [servere.lab.example.com]
+2021-07-29 10:48:27,128 p=4188 u=student |  TASK [Register example] *************************************************************************************
+2021-07-29 10:48:27,627 p=4188 u=student |  changed: [serverf.lab.example.com]
+2021-07-29 10:48:27,630 p=4188 u=student |  changed: [servere.lab.example.com]
+2021-07-29 10:48:27,643 p=4188 u=student |  TASK [Display sshd output] **********************************************************************************
+2021-07-29 10:48:27,663 p=4188 u=student |  ok: [serverf.lab.example.com] => {
+    "sshd_output": {
+        "changed": true,
+        "cmd": "systemctl status sshd",
+        "delta": "0:00:00.012970",
+        "end": "2021-07-29 10:48:27.581710",
+        "failed": false,
+        "rc": 0,
+        "start": "2021-07-29 10:48:27.568740",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "● sshd.service - OpenSSH server daemon\n   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)\n   Active: active (running) since Mon 2021-07-26 13:38:17 IST; 2 days ago\n     Docs: man:sshd(8)\n           man:sshd_config(5)\n Main PID: 704 (sshd)\n    Tasks: 1 (limit: 4956)\n   Memory: 6.2M\n   CGroup: /system.slice/sshd.service\n           └─704 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com\n\nJul 29 10:28:22 serverf.lab.example.com sshd[10453]: Accepted publickey for devops from 172.25.250.9 port 49070 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:28:22 serverf.lab.example.com sshd[10453]: pam_unix(sshd:session): session opened for user devops by (uid=0)\nJul 29 10:39:18 serverf.lab.example.com sshd[11338]: Accepted publickey for devops from 172.25.250.9 port 49076 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:39:18 serverf.lab.example.com sshd[11338]: pam_unix(sshd:session): session opened for user devops by (uid=0)\nJul 29 10:44:11 serverf.lab.example.com sshd[11621]: Accepted publickey for devops from 172.25.250.9 port 49080 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:44:12 serverf.lab.example.com sshd[11621]: pam_unix(sshd:session): session opened for user devops by (uid=0)\nJul 29 10:45:40 serverf.lab.example.com sshd[11903]: Accepted publickey for devops from 172.25.250.9 port 49084 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:45:40 serverf.lab.example.com sshd[11903]: pam_unix(sshd:session): session opened for user devops by (uid=0)\nJul 29 10:48:25 serverf.lab.example.com sshd[12553]: Accepted publickey for devops from 172.25.250.9 port 49090 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:48:25 serverf.lab.example.com sshd[12553]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+        "stdout_lines": [
+            "● sshd.service - OpenSSH server daemon",
+            "   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)",
+            "   Active: active (running) since Mon 2021-07-26 13:38:17 IST; 2 days ago",
+            "     Docs: man:sshd(8)",
+            "           man:sshd_config(5)",
+            " Main PID: 704 (sshd)",
+            "    Tasks: 1 (limit: 4956)",
+            "   Memory: 6.2M",
+            "   CGroup: /system.slice/sshd.service",
+            "           └─704 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com",
+            "",
+            "Jul 29 10:28:22 serverf.lab.example.com sshd[10453]: Accepted publickey for devops from 172.25.250.9 port 49070 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:28:22 serverf.lab.example.com sshd[10453]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+            "Jul 29 10:39:18 serverf.lab.example.com sshd[11338]: Accepted publickey for devops from 172.25.250.9 port 49076 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:39:18 serverf.lab.example.com sshd[11338]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+            "Jul 29 10:44:11 serverf.lab.example.com sshd[11621]: Accepted publickey for devops from 172.25.250.9 port 49080 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:44:12 serverf.lab.example.com sshd[11621]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+            "Jul 29 10:45:40 serverf.lab.example.com sshd[11903]: Accepted publickey for devops from 172.25.250.9 port 49084 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:45:40 serverf.lab.example.com sshd[11903]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+            "Jul 29 10:48:25 serverf.lab.example.com sshd[12553]: Accepted publickey for devops from 172.25.250.9 port 49090 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:48:25 serverf.lab.example.com sshd[12553]: pam_unix(sshd:session): session opened for user devops by (uid=0)"
+        ]
+    }
+}
+2021-07-29 10:48:27,674 p=4188 u=student |  ok: [servere.lab.example.com] => {
+    "sshd_output": {
+        "changed": true,
+        "cmd": "systemctl status sshd",
+        "delta": "0:00:00.013889",
+        "end": "2021-07-29 10:48:27.581173",
+        "failed": false,
+        "rc": 0,
+        "start": "2021-07-29 10:48:27.567284",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "● sshd.service - OpenSSH server daemon\n   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)\n   Active: active (running) since Mon 2021-07-26 13:38:14 IST; 2 days ago\n     Docs: man:sshd(8)\n           man:sshd_config(5)\n Main PID: 710 (sshd)\n    Tasks: 1 (limit: 4956)\n   Memory: 6.2M\n   CGroup: /system.slice/sshd.service\n           └─710 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com\n\nJul 29 10:39:18 servere.lab.example.com sshd[11226]: Accepted publickey for devops from 172.25.250.9 port 49426 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:39:18 servere.lab.example.com sshd[11226]: pam_unix(sshd:session): session opened for user devops by (uid=0)\nJul 29 10:44:11 servere.lab.example.com sshd[11509]: Accepted publickey for devops from 172.25.250.9 port 49430 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:44:12 servere.lab.example.com sshd[11509]: pam_unix(sshd:session): session opened for user devops by (uid=0)\nJul 29 10:45:40 servere.lab.example.com sshd[11791]: Accepted publickey for devops from 172.25.250.9 port 49434 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:45:40 servere.lab.example.com sshd[11791]: pam_unix(sshd:session): session opened for user devops by (uid=0)\nJul 29 10:46:05 servere.lab.example.com sshd[12172]: Accepted publickey for root from 172.25.250.9 port 49436 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:46:05 servere.lab.example.com sshd[12172]: pam_unix(sshd:session): session opened for user root by (uid=0)\nJul 29 10:48:25 servere.lab.example.com sshd[12487]: Accepted publickey for devops from 172.25.250.9 port 49440 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0\nJul 29 10:48:25 servere.lab.example.com sshd[12487]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+        "stdout_lines": [
+            "● sshd.service - OpenSSH server daemon",
+            "   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)",
+            "   Active: active (running) since Mon 2021-07-26 13:38:14 IST; 2 days ago",
+            "     Docs: man:sshd(8)",
+            "           man:sshd_config(5)",
+            " Main PID: 710 (sshd)",
+            "    Tasks: 1 (limit: 4956)",
+            "   Memory: 6.2M",
+            "   CGroup: /system.slice/sshd.service",
+            "           └─710 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com",
+            "",
+            "Jul 29 10:39:18 servere.lab.example.com sshd[11226]: Accepted publickey for devops from 172.25.250.9 port 49426 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:39:18 servere.lab.example.com sshd[11226]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+            "Jul 29 10:44:11 servere.lab.example.com sshd[11509]: Accepted publickey for devops from 172.25.250.9 port 49430 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:44:12 servere.lab.example.com sshd[11509]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+            "Jul 29 10:45:40 servere.lab.example.com sshd[11791]: Accepted publickey for devops from 172.25.250.9 port 49434 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:45:40 servere.lab.example.com sshd[11791]: pam_unix(sshd:session): session opened for user devops by (uid=0)",
+            "Jul 29 10:46:05 servere.lab.example.com sshd[12172]: Accepted publickey for root from 172.25.250.9 port 49436 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:46:05 servere.lab.example.com sshd[12172]: pam_unix(sshd:session): session opened for user root by (uid=0)",
+            "Jul 29 10:48:25 servere.lab.example.com sshd[12487]: Accepted publickey for devops from 172.25.250.9 port 49440 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0",
+            "Jul 29 10:48:25 servere.lab.example.com sshd[12487]: pam_unix(sshd:session): session opened for user devops by (uid=0)"
+        ]
+    }
+}
+2021-07-29 10:48:27,676 p=4188 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-29 10:48:27,677 p=4188 u=student |  servere.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-29 10:48:27,677 p=4188 u=student |  serverf.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-29 10:50:34,975 p=4298 u=student |  PLAY [Stat example] *****************************************************************************************
+2021-07-29 10:50:34,986 p=4298 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-29 10:50:36,408 p=4298 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:50:36,419 p=4298 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:50:36,432 p=4298 u=student |  TASK [Check directory] **************************************************************************************
+2021-07-29 10:50:36,975 p=4298 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:50:36,989 p=4298 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:50:37,002 p=4298 u=student |  TASK [Display the output] ***********************************************************************************
+2021-07-29 10:50:37,035 p=4298 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5719109,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5719109,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 4318237,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5719109,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "763895584",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 10:50:37,047 p=4298 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5738971,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5738971,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 8758507,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5738971,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "3845647196",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 10:50:37,060 p=4298 u=student |  TASK [Creating directory] ***********************************************************************************
+2021-07-29 10:50:37,079 p=4298 u=student |  skipping: [serverf.lab.example.com]
+2021-07-29 10:50:37,091 p=4298 u=student |  skipping: [servere.lab.example.com]
+2021-07-29 10:50:37,105 p=4298 u=student |  TASK [Register example] *************************************************************************************
+2021-07-29 10:50:37,611 p=4298 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": true, "cmd": "systemctl status httpd", "delta": "0:00:00.009064", "end": "2021-07-29 10:50:37.564174", "msg": "non-zero return code", "rc": 4, "start": "2021-07-29 10:50:37.555110", "stderr": "Unit httpd.service could not be found.", "stderr_lines": ["Unit httpd.service could not be found."], "stdout": "", "stdout_lines": []}
+2021-07-29 10:50:37,618 p=4298 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": true, "cmd": "systemctl status httpd", "delta": "0:00:00.010070", "end": "2021-07-29 10:50:37.567351", "msg": "non-zero return code", "rc": 4, "start": "2021-07-29 10:50:37.557281", "stderr": "Unit httpd.service could not be found.", "stderr_lines": ["Unit httpd.service could not be found."], "stdout": "", "stdout_lines": []}
+2021-07-29 10:50:37,620 p=4298 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-29 10:50:37,620 p=4298 u=student |  servere.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2021-07-29 10:50:37,620 p=4298 u=student |  serverf.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2021-07-29 10:51:13,839 p=4377 u=student |  PLAY [Stat example] *****************************************************************************************
+2021-07-29 10:51:13,848 p=4377 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-29 10:51:14,937 p=4377 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:51:14,949 p=4377 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:51:14,961 p=4377 u=student |  TASK [Check directory] **************************************************************************************
+2021-07-29 10:51:15,468 p=4377 u=student |  ok: [servere.lab.example.com]
+2021-07-29 10:51:15,475 p=4377 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 10:51:15,487 p=4377 u=student |  TASK [Display the output] ***********************************************************************************
+2021-07-29 10:51:15,508 p=4377 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5719109,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5719109,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 4318237,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5719109,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "763895584",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 10:51:15,520 p=4377 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5738971,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5738971,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 8758507,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5738971,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "3845647196",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 10:51:15,533 p=4377 u=student |  TASK [Creating directory] ***********************************************************************************
+2021-07-29 10:51:15,561 p=4377 u=student |  skipping: [serverf.lab.example.com]
+2021-07-29 10:51:15,571 p=4377 u=student |  skipping: [servere.lab.example.com]
+2021-07-29 10:51:15,584 p=4377 u=student |  TASK [Register example] *************************************************************************************
+2021-07-29 10:51:16,097 p=4377 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": true, "cmd": "systemctl status httpd", "delta": "0:00:00.008997", "end": "2021-07-29 10:51:16.049155", "msg": "non-zero return code", "rc": 4, "start": "2021-07-29 10:51:16.040158", "stderr": "Unit httpd.service could not be found.", "stderr_lines": ["Unit httpd.service could not be found."], "stdout": "", "stdout_lines": []}
+2021-07-29 10:51:16,097 p=4377 u=student |  ...ignoring
+2021-07-29 10:51:16,098 p=4377 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": true, "cmd": "systemctl status httpd", "delta": "0:00:00.008992", "end": "2021-07-29 10:51:16.051180", "msg": "non-zero return code", "rc": 4, "start": "2021-07-29 10:51:16.042188", "stderr": "Unit httpd.service could not be found.", "stderr_lines": ["Unit httpd.service could not be found."], "stdout": "", "stdout_lines": []}
+2021-07-29 10:51:16,098 p=4377 u=student |  ...ignoring
+2021-07-29 10:51:16,112 p=4377 u=student |  TASK [Display sshd output] **********************************************************************************
+2021-07-29 10:51:16,137 p=4377 u=student |  ok: [serverf.lab.example.com] => {
+    "httpd_output": {
+        "changed": true,
+        "cmd": "systemctl status httpd",
+        "delta": "0:00:00.008992",
+        "end": "2021-07-29 10:51:16.051180",
+        "failed": true,
+        "msg": "non-zero return code",
+        "rc": 4,
+        "start": "2021-07-29 10:51:16.042188",
+        "stderr": "Unit httpd.service could not be found.",
+        "stderr_lines": [
+            "Unit httpd.service could not be found."
+        ],
+        "stdout": "",
+        "stdout_lines": []
+    }
+}
+2021-07-29 10:51:16,149 p=4377 u=student |  ok: [servere.lab.example.com] => {
+    "httpd_output": {
+        "changed": true,
+        "cmd": "systemctl status httpd",
+        "delta": "0:00:00.008997",
+        "end": "2021-07-29 10:51:16.049155",
+        "failed": true,
+        "msg": "non-zero return code",
+        "rc": 4,
+        "start": "2021-07-29 10:51:16.040158",
+        "stderr": "Unit httpd.service could not be found.",
+        "stderr_lines": [
+            "Unit httpd.service could not be found."
+        ],
+        "stdout": "",
+        "stdout_lines": []
+    }
+}
+2021-07-29 10:51:16,152 p=4377 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-29 10:51:16,152 p=4377 u=student |  servere.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-07-29 10:51:16,152 p=4377 u=student |  serverf.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-07-29 11:04:11,590 p=4565 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.25.250.13"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::f3d0:2f0d:28bc:4d63"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_version": "1.11.1-3.module+el8+2529+a9686a4d",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": "ttyS0,115200n8",
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_date_time": {
+            "date": "2021-07-29",
+            "day": "29",
+            "epoch": "1627536851",
+            "hour": "11",
+            "iso8601": "2021-07-29T05:34:11Z",
+            "iso8601_basic": "20210729T110411495859",
+            "iso8601_basic_short": "20210729T110411",
+            "iso8601_micro": "2021-07-29T05:34:11.495946Z",
+            "minute": "04",
+            "month": "07",
+            "second": "11",
+            "time": "11:04:11",
+            "tz": "IST",
+            "tz_offset": "+0530",
+            "weekday": "Thursday",
+            "weekday_number": "4",
+            "weeknumber": "30",
+            "year": "2021"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.25.250.13",
+            "alias": "enp1s0",
+            "broadcast": "172.25.250.255",
+            "gateway": "172.25.250.254",
+            "interface": "enp1s0",
+            "macaddress": "52:54:00:00:fa:0d",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "172.25.250.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "vda1": [
+                    "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "vda": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                            ]
+                        },
+                        "sectors": "20969439",
+                        "sectorsize": 512,
+                        "size": "10.00 GB",
+                        "start": "2048",
+                        "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "20971520",
+                "sectorsize": "512",
+                "size": "10.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdb": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097152",
+                "sectorsize": "512",
+                "size": "1.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.0",
+        "ansible_dns": {
+            "nameservers": [
+                "172.25.250.254"
+            ],
+            "search": [
+                "lab.example.com",
+                "example.com"
+            ]
+        },
+        "ansible_domain": "lab.example.com",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_enp1s0": {
+            "active": true,
+            "device": "enp1s0",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "on [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "172.25.250.13",
+                "broadcast": "172.25.250.255",
+                "netmask": "255.255.255.0",
+                "network": "172.25.250.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::f3d0:2f0d:28bc:4d63",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "52:54:00:00:fa:0d",
+            "module": "virtio_net",
+            "mtu": 1500,
+            "pciid": "virtio1",
+            "promisc": false,
+            "speed": -1,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_env": {
+            "HOME": "/root",
+            "LANG": "en_US.UTF-8",
+            "LOGNAME": "root",
+            "LS_COLORS": "rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+            "MAIL": "/var/mail/devops",
+            "PATH": "/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin",
+            "PWD": "/home/devops",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-cyxbekidfdfheacfhphvfefndtoqgmcy ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1627536850.1949556-265102798118140/AnsiballZ_setup.py",
+            "SUDO_GID": "1001",
+            "SUDO_UID": "1001",
+            "SUDO_USER": "devops",
+            "TERM": "xterm-256color",
+            "USER": "root",
+            "USERNAME": "root",
+            "_": "/usr/libexec/platform-python"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "serverd.lab.example.com",
+        "ansible_hostname": "serverd",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "enp1s0",
+            "lo"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-80.el8.x86_64",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_lvm": {
+            "lvs": {},
+            "pvs": {},
+            "vgs": {}
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "88394775ca9147439ae63aab9c500045",
+        "ansible_memfree_mb": 173,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 553,
+                "used": 268
+            },
+            "real": {
+                "free": 173,
+                "total": 821,
+                "used": 648
+            },
+            "swap": {
+                "cached": 0,
+                "free": 0,
+                "total": 0,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 821,
+        "ansible_mounts": [
+            {
+                "block_available": 2219978,
+                "block_size": 4096,
+                "block_total": 2618619,
+                "block_used": 398641,
+                "device": "/dev/vda1",
+                "fstype": "xfs",
+                "inode_available": 5196717,
+                "inode_total": 5242304,
+                "inode_used": 45587,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota",
+                "size_available": 9093029888,
+                "size_total": 10725863424,
+                "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+            }
+        ],
+        "ansible_nodename": "serverd.lab.example.com",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": [
+                "tty0",
+                "ttyS0,115200n8"
+            ],
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "QEMU Virtual CPU version 2.5+"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 1,
+        "ansible_product_name": "KVM",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "45c80158-952f-4a57-85c0-83f705534a48",
+        "ansible_product_version": "RHEL-7.6.0 PC (Q35 + ICH9, 2009)",
+        "ansible_python": {
+            "executable": "/usr/libexec/platform-python",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "config_mode": "enforcing",
+            "mode": "enforcing",
+            "policyvers": 31,
+            "status": "enabled",
+            "type": "targeted"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMzl8zujH2mt6wy+3tgViAh/kbAOg/o+5bbNMUqiDX+keObXAIODAEb9EoQLfAcR3ZlEKqYCsweGADkw52HmNCc=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAICduOpoEOEGzWCiFyWpwOPPzo729ugmYJ+z+Xd2VYxTl",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDLXT54GJfAGvnIbzAW8flDln+3QAgHrlut7VBIwdus6+Fwf/GKFvMz28VpL2mRJO/Don1LDcyojxWgmRjaI8nOYQxE58zxWH/rQ05sjD9rtVd529921E5RJjUaiydjW4FXf1EsCyKbt2mxEPKKA5Neg6WTQmGdljh4TqPtv9bqDbMjUUj+cwFV2OoY2RmqDtrxW6bggeZQMYMFmgYEaQDcGUc1n3+3gHHIZDOTj8ice4z/fKMUl2QKmcU619zy4A2jwHYawrFx7s+OkeKSVT6gfrcI7wk9+I2PqbINXXa/WsLNlFzDkmiD0JbOL9ZrjBW3WmoX4SIc2G2BH97ZFXqD",
+        "ansible_swapfree_mb": 0,
+        "ansible_swaptotal_mb": 0,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_dac_read_search",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_linux_immutable",
+            "cap_net_bind_service",
+            "cap_net_broadcast",
+            "cap_net_admin",
+            "cap_net_raw",
+            "cap_ipc_lock",
+            "cap_ipc_owner",
+            "cap_sys_module",
+            "cap_sys_rawio",
+            "cap_sys_chroot",
+            "cap_sys_ptrace",
+            "cap_sys_pacct",
+            "cap_sys_admin",
+            "cap_sys_boot",
+            "cap_sys_nice",
+            "cap_sys_resource",
+            "cap_sys_time",
+            "cap_sys_tty_config",
+            "cap_mknod",
+            "cap_lease",
+            "cap_audit_write",
+            "cap_audit_control",
+            "cap_setfcap",
+            "cap_mac_override",
+            "cap_mac_admin",
+            "cap_syslog",
+            "cap_wake_alarm",
+            "cap_block_suspend",
+            "cap_audit_read+ep"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Red Hat",
+        "ansible_uptime_seconds": 249981,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "kvm",
+        "discovered_interpreter_python": "/usr/libexec/platform-python",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2021-07-29 11:05:27,556 p=4604 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.25.250.13"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::f3d0:2f0d:28bc:4d63"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_version": "1.11.1-3.module+el8+2529+a9686a4d",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": "ttyS0,115200n8",
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_date_time": {
+            "date": "2021-07-29",
+            "day": "29",
+            "epoch": "1627536927",
+            "hour": "11",
+            "iso8601": "2021-07-29T05:35:27Z",
+            "iso8601_basic": "20210729T110527461081",
+            "iso8601_basic_short": "20210729T110527",
+            "iso8601_micro": "2021-07-29T05:35:27.461156Z",
+            "minute": "05",
+            "month": "07",
+            "second": "27",
+            "time": "11:05:27",
+            "tz": "IST",
+            "tz_offset": "+0530",
+            "weekday": "Thursday",
+            "weekday_number": "4",
+            "weeknumber": "30",
+            "year": "2021"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.25.250.13",
+            "alias": "enp1s0",
+            "broadcast": "172.25.250.255",
+            "gateway": "172.25.250.254",
+            "interface": "enp1s0",
+            "macaddress": "52:54:00:00:fa:0d",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "172.25.250.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "vda1": [
+                    "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "vda": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                            ]
+                        },
+                        "sectors": "20969439",
+                        "sectorsize": 512,
+                        "size": "10.00 GB",
+                        "start": "2048",
+                        "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "20971520",
+                "sectorsize": "512",
+                "size": "10.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdb": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097152",
+                "sectorsize": "512",
+                "size": "1.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.0",
+        "ansible_dns": {
+            "nameservers": [
+                "172.25.250.254"
+            ],
+            "search": [
+                "lab.example.com",
+                "example.com"
+            ]
+        },
+        "ansible_domain": "lab.example.com",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_enp1s0": {
+            "active": true,
+            "device": "enp1s0",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "on [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "172.25.250.13",
+                "broadcast": "172.25.250.255",
+                "netmask": "255.255.255.0",
+                "network": "172.25.250.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::f3d0:2f0d:28bc:4d63",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "52:54:00:00:fa:0d",
+            "module": "virtio_net",
+            "mtu": 1500,
+            "pciid": "virtio1",
+            "promisc": false,
+            "speed": -1,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_env": {
+            "HOME": "/root",
+            "LANG": "en_US.UTF-8",
+            "LOGNAME": "root",
+            "LS_COLORS": "rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+            "MAIL": "/var/mail/devops",
+            "PATH": "/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin",
+            "PWD": "/home/devops",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-mdksfvancrsdsxbepsehxktgdblyuuny ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1627536926.145811-177689952136234/AnsiballZ_setup.py",
+            "SUDO_GID": "1001",
+            "SUDO_UID": "1001",
+            "SUDO_USER": "devops",
+            "TERM": "xterm-256color",
+            "USER": "root",
+            "USERNAME": "root",
+            "_": "/usr/libexec/platform-python"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "serverd.lab.example.com",
+        "ansible_hostname": "serverd",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "enp1s0",
+            "lo"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-80.el8.x86_64",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_lvm": {
+            "lvs": {},
+            "pvs": {},
+            "vgs": {}
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "88394775ca9147439ae63aab9c500045",
+        "ansible_memfree_mb": 173,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 553,
+                "used": 268
+            },
+            "real": {
+                "free": 173,
+                "total": 821,
+                "used": 648
+            },
+            "swap": {
+                "cached": 0,
+                "free": 0,
+                "total": 0,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 821,
+        "ansible_mounts": [
+            {
+                "block_available": 2219966,
+                "block_size": 4096,
+                "block_total": 2618619,
+                "block_used": 398653,
+                "device": "/dev/vda1",
+                "fstype": "xfs",
+                "inode_available": 5196717,
+                "inode_total": 5242304,
+                "inode_used": 45587,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota",
+                "size_available": 9092980736,
+                "size_total": 10725863424,
+                "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+            }
+        ],
+        "ansible_nodename": "serverd.lab.example.com",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": [
+                "tty0",
+                "ttyS0,115200n8"
+            ],
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "QEMU Virtual CPU version 2.5+"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 1,
+        "ansible_product_name": "KVM",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "45c80158-952f-4a57-85c0-83f705534a48",
+        "ansible_product_version": "RHEL-7.6.0 PC (Q35 + ICH9, 2009)",
+        "ansible_python": {
+            "executable": "/usr/libexec/platform-python",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "config_mode": "enforcing",
+            "mode": "enforcing",
+            "policyvers": 31,
+            "status": "enabled",
+            "type": "targeted"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMzl8zujH2mt6wy+3tgViAh/kbAOg/o+5bbNMUqiDX+keObXAIODAEb9EoQLfAcR3ZlEKqYCsweGADkw52HmNCc=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAICduOpoEOEGzWCiFyWpwOPPzo729ugmYJ+z+Xd2VYxTl",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDLXT54GJfAGvnIbzAW8flDln+3QAgHrlut7VBIwdus6+Fwf/GKFvMz28VpL2mRJO/Don1LDcyojxWgmRjaI8nOYQxE58zxWH/rQ05sjD9rtVd529921E5RJjUaiydjW4FXf1EsCyKbt2mxEPKKA5Neg6WTQmGdljh4TqPtv9bqDbMjUUj+cwFV2OoY2RmqDtrxW6bggeZQMYMFmgYEaQDcGUc1n3+3gHHIZDOTj8ice4z/fKMUl2QKmcU619zy4A2jwHYawrFx7s+OkeKSVT6gfrcI7wk9+I2PqbINXXa/WsLNlFzDkmiD0JbOL9ZrjBW3WmoX4SIc2G2BH97ZFXqD",
+        "ansible_swapfree_mb": 0,
+        "ansible_swaptotal_mb": 0,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_dac_read_search",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_linux_immutable",
+            "cap_net_bind_service",
+            "cap_net_broadcast",
+            "cap_net_admin",
+            "cap_net_raw",
+            "cap_ipc_lock",
+            "cap_ipc_owner",
+            "cap_sys_module",
+            "cap_sys_rawio",
+            "cap_sys_chroot",
+            "cap_sys_ptrace",
+            "cap_sys_pacct",
+            "cap_sys_admin",
+            "cap_sys_boot",
+            "cap_sys_nice",
+            "cap_sys_resource",
+            "cap_sys_time",
+            "cap_sys_tty_config",
+            "cap_mknod",
+            "cap_lease",
+            "cap_audit_write",
+            "cap_audit_control",
+            "cap_setfcap",
+            "cap_mac_override",
+            "cap_mac_admin",
+            "cap_syslog",
+            "cap_wake_alarm",
+            "cap_block_suspend",
+            "cap_audit_read+ep"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Red Hat",
+        "ansible_uptime_seconds": 250057,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "kvm",
+        "discovered_interpreter_python": "/usr/libexec/platform-python",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2021-07-29 11:08:00,291 p=4645 u=student |  PLAY [Stat example] ***************************************************************************
+2021-07-29 11:08:00,298 p=4645 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:08:01,761 p=4645 u=student |  ok: [servere.lab.example.com]
+2021-07-29 11:08:01,770 p=4645 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 11:08:01,783 p=4645 u=student |  TASK [Check directory] ************************************************************************
+2021-07-29 11:08:02,284 p=4645 u=student |  ok: [servere.lab.example.com]
+2021-07-29 11:08:02,290 p=4645 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 11:08:02,303 p=4645 u=student |  TASK [Display the output] *********************************************************************
+2021-07-29 11:08:02,324 p=4645 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5719109,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5719109,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 4318237,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5719109,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "763895584",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 11:08:02,335 p=4645 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5738971,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5738971,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 8758507,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5738971,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "3845647196",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 11:08:02,347 p=4645 u=student |  TASK [Creating directory] *********************************************************************
+2021-07-29 11:08:02,367 p=4645 u=student |  skipping: [serverf.lab.example.com]
+2021-07-29 11:08:02,378 p=4645 u=student |  skipping: [servere.lab.example.com]
+2021-07-29 11:08:02,392 p=4645 u=student |  TASK [Register example] ***********************************************************************
+2021-07-29 11:08:02,897 p=4645 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": true, "cmd": "systemctl status httpd", "delta": "0:00:00.008611", "end": "2021-07-29 11:08:02.850103", "msg": "non-zero return code", "rc": 4, "start": "2021-07-29 11:08:02.841492", "stderr": "Unit httpd.service could not be found.", "stderr_lines": ["Unit httpd.service could not be found."], "stdout": "", "stdout_lines": []}
+2021-07-29 11:08:02,897 p=4645 u=student |  ...ignoring
+2021-07-29 11:08:02,903 p=4645 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": true, "cmd": "systemctl status httpd", "delta": "0:00:00.009373", "end": "2021-07-29 11:08:02.855191", "msg": "non-zero return code", "rc": 4, "start": "2021-07-29 11:08:02.845818", "stderr": "Unit httpd.service could not be found.", "stderr_lines": ["Unit httpd.service could not be found."], "stdout": "", "stdout_lines": []}
+2021-07-29 11:08:02,903 p=4645 u=student |  ...ignoring
+2021-07-29 11:08:02,916 p=4645 u=student |  TASK [Display sshd output] ********************************************************************
+2021-07-29 11:08:02,936 p=4645 u=student |  ok: [serverf.lab.example.com] => {
+    "httpd_output": {
+        "changed": true,
+        "cmd": "systemctl status httpd",
+        "delta": "0:00:00.009373",
+        "end": "2021-07-29 11:08:02.855191",
+        "failed": true,
+        "msg": "non-zero return code",
+        "rc": 4,
+        "start": "2021-07-29 11:08:02.845818",
+        "stderr": "Unit httpd.service could not be found.",
+        "stderr_lines": [
+            "Unit httpd.service could not be found."
+        ],
+        "stdout": "",
+        "stdout_lines": []
+    }
+}
+2021-07-29 11:08:02,947 p=4645 u=student |  ok: [servere.lab.example.com] => {
+    "httpd_output": {
+        "changed": true,
+        "cmd": "systemctl status httpd",
+        "delta": "0:00:00.008611",
+        "end": "2021-07-29 11:08:02.850103",
+        "failed": true,
+        "msg": "non-zero return code",
+        "rc": 4,
+        "start": "2021-07-29 11:08:02.841492",
+        "stderr": "Unit httpd.service could not be found.",
+        "stderr_lines": [
+            "Unit httpd.service could not be found."
+        ],
+        "stdout": "",
+        "stdout_lines": []
+    }
+}
+2021-07-29 11:08:02,949 p=4645 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:08:02,949 p=4645 u=student |  servere.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-07-29 11:08:02,950 p=4645 u=student |  serverf.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-07-29 11:08:30,306 p=4736 u=student |  PLAY [Stat example] ***************************************************************************
+2021-07-29 11:08:30,314 p=4736 u=student |  TASK [Check directory] ************************************************************************
+2021-07-29 11:08:30,920 p=4736 u=student |  ok: [serverf.lab.example.com]
+2021-07-29 11:08:30,922 p=4736 u=student |  ok: [servere.lab.example.com]
+2021-07-29 11:08:30,927 p=4736 u=student |  TASK [Display the output] *********************************************************************
+2021-07-29 11:08:30,945 p=4736 u=student |  ok: [serverf.lab.example.com] => {
+    "output": {
+        "ansible_facts": {
+            "discovered_interpreter_python": "/usr/libexec/platform-python"
+        },
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5719109,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5719109,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 4318237,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5719109,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "763895584",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 11:08:30,953 p=4736 u=student |  ok: [servere.lab.example.com] => {
+    "output": {
+        "ansible_facts": {
+            "discovered_interpreter_python": "/usr/libexec/platform-python"
+        },
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1627535742.5738971,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 0,
+            "charset": "binary",
+            "ctime": 1627535742.5738971,
+            "dev": 64513,
+            "device_type": 0,
+            "executable": true,
+            "exists": true,
+            "gid": 0,
+            "gr_name": "root",
+            "inode": 8758507,
+            "isblk": false,
+            "ischr": false,
+            "isdir": true,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": false,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "inode/directory",
+            "mode": "0755",
+            "mtime": 1627535742.5738971,
+            "nlink": 2,
+            "path": "/var/www/vhost/",
+            "pw_name": "root",
+            "readable": true,
+            "rgrp": true,
+            "roth": true,
+            "rusr": true,
+            "size": 6,
+            "uid": 0,
+            "version": "3845647196",
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": true,
+            "xoth": true,
+            "xusr": true
+        }
+    }
+}
+2021-07-29 11:08:30,958 p=4736 u=student |  TASK [Creating directory] *********************************************************************
+2021-07-29 11:08:30,970 p=4736 u=student |  skipping: [serverf.lab.example.com]
+2021-07-29 11:08:30,979 p=4736 u=student |  skipping: [servere.lab.example.com]
+2021-07-29 11:08:30,985 p=4736 u=student |  TASK [Register example] ***********************************************************************
+2021-07-29 11:08:31,490 p=4736 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": true, "cmd": "systemctl status httpd", "delta": "0:00:00.008265", "end": "2021-07-29 11:08:31.443905", "msg": "non-zero return code", "rc": 4, "start": "2021-07-29 11:08:31.435640", "stderr": "Unit httpd.service could not be found.", "stderr_lines": ["Unit httpd.service could not be found."], "stdout": "", "stdout_lines": []}
+2021-07-29 11:08:31,490 p=4736 u=student |  ...ignoring
+2021-07-29 11:08:31,496 p=4736 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": true, "cmd": "systemctl status httpd", "delta": "0:00:00.008518", "end": "2021-07-29 11:08:31.451059", "msg": "non-zero return code", "rc": 4, "start": "2021-07-29 11:08:31.442541", "stderr": "Unit httpd.service could not be found.", "stderr_lines": ["Unit httpd.service could not be found."], "stdout": "", "stdout_lines": []}
+2021-07-29 11:08:31,497 p=4736 u=student |  ...ignoring
+2021-07-29 11:08:31,500 p=4736 u=student |  TASK [Display sshd output] ********************************************************************
+2021-07-29 11:08:31,517 p=4736 u=student |  ok: [serverf.lab.example.com] => {
+    "httpd_output": {
+        "changed": true,
+        "cmd": "systemctl status httpd",
+        "delta": "0:00:00.008265",
+        "end": "2021-07-29 11:08:31.443905",
+        "failed": true,
+        "msg": "non-zero return code",
+        "rc": 4,
+        "start": "2021-07-29 11:08:31.435640",
+        "stderr": "Unit httpd.service could not be found.",
+        "stderr_lines": [
+            "Unit httpd.service could not be found."
+        ],
+        "stdout": "",
+        "stdout_lines": []
+    }
+}
+2021-07-29 11:08:31,524 p=4736 u=student |  ok: [servere.lab.example.com] => {
+    "httpd_output": {
+        "changed": true,
+        "cmd": "systemctl status httpd",
+        "delta": "0:00:00.008518",
+        "end": "2021-07-29 11:08:31.451059",
+        "failed": true,
+        "msg": "non-zero return code",
+        "rc": 4,
+        "start": "2021-07-29 11:08:31.442541",
+        "stderr": "Unit httpd.service could not be found.",
+        "stderr_lines": [
+            "Unit httpd.service could not be found."
+        ],
+        "stdout": "",
+        "stdout_lines": []
+    }
+}
+2021-07-29 11:08:31,526 p=4736 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:08:31,526 p=4736 u=student |  servere.lab.example.com    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-07-29 11:08:31,527 p=4736 u=student |  serverf.lab.example.com    : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-07-29 11:14:52,767 p=4846 u=student |  servera.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.25.250.10"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::e6c5:468e:edb6:9b52"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_version": "1.11.1-3.module+el8+2529+a9686a4d",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": "ttyS0,115200n8",
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_date_time": {
+            "date": "2021-07-29",
+            "day": "29",
+            "epoch": "1627537492",
+            "hour": "11",
+            "iso8601": "2021-07-29T05:44:52Z",
+            "iso8601_basic": "20210729T111452478064",
+            "iso8601_basic_short": "20210729T111452",
+            "iso8601_micro": "2021-07-29T05:44:52.478124Z",
+            "minute": "14",
+            "month": "07",
+            "second": "52",
+            "time": "11:14:52",
+            "tz": "IST",
+            "tz_offset": "+0530",
+            "weekday": "Thursday",
+            "weekday_number": "4",
+            "weeknumber": "30",
+            "year": "2021"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.25.250.10",
+            "alias": "enp1s0",
+            "broadcast": "172.25.250.255",
+            "gateway": "172.25.250.254",
+            "interface": "enp1s0",
+            "macaddress": "52:54:00:00:fa:0a",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "172.25.250.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "vda1": [
+                    "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "vda": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                            ]
+                        },
+                        "sectors": "20969439",
+                        "sectorsize": 512,
+                        "size": "10.00 GB",
+                        "start": "2048",
+                        "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "20971520",
+                "sectorsize": "512",
+                "size": "10.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdb": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097152",
+                "sectorsize": "512",
+                "size": "1.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.0",
+        "ansible_dns": {
+            "nameservers": [
+                "172.25.250.254"
+            ],
+            "search": [
+                "lab.example.com",
+                "example.com"
+            ]
+        },
+        "ansible_domain": "lab.example.com",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_enp1s0": {
+            "active": true,
+            "device": "enp1s0",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "on [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "172.25.250.10",
+                "broadcast": "172.25.250.255",
+                "netmask": "255.255.255.0",
+                "network": "172.25.250.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::e6c5:468e:edb6:9b52",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "52:54:00:00:fa:0a",
+            "module": "virtio_net",
+            "mtu": 1500,
+            "pciid": "virtio1",
+            "promisc": false,
+            "speed": -1,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_env": {
+            "HOME": "/root",
+            "LANG": "en_US.UTF-8",
+            "LOGNAME": "root",
+            "LS_COLORS": "rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+            "MAIL": "/var/mail/devops",
+            "PATH": "/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin",
+            "PWD": "/home/devops",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-pryujckwtdhuwheoowbwqzgkcpjzugsr ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1627537491.3634596-14814826793592/AnsiballZ_setup.py",
+            "SUDO_GID": "1001",
+            "SUDO_UID": "1001",
+            "SUDO_USER": "devops",
+            "TERM": "xterm-256color",
+            "USER": "root",
+            "USERNAME": "root",
+            "_": "/usr/libexec/platform-python"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "servera.lab.example.com",
+        "ansible_hostname": "servera",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "enp1s0",
+            "lo"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-80.el8.x86_64",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_lvm": {
+            "lvs": {},
+            "pvs": {},
+            "vgs": {}
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "88394775ca9147439ae63aab9c500045",
+        "ansible_memfree_mb": 172,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 551,
+                "used": 270
+            },
+            "real": {
+                "free": 172,
+                "total": 821,
+                "used": 649
+            },
+            "swap": {
+                "cached": 0,
+                "free": 0,
+                "total": 0,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 821,
+        "ansible_mounts": [
+            {
+                "block_available": 2215534,
+                "block_size": 4096,
+                "block_total": 2618619,
+                "block_used": 403085,
+                "device": "/dev/vda1",
+                "fstype": "xfs",
+                "inode_available": 5196259,
+                "inode_total": 5242304,
+                "inode_used": 46045,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota",
+                "size_available": 9074827264,
+                "size_total": 10725863424,
+                "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+            }
+        ],
+        "ansible_nodename": "servera.lab.example.com",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": [
+                "tty0",
+                "ttyS0,115200n8"
+            ],
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "QEMU Virtual CPU version 2.5+"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 1,
+        "ansible_product_name": "KVM",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "8f6070ad-ed94-45ae-bf7c-5f5abe7044b7",
+        "ansible_product_version": "RHEL-7.6.0 PC (Q35 + ICH9, 2009)",
+        "ansible_python": {
+            "executable": "/usr/libexec/platform-python",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "config_mode": "enforcing",
+            "mode": "enforcing",
+            "policyvers": 31,
+            "status": "enabled",
+            "type": "targeted"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMzl8zujH2mt6wy+3tgViAh/kbAOg/o+5bbNMUqiDX+keObXAIODAEb9EoQLfAcR3ZlEKqYCsweGADkw52HmNCc=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAICduOpoEOEGzWCiFyWpwOPPzo729ugmYJ+z+Xd2VYxTl",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDLXT54GJfAGvnIbzAW8flDln+3QAgHrlut7VBIwdus6+Fwf/GKFvMz28VpL2mRJO/Don1LDcyojxWgmRjaI8nOYQxE58zxWH/rQ05sjD9rtVd529921E5RJjUaiydjW4FXf1EsCyKbt2mxEPKKA5Neg6WTQmGdljh4TqPtv9bqDbMjUUj+cwFV2OoY2RmqDtrxW6bggeZQMYMFmgYEaQDcGUc1n3+3gHHIZDOTj8ice4z/fKMUl2QKmcU619zy4A2jwHYawrFx7s+OkeKSVT6gfrcI7wk9+I2PqbINXXa/WsLNlFzDkmiD0JbOL9ZrjBW3WmoX4SIc2G2BH97ZFXqD",
+        "ansible_swapfree_mb": 0,
+        "ansible_swaptotal_mb": 0,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_dac_read_search",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_linux_immutable",
+            "cap_net_bind_service",
+            "cap_net_broadcast",
+            "cap_net_admin",
+            "cap_net_raw",
+            "cap_ipc_lock",
+            "cap_ipc_owner",
+            "cap_sys_module",
+            "cap_sys_rawio",
+            "cap_sys_chroot",
+            "cap_sys_ptrace",
+            "cap_sys_pacct",
+            "cap_sys_admin",
+            "cap_sys_boot",
+            "cap_sys_nice",
+            "cap_sys_resource",
+            "cap_sys_time",
+            "cap_sys_tty_config",
+            "cap_mknod",
+            "cap_lease",
+            "cap_audit_write",
+            "cap_audit_control",
+            "cap_setfcap",
+            "cap_mac_override",
+            "cap_mac_admin",
+            "cap_syslog",
+            "cap_wake_alarm",
+            "cap_block_suspend",
+            "cap_audit_read+ep"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Red Hat",
+        "ansible_uptime_seconds": 250634,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "kvm",
+        "discovered_interpreter_python": "/usr/libexec/platform-python",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2021-07-29 11:19:16,320 p=4906 u=student |  playbook: server_details.yaml
+2021-07-29 11:19:19,849 p=4912 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:19:19,856 p=4912 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:19:21,281 p=4912 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:19:21,295 p=4912 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:19:21,309 p=4912 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'ansible_default_ipv4'\n\nThe error appears to be in '/home/student/work/session-01-playbook/server_details.yaml': line 5, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Server details.\n      ^ here\n"}
+2021-07-29 11:19:21,310 p=4912 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:19:21,310 p=4912 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:19:44,491 p=4944 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:19:44,498 p=4944 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:19:45,568 p=4944 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:19:45,584 p=4944 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:19:45,599 p=4944 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'ansible_default_ipv4'\n\nThe error appears to be in '/home/student/work/session-01-playbook/server_details.yaml': line 5, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Server details.\n      ^ here\n"}
+2021-07-29 11:19:45,601 p=4944 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:19:45,601 p=4944 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:19:58,236 p=4965 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:19:58,243 p=4965 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:19:59,316 p=4965 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:19:59,330 p=4965 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:19:59,345 p=4965 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "'msg' and 'var' are incompatible options"}
+2021-07-29 11:19:59,346 p=4965 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:19:59,346 p=4965 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:20:27,742 p=4994 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:20:27,749 p=4994 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:20:28,798 p=4994 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:20:28,812 p=4994 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:20:28,825 p=4994 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "'msg' and 'var' are incompatible options"}
+2021-07-29 11:20:28,827 p=4994 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:20:28,827 p=4994 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:20:44,668 p=5015 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:20:44,676 p=5015 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:20:45,768 p=5015 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:20:45,782 p=5015 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:20:45,793 p=5015 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "'msg' and 'var' are incompatible options"}
+2021-07-29 11:20:45,794 p=5015 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:20:45,795 p=5015 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:20:55,689 p=5036 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:20:55,696 p=5036 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:20:56,759 p=5036 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:20:56,775 p=5036 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:20:56,790 p=5036 u=student |  ok: [servera.lab.example.com] => {
+    "ansible_default_ipv4.address": "172.25.250.10"
+}
+2021-07-29 11:20:56,792 p=5036 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:20:56,792 p=5036 u=student |  servera.lab.example.com    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:21:33,968 p=5065 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:21:33,975 p=5065 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:21:35,046 p=5065 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:21:35,060 p=5065 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:21:35,076 p=5065 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'ansible_default_ipv4'. String: {{ansible_default_ipv4.address  ansible_default_ipv4.macaddress}}"}
+2021-07-29 11:21:35,077 p=5065 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:21:35,078 p=5065 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:21:55,049 p=5086 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:21:55,056 p=5086 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:21:56,120 p=5086 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:21:56,135 p=5086 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:21:56,148 p=5086 u=student |  ok: [servera.lab.example.com] => {
+    "<class 'list'>": "VARIABLE IS NOT DEFINED!"
+}
+2021-07-29 11:21:56,151 p=5086 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:21:56,151 p=5086 u=student |  servera.lab.example.com    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:22:37,830 p=5115 u=student |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/student/work/session-01-playbook/server_details.yaml': line 7, column 50, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      debug:
+        var: {{ ansible_default_ipv4.address  }} {{ansible_default_ipv4.macaddress }}
+                                                 ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2021-07-29 11:22:48,897 p=5120 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:22:48,904 p=5120 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:22:49,955 p=5120 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:22:49,969 p=5120 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:22:49,988 p=5120 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'integer'. String: {{172.25.250.10 52:54:00:00:fa:0a}}"}
+2021-07-29 11:22:49,989 p=5120 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:22:49,989 p=5120 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:23:08,486 p=5141 u=student |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/student/work/session-01-playbook/server_details.yaml': line 7, column 52, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      debug:
+        var: "{{ ansible_default_ipv4.address  }}" "{{ansible_default_ipv4.macaddress }}"
+                                                   ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2021-07-29 11:23:30,025 p=5154 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:23:30,032 p=5154 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:23:31,097 p=5154 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:23:31,111 p=5154 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:23:31,129 p=5154 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'integer'. String: {{172.25.250.10 52:54:00:00:fa:0a}}"}
+2021-07-29 11:23:31,130 p=5154 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:23:31,130 p=5154 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:23:49,865 p=5175 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:23:49,872 p=5175 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:23:50,949 p=5175 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:23:50,964 p=5175 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:23:50,980 p=5175 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "172.25.250.10 52:54:00:00:fa:0a"
+}
+2021-07-29 11:23:50,982 p=5175 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:23:50,983 p=5175 u=student |  servera.lab.example.com    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:24:35,377 p=5204 u=student |  PLAY [Server details.] ************************************************************************
+2021-07-29 11:24:35,384 p=5204 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-29 11:24:36,428 p=5204 u=student |  ok: [servera.lab.example.com]
+2021-07-29 11:24:36,441 p=5204 u=student |  TASK [Server details.] ************************************************************************
+2021-07-29 11:24:36,458 p=5204 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "IP address = 172.25.250.10 , Mac address= 52:54:00:00:fa:0a"
+}
+2021-07-29 11:24:36,461 p=5204 u=student |  PLAY RECAP ************************************************************************************
+2021-07-29 11:24:36,461 p=5204 u=student |  servera.lab.example.com    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-29 11:25:15,966 p=5225 u=student |  servera.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.25.250.10"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::e6c5:468e:edb6:9b52"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_version": "1.11.1-3.module+el8+2529+a9686a4d",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": "ttyS0,115200n8",
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_date_time": {
+            "date": "2021-07-29",
+            "day": "29",
+            "epoch": "1627538115",
+            "hour": "11",
+            "iso8601": "2021-07-29T05:55:15Z",
+            "iso8601_basic": "20210729T112515686766",
+            "iso8601_basic_short": "20210729T112515",
+            "iso8601_micro": "2021-07-29T05:55:15.686852Z",
+            "minute": "25",
+            "month": "07",
+            "second": "15",
+            "time": "11:25:15",
+            "tz": "IST",
+            "tz_offset": "+0530",
+            "weekday": "Thursday",
+            "weekday_number": "4",
+            "weeknumber": "30",
+            "year": "2021"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.25.250.10",
+            "alias": "enp1s0",
+            "broadcast": "172.25.250.255",
+            "gateway": "172.25.250.254",
+            "interface": "enp1s0",
+            "macaddress": "52:54:00:00:fa:0a",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "172.25.250.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "vda1": [
+                    "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "vda": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                            ]
+                        },
+                        "sectors": "20969439",
+                        "sectorsize": 512,
+                        "size": "10.00 GB",
+                        "start": "2048",
+                        "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "20971520",
+                "sectorsize": "512",
+                "size": "10.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdb": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097152",
+                "sectorsize": "512",
+                "size": "1.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.0",
+        "ansible_dns": {
+            "nameservers": [
+                "172.25.250.254"
+            ],
+            "search": [
+                "lab.example.com",
+                "example.com"
+            ]
+        },
+        "ansible_domain": "lab.example.com",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_enp1s0": {
+            "active": true,
+            "device": "enp1s0",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "on [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "172.25.250.10",
+                "broadcast": "172.25.250.255",
+                "netmask": "255.255.255.0",
+                "network": "172.25.250.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::e6c5:468e:edb6:9b52",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "52:54:00:00:fa:0a",
+            "module": "virtio_net",
+            "mtu": 1500,
+            "pciid": "virtio1",
+            "promisc": false,
+            "speed": -1,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_env": {
+            "HOME": "/root",
+            "LANG": "en_US.UTF-8",
+            "LOGNAME": "root",
+            "LS_COLORS": "rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+            "MAIL": "/var/mail/devops",
+            "PATH": "/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin",
+            "PWD": "/home/devops",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-uophwirqfcaeyamsyjbxuyglporydioo ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1627538114.8568778-273671501715292/AnsiballZ_setup.py",
+            "SUDO_GID": "1001",
+            "SUDO_UID": "1001",
+            "SUDO_USER": "devops",
+            "TERM": "xterm-256color",
+            "USER": "root",
+            "USERNAME": "root",
+            "_": "/usr/libexec/platform-python"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "servera.lab.example.com",
+        "ansible_hostname": "servera",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "enp1s0",
+            "lo"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-80.el8.x86_64",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_lvm": {
+            "lvs": {},
+            "pvs": {},
+            "vgs": {}
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "88394775ca9147439ae63aab9c500045",
+        "ansible_memfree_mb": 168,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 550,
+                "used": 271
+            },
+            "real": {
+                "free": 168,
+                "total": 821,
+                "used": 653
+            },
+            "swap": {
+                "cached": 0,
+                "free": 0,
+                "total": 0,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 821,
+        "ansible_mounts": [
+            {
+                "block_available": 2214765,
+                "block_size": 4096,
+                "block_total": 2618619,
+                "block_used": 403854,
+                "device": "/dev/vda1",
+                "fstype": "xfs",
+                "inode_available": 5196235,
+                "inode_total": 5242304,
+                "inode_used": 46069,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota",
+                "size_available": 9071677440,
+                "size_total": 10725863424,
+                "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+            }
+        ],
+        "ansible_nodename": "servera.lab.example.com",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": [
+                "tty0",
+                "ttyS0,115200n8"
+            ],
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "QEMU Virtual CPU version 2.5+"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 1,
+        "ansible_product_name": "KVM",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "8f6070ad-ed94-45ae-bf7c-5f5abe7044b7",
+        "ansible_product_version": "RHEL-7.6.0 PC (Q35 + ICH9, 2009)",
+        "ansible_python": {
+            "executable": "/usr/libexec/platform-python",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "config_mode": "enforcing",
+            "mode": "enforcing",
+            "policyvers": 31,
+            "status": "enabled",
+            "type": "targeted"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMzl8zujH2mt6wy+3tgViAh/kbAOg/o+5bbNMUqiDX+keObXAIODAEb9EoQLfAcR3ZlEKqYCsweGADkw52HmNCc=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAICduOpoEOEGzWCiFyWpwOPPzo729ugmYJ+z+Xd2VYxTl",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDLXT54GJfAGvnIbzAW8flDln+3QAgHrlut7VBIwdus6+Fwf/GKFvMz28VpL2mRJO/Don1LDcyojxWgmRjaI8nOYQxE58zxWH/rQ05sjD9rtVd529921E5RJjUaiydjW4FXf1EsCyKbt2mxEPKKA5Neg6WTQmGdljh4TqPtv9bqDbMjUUj+cwFV2OoY2RmqDtrxW6bggeZQMYMFmgYEaQDcGUc1n3+3gHHIZDOTj8ice4z/fKMUl2QKmcU619zy4A2jwHYawrFx7s+OkeKSVT6gfrcI7wk9+I2PqbINXXa/WsLNlFzDkmiD0JbOL9ZrjBW3WmoX4SIc2G2BH97ZFXqD",
+        "ansible_swapfree_mb": 0,
+        "ansible_swaptotal_mb": 0,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_dac_read_search",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_linux_immutable",
+            "cap_net_bind_service",
+            "cap_net_broadcast",
+            "cap_net_admin",
+            "cap_net_raw",
+            "cap_ipc_lock",
+            "cap_ipc_owner",
+            "cap_sys_module",
+            "cap_sys_rawio",
+            "cap_sys_chroot",
+            "cap_sys_ptrace",
+            "cap_sys_pacct",
+            "cap_sys_admin",
+            "cap_sys_boot",
+            "cap_sys_nice",
+            "cap_sys_resource",
+            "cap_sys_time",
+            "cap_sys_tty_config",
+            "cap_mknod",
+            "cap_lease",
+            "cap_audit_write",
+            "cap_audit_control",
+            "cap_setfcap",
+            "cap_mac_override",
+            "cap_mac_admin",
+            "cap_syslog",
+            "cap_wake_alarm",
+            "cap_block_suspend",
+            "cap_audit_read+ep"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Red Hat",
+        "ansible_uptime_seconds": 251257,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "kvm",
+        "discovered_interpreter_python": "/usr/libexec/platform-python",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}

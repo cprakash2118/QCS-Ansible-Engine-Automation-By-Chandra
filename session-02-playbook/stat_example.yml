@@ -1,0 +1,31 @@
+---
+- name: Stat example
+  hosts: other 
+  gather_facts: no
+  vars:
+     dir_name: /var/www/vhost/
+  tasks:
+    - name: Check directory 
+      stat:
+        path: "{{ dir_name }}"
+      register: output
+
+    - name: Display the output
+      debug:
+        var: output 
+
+    - name: Creating directory
+      file:
+        path: "{{dir_name}}"
+        state: directory
+      when: output.stat.exists == false 
+
+    - name: Register example
+      shell: systemctl status httpd
+      register: httpd_output 
+      ignore_errors: true 
+
+    - name: Display sshd output 
+      debug: 
+        var: httpd_output
+...

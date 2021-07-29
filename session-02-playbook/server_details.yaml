@@ -1,0 +1,12 @@
+---
+- name: Server details.
+  hosts: servera.lab.example.com
+  tasks:
+    - name: Server details.
+      debug:
+        msg: "IP address = {{ ansible_default_ipv4.address }} , Mac address= {{ ansible_default_ipv4.macaddress }}"
+        #Server Mac address - {{ ansible_facts.ansible_default_ipv4.macaddress}}"
+#ansible_facts.ansible_default_ipv4.mtu
+#ansible_facts.ansible_default_ipv4.type
+#ansible_facts.ansible_default_ipv4.gateway
+...
