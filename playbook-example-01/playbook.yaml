@@ -1,0 +1,25 @@
+---
+- name: My 1st play.
+  hosts: web 
+  tasks:
+    - name: Group addition
+      group: 
+        name: "{{ item }}"
+        state: present 
+      loop: 
+         - unixadm 
+         - middleware
+         - dba 
+
+
+    - name: User creation.
+      user:
+        name: "{{item.name}}"
+        group: "{{ item.grp}}"
+        state: present
+      loop:
+         - {name: prakash, grp: unixadm}
+         - {name: john , grp: middleware}
+         - {name: tom , grp: dba}
+
+...

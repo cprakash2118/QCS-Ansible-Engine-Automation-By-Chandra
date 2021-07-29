@@ -1,0 +1,8 @@
+---
+  - apache_pkg_name: httpd
+  - apache_service_name: httpd
+  - firewall_rule_service: http
+  - server_list:
+      - servera
+      - serverb
+...

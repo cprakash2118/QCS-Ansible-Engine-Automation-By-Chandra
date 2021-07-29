@@ -1,0 +1,42 @@
+---
+- name: 1st play - APache installation and Configuration.
+  hosts: lb 
+  tasks:
+    - name: Installing apache package.
+      yum:
+        name: httpd
+        state: present 
+        #state: latest 
+
+    - name: Start and enable httpd/apache service.
+      service:
+        name: httpd
+        state: started
+        enabled: true 
+
+    - name: Application/index.html deployment 
+      copy:
+        content: "This is my web server"
+        dest: /var/www/html/index.html 
+
+    - name: Adding firewalld rules for apache 
+      firewalld:
+          service: http
+          permanent: yes
+          state: enabled
+          immediate: yes
+
+- name: 2nd play - Verifying apache 
+  hosts: myself
+  tasks:
+     - name: Verifing URL - http://servera.lab.example.com
+       uri:
+         url: http://servera.lab.example.com
+         return_content: yes
+         status_code: 200
+     - name: Verifing URL - http://serverb.lab.example.com
+       uri:
+         url: http://serverb.lab.example.com
+         return_content: yes
+         status_code: 200
+...

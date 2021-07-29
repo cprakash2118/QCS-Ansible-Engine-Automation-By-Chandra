@@ -1,0 +1,15 @@
+---
+- name: My 1st play - any message 
+  hosts: lb 
+  tasks:
+    - name: Group creation.
+      group:
+        name: unixadm 
+        state: present 
+
+    - name: User creation.
+      user:
+        name: joe 
+        groups: unixadm 
+        state: present 
+...

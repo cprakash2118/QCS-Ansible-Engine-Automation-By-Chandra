@@ -1,0 +1,1494 @@
+2021-07-27 09:53:00,903 p=13035 u=student |    hosts (6):
+2021-07-27 09:53:00,903 p=13035 u=student |      servera.lab.example.com
+2021-07-27 09:53:00,903 p=13035 u=student |      serverb.lab.example.com
+2021-07-27 09:53:00,903 p=13035 u=student |      serverc.lab.example.com
+2021-07-27 09:53:00,903 p=13035 u=student |      serverd.lab.example.com
+2021-07-27 09:53:00,903 p=13035 u=student |      servere.lab.example.com
+2021-07-27 09:53:00,904 p=13035 u=student |      serverf.lab.example.com
+2021-07-27 09:53:09,733 p=13038 u=student |    hosts (2):
+2021-07-27 09:53:09,734 p=13038 u=student |      servera.lab.example.com
+2021-07-27 09:53:09,734 p=13038 u=student |      serverb.lab.example.com
+2021-07-27 09:53:16,526 p=13041 u=student |    hosts (1):
+2021-07-27 09:53:16,526 p=13041 u=student |      serverc.lab.example.com
+2021-07-27 09:53:24,071 p=13044 u=student |    hosts (1):
+2021-07-27 09:53:24,072 p=13044 u=student |      serverd.lab.example.com
+2021-07-27 09:53:30,237 p=13047 u=student |    hosts (1):
+2021-07-27 09:53:30,237 p=13047 u=student |      servere.lab.example.com
+2021-07-27 09:53:37,728 p=13050 u=student |    hosts (1):
+2021-07-27 09:53:37,729 p=13050 u=student |      serverf.lab.example.com
+2021-07-27 09:53:53,522 p=13061 u=student |   [WARNING]: No hosts matched, nothing to do
+
+2021-07-27 09:53:53,522 p=13061 u=student |    hosts (0):
+2021-07-27 09:55:14,086 p=13081 u=student |   [WARNING]: No hosts matched, nothing to do
+
+2021-07-27 09:55:14,087 p=13081 u=student |    hosts (0):
+2021-07-27 09:55:17,181 p=13084 u=student |    hosts (4):
+2021-07-27 09:55:17,182 p=13084 u=student |      serverf.lab.example.com
+2021-07-27 09:55:17,182 p=13084 u=student |      10.10.0.1
+2021-07-27 09:55:17,182 p=13084 u=student |      10.10.0.2
+2021-07-27 09:55:17,182 p=13084 u=student |      10.10.0.3
+2021-07-27 09:56:00,157 p=13096 u=student |    hosts (1):
+2021-07-27 09:56:00,157 p=13096 u=student |      serverf.lab.example.com
+2021-07-27 09:56:04,094 p=13099 u=student |    hosts (3):
+2021-07-27 09:56:04,094 p=13099 u=student |      10.10.0.1
+2021-07-27 09:56:04,094 p=13099 u=student |      10.10.0.2
+2021-07-27 09:56:04,094 p=13099 u=student |      10.10.0.3
+2021-07-27 09:57:51,171 p=13130 u=student |    hosts (3):
+2021-07-27 09:57:51,171 p=13130 u=student |      servera.lab.example.com
+2021-07-27 09:57:51,171 p=13130 u=student |      serverb.lab.example.com
+2021-07-27 09:57:51,171 p=13130 u=student |      serverc.lab.example.com
+2021-07-27 09:58:03,311 p=13133 u=student |    hosts (2):
+2021-07-27 09:58:03,311 p=13133 u=student |      servera.lab.example.com
+2021-07-27 09:58:03,311 p=13133 u=student |      serverb.lab.example.com
+2021-07-27 09:58:12,116 p=13136 u=student |    hosts (1):
+2021-07-27 09:58:12,117 p=13136 u=student |      serverc.lab.example.com
+2021-07-27 10:01:06,819 p=13172 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+ 10:01:06 up 20:23,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-07-27 10:01:31,119 p=13197 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+ 10:01:31 up 20:23,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-07-27 10:01:31,436 p=13197 u=student |  serverc.lab.example.com | CHANGED | rc=0 >>
+ 10:01:31 up 20:23,  1 user,  load average: 0.48, 0.10, 0.03
+
+2021-07-27 10:05:51,359 p=13273 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+ 10:05:51 up 20:28,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-07-27 10:05:51,370 p=13273 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+ 10:05:51 up 20:28,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-07-27 10:05:51,378 p=13273 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+ 10:05:51 up 20:28,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-07-27 10:06:00,205 p=13331 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:06:00,215 p=13331 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:06:00,235 p=13331 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:06:28,071 p=13399 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+uid=1001(devops) gid=1001(devops) groups=1001(devops) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:06:28,072 p=13399 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+uid=1001(devops) gid=1001(devops) groups=1001(devops) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:06:28,077 p=13399 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=1001(devops) gid=1001(devops) groups=1001(devops) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:06:57,486 p=13467 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=1000(student) gid=1000(student) groups=1000(student),10(wheel) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:06:57,503 p=13467 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+uid=1000(student) gid=1000(student) groups=1000(student),10(wheel) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:06:57,519 p=13467 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+uid=1000(student) gid=1000(student) groups=1000(student),10(wheel) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:07:35,996 p=13521 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:12 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 709 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 7.8M
+   CGroup: /system.slice/sshd.service
+           └─709 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:10 jegui.ilt.example.com systemd[1]: Starting OpenSSH server daemon...
+Jul 26 13:38:12 jegui.ilt.example.com sshd[709]: Server listening on 0.0.0.0 port 22.
+Jul 26 13:38:12 jegui.ilt.example.com sshd[709]: Server listening on :: port 22.
+Jul 26 13:38:12 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:05:50 serverd.lab.example.com sshd[1771]: Accepted publickey for devops from 172.25.250.9 port 38120 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 serverd.lab.example.com sshd[1771]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 serverd.lab.example.com sshd[2212]: Accepted publickey for student from 172.25.250.9 port 38126 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 serverd.lab.example.com sshd[2212]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 serverd.lab.example.com sshd[2374]: Accepted publickey for devops from 172.25.250.9 port 38132 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 serverd.lab.example.com sshd[2374]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+
+2021-07-27 10:07:35,998 p=13521 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:05 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 720 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 7.8M
+   CGroup: /system.slice/sshd.service
+           └─720 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:02 jegui.ilt.example.com systemd[1]: Starting OpenSSH server daemon...
+Jul 26 13:38:05 jegui.ilt.example.com sshd[720]: Server listening on 0.0.0.0 port 22.
+Jul 26 13:38:05 jegui.ilt.example.com sshd[720]: Server listening on :: port 22.
+Jul 26 13:38:05 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:05:50 serverb.lab.example.com sshd[1789]: Accepted publickey for devops from 172.25.250.9 port 34298 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 serverb.lab.example.com sshd[1789]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 serverb.lab.example.com sshd[2225]: Accepted publickey for student from 172.25.250.9 port 34304 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 serverb.lab.example.com sshd[2225]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 serverb.lab.example.com sshd[2387]: Accepted publickey for devops from 172.25.250.9 port 34310 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 serverb.lab.example.com sshd[2387]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+
+2021-07-27 10:07:36,023 p=13521 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:00 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 733 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 7.8M
+   CGroup: /system.slice/sshd.service
+           └─733 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:00 jegui.ilt.example.com sshd[733]: Server listening on :: port 22.
+Jul 26 13:38:00 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:01:06 servera.lab.example.com sshd[1778]: Accepted publickey for devops from 172.25.250.9 port 44694 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:01:06 servera.lab.example.com sshd[1778]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:05:50 servera.lab.example.com sshd[2085]: Accepted publickey for devops from 172.25.250.9 port 44698 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 servera.lab.example.com sshd[2085]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 servera.lab.example.com sshd[2525]: Accepted publickey for student from 172.25.250.9 port 44704 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 servera.lab.example.com sshd[2525]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 servera.lab.example.com sshd[2686]: Accepted publickey for devops from 172.25.250.9 port 44710 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 servera.lab.example.com sshd[2686]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+
+2021-07-27 10:07:52,032 p=13581 u=student |  serverd.lab.example.com | FAILED | rc=4 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:12 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 709 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 7.8M
+   CGroup: /system.slice/sshd.service
+           └─709 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:10 jegui.ilt.example.com systemd[1]: Starting OpenSSH server daemon...
+Jul 26 13:38:12 jegui.ilt.example.com sshd[709]: Server listening on 0.0.0.0 port 22.
+Jul 26 13:38:12 jegui.ilt.example.com sshd[709]: Server listening on :: port 22.
+Jul 26 13:38:12 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:05:50 serverd.lab.example.com sshd[1771]: Accepted publickey for devops from 172.25.250.9 port 38120 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 serverd.lab.example.com sshd[1771]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 serverd.lab.example.com sshd[2212]: Accepted publickey for student from 172.25.250.9 port 38126 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 serverd.lab.example.com sshd[2212]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 serverd.lab.example.com sshd[2374]: Accepted publickey for devops from 172.25.250.9 port 38132 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 serverd.lab.example.com sshd[2374]: pam_unix(sshd:session): session opened for user devops by (uid=0)Invalid unit name ";" was escaped as "\x3b" (maybe you should use systemd-escape?)
+Unit \x3b.service could not be found.
+Unit uptime.service could not be found.non-zero return code
+
+2021-07-27 10:07:52,079 p=13581 u=student |  serverb.lab.example.com | FAILED | rc=4 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:05 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 720 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 7.8M
+   CGroup: /system.slice/sshd.service
+           └─720 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:02 jegui.ilt.example.com systemd[1]: Starting OpenSSH server daemon...
+Jul 26 13:38:05 jegui.ilt.example.com sshd[720]: Server listening on 0.0.0.0 port 22.
+Jul 26 13:38:05 jegui.ilt.example.com sshd[720]: Server listening on :: port 22.
+Jul 26 13:38:05 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:05:50 serverb.lab.example.com sshd[1789]: Accepted publickey for devops from 172.25.250.9 port 34298 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 serverb.lab.example.com sshd[1789]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 serverb.lab.example.com sshd[2225]: Accepted publickey for student from 172.25.250.9 port 34304 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 serverb.lab.example.com sshd[2225]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 serverb.lab.example.com sshd[2387]: Accepted publickey for devops from 172.25.250.9 port 34310 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 serverb.lab.example.com sshd[2387]: pam_unix(sshd:session): session opened for user devops by (uid=0)Invalid unit name ";" was escaped as "\x3b" (maybe you should use systemd-escape?)
+Unit \x3b.service could not be found.
+Unit uptime.service could not be found.non-zero return code
+
+2021-07-27 10:07:52,084 p=13581 u=student |  servera.lab.example.com | FAILED | rc=4 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:00 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 733 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 7.8M
+   CGroup: /system.slice/sshd.service
+           └─733 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:00 jegui.ilt.example.com sshd[733]: Server listening on :: port 22.
+Jul 26 13:38:00 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:01:06 servera.lab.example.com sshd[1778]: Accepted publickey for devops from 172.25.250.9 port 44694 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:01:06 servera.lab.example.com sshd[1778]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:05:50 servera.lab.example.com sshd[2085]: Accepted publickey for devops from 172.25.250.9 port 44698 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 servera.lab.example.com sshd[2085]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 servera.lab.example.com sshd[2525]: Accepted publickey for student from 172.25.250.9 port 44704 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 servera.lab.example.com sshd[2525]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 servera.lab.example.com sshd[2686]: Accepted publickey for devops from 172.25.250.9 port 44710 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 servera.lab.example.com sshd[2686]: pam_unix(sshd:session): session opened for user devops by (uid=0)Invalid unit name ";" was escaped as "\x3b" (maybe you should use systemd-escape?)
+Unit \x3b.service could not be found.
+Unit uptime.service could not be found.non-zero return code
+
+2021-07-27 10:08:18,185 p=13625 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:12 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 709 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 6.2M
+   CGroup: /system.slice/sshd.service
+           └─709 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:10 jegui.ilt.example.com systemd[1]: Starting OpenSSH server daemon...
+Jul 26 13:38:12 jegui.ilt.example.com sshd[709]: Server listening on 0.0.0.0 port 22.
+Jul 26 13:38:12 jegui.ilt.example.com sshd[709]: Server listening on :: port 22.
+Jul 26 13:38:12 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:05:50 serverd.lab.example.com sshd[1771]: Accepted publickey for devops from 172.25.250.9 port 38120 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 serverd.lab.example.com sshd[1771]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 serverd.lab.example.com sshd[2212]: Accepted publickey for student from 172.25.250.9 port 38126 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 serverd.lab.example.com sshd[2212]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 serverd.lab.example.com sshd[2374]: Accepted publickey for devops from 172.25.250.9 port 38132 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 serverd.lab.example.com sshd[2374]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+ 10:08:18 up 20:30,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-07-27 10:08:18,205 p=13625 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:00 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 733 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 6.2M
+   CGroup: /system.slice/sshd.service
+           └─733 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:00 jegui.ilt.example.com sshd[733]: Server listening on :: port 22.
+Jul 26 13:38:00 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:01:06 servera.lab.example.com sshd[1778]: Accepted publickey for devops from 172.25.250.9 port 44694 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:01:06 servera.lab.example.com sshd[1778]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:05:50 servera.lab.example.com sshd[2085]: Accepted publickey for devops from 172.25.250.9 port 44698 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 servera.lab.example.com sshd[2085]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 servera.lab.example.com sshd[2525]: Accepted publickey for student from 172.25.250.9 port 44704 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 servera.lab.example.com sshd[2525]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 servera.lab.example.com sshd[2686]: Accepted publickey for devops from 172.25.250.9 port 44710 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 servera.lab.example.com sshd[2686]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+ 10:08:18 up 20:30,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-07-27 10:08:18,223 p=13625 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-07-26 13:38:05 IST; 20h ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 720 (sshd)
+    Tasks: 1 (limit: 4956)
+   Memory: 6.2M
+   CGroup: /system.slice/sshd.service
+           └─720 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=rsa-sha2-256,ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,rsa-sha2-512,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com
+
+Jul 26 13:38:02 jegui.ilt.example.com systemd[1]: Starting OpenSSH server daemon...
+Jul 26 13:38:05 jegui.ilt.example.com sshd[720]: Server listening on 0.0.0.0 port 22.
+Jul 26 13:38:05 jegui.ilt.example.com sshd[720]: Server listening on :: port 22.
+Jul 26 13:38:05 jegui.ilt.example.com systemd[1]: Started OpenSSH server daemon.
+Jul 27 10:05:50 serverb.lab.example.com sshd[1789]: Accepted publickey for devops from 172.25.250.9 port 34298 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:05:50 serverb.lab.example.com sshd[1789]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 27 10:06:56 serverb.lab.example.com sshd[2225]: Accepted publickey for student from 172.25.250.9 port 34304 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:06:56 serverb.lab.example.com sshd[2225]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 27 10:07:35 serverb.lab.example.com sshd[2387]: Accepted publickey for devops from 172.25.250.9 port 34310 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 27 10:07:35 serverb.lab.example.com sshd[2387]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+ 10:08:18 up 20:30,  1 user,  load average: 0.04, 0.02, 0.00
+
+2021-07-27 10:15:15,426 p=13727 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-27 10:16:01,423 p=13761 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-27 10:16:24,316 p=13787 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-27 10:18:10,931 p=13824 u=student |  serverd.lab.example.com | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "msg": "",
+    "rc": 0,
+    "results": [
+        "Installed: samba",
+        "Installed: samba-common-tools-4.9.1-8.el8.x86_64",
+        "Installed: samba-4.9.1-8.el8.x86_64",
+        "Installed: samba-libs-4.9.1-8.el8.x86_64"
+    ]
+}
+2021-07-27 10:18:46,442 p=13858 u=student |   [WARNING]: Consider using the yum, dnf or zypper module rather than running 'rpm'.  If you need to use
+command because yum, dnf or zypper is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2021-07-27 10:18:46,442 p=13858 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+samba-libs-4.9.1-8.el8.x86_64
+samba-common-4.9.1-8.el8.noarch
+samba-common-tools-4.9.1-8.el8.x86_64
+samba-common-libs-4.9.1-8.el8.x86_64
+samba-4.9.1-8.el8.x86_64
+samba-client-libs-4.9.1-8.el8.x86_64
+
+2021-07-27 10:19:39,798 p=13878 u=student |  serverd.lab.example.com | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "msg": "",
+    "rc": 0,
+    "results": [
+        "Removed: samba-4.9.1-8.el8.x86_64"
+    ]
+}
+2021-07-27 10:19:44,309 p=13901 u=student |   [WARNING]: Consider using the yum, dnf or zypper module rather than running 'rpm'.  If you need to use
+command because yum, dnf or zypper is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2021-07-27 10:19:44,309 p=13901 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+samba-libs-4.9.1-8.el8.x86_64
+samba-common-4.9.1-8.el8.noarch
+samba-common-tools-4.9.1-8.el8.x86_64
+samba-common-libs-4.9.1-8.el8.x86_64
+samba-client-libs-4.9.1-8.el8.x86_64
+
+2021-07-27 10:20:10,294 p=13929 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "msg": "Nothing to do",
+    "rc": 0,
+    "results": []
+}
+2021-07-27 10:20:20,349 p=13952 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "msg": "Nothing to do",
+    "rc": 0,
+    "results": []
+}
+2021-07-27 10:20:36,953 p=13975 u=student |   [WARNING]: Consider using the yum, dnf or zypper module rather than running 'rpm'.  If you need to use
+command because yum, dnf or zypper is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2021-07-27 10:20:36,953 p=13975 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+samba-libs-4.9.1-8.el8.x86_64
+samba-common-4.9.1-8.el8.noarch
+samba-common-tools-4.9.1-8.el8.x86_64
+samba-common-libs-4.9.1-8.el8.x86_64
+samba-client-libs-4.9.1-8.el8.x86_64
+
+2021-07-27 10:21:54,824 p=14002 u=student |   [ERROR]: User interrupted execution
+
+2021-07-27 10:22:01,818 p=14026 u=student |   [WARNING]: Consider using the yum module rather than running 'yum'.  If you need to use command because yum
+is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2021-07-27 10:22:01,819 p=14026 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+Dependencies resolved.
+================================================================================
+ Package          Arch   Version      Repository                           Size
+================================================================================
+Removing:
+ samba-client-libs
+                  x86_64 4.9.1-8.el8  @rhel-8.0-for-x86_64-baseos-rpms     20 M
+ samba-common     noarch 4.9.1-8.el8  @rhel-8.0-for-x86_64-baseos-rpms    128 k
+ samba-common-libs
+                  x86_64 4.9.1-8.el8  @rhel-8.0-for-x86_64-baseos-rpms    280 k
+ samba-common-tools
+                  x86_64 4.9.1-8.el8  @rhel-8.0-for-x86_64-baseos-rpms    1.1 M
+ samba-libs       x86_64 4.9.1-8.el8  @rhel-8.0-for-x86_64-baseos-rpms    368 k
+Removing dependent packages:
+ sssd             x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms     34 k
+Removing unused dependencies:
+ adcli            x86_64 0.8.2-2.el8  @rhel-8.0-for-x86_64-baseos-rpms    263 k
+ avahi-libs       x86_64 0.7-19.el8   @rhel-8.0-for-x86_64-baseos-rpms    159 k
+ bind-libs        x86_64 32:9.11.4-16.P2.el8
+                                      @rhel-8.0-for-x86_64-appstream-rpms 210 k
+ bind-libs-lite   x86_64 32:9.11.4-16.P2.el8
+                                      @rhel-8.0-for-x86_64-appstream-rpms 3.1 M
+ bind-license     noarch 32:9.11.4-16.P2.el8
+                                      @rhel-8.0-for-x86_64-appstream-rpms  29 k
+ bind-utils       x86_64 32:9.11.4-16.P2.el8
+                                      @rhel-8.0-for-x86_64-appstream-rpms 1.2 M
+ cups-libs        x86_64 1:2.2.6-25.el8
+                                      @rhel-8.0-for-x86_64-baseos-rpms    961 k
+ cyrus-sasl-gssapi
+                  x86_64 2.1.27-0.3rc7.el8
+                                      @rhel-8.0-for-x86_64-baseos-rpms     37 k
+ libipa_hbac      x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms     58 k
+ libsmbclient     x86_64 4.9.1-8.el8  @rhel-8.0-for-x86_64-baseos-rpms    170 k
+ libwbclient      x86_64 4.9.1-8.el8  @rhel-8.0-for-x86_64-baseos-rpms     76 k
+ python3-bind     noarch 32:9.11.4-16.P2.el8
+                                      @rhel-8.0-for-x86_64-appstream-rpms 175 k
+ python3-sssdconfig
+                  noarch 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms    185 k
+ sssd-ad          x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms    375 k
+ sssd-common-pac  x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms    251 k
+ sssd-ipa         x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms    715 k
+ sssd-krb5        x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms     84 k
+ sssd-krb5-common x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms    289 k
+ sssd-ldap        x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms    142 k
+ sssd-proxy       x86_64 2.0.0-43.el8 @rhel-8.0-for-x86_64-baseos-rpms    138 k
+
+Transaction Summary
+================================================================================
+Remove  26 Packages
+
+Freed space: 30 M
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Erasing          : samba-common-tools-4.9.1-8.el8.x86_64                 1/26 
+  Erasing          : sssd-2.0.0-43.el8.x86_64                              2/26 
+  Erasing          : samba-libs-4.9.1-8.el8.x86_64                         3/26 
+  Running scriptlet: samba-libs-4.9.1-8.el8.x86_64                         3/26 
+  Erasing          : sssd-ipa-2.0.0-43.el8.x86_64                          4/26 
+  Erasing          : sssd-ad-2.0.0-43.el8.x86_64                           5/26 
+  Erasing          : libsmbclient-4.9.1-8.el8.x86_64                       6/26 
+  Running scriptlet: libsmbclient-4.9.1-8.el8.x86_64                       6/26 
+  Erasing          : bind-utils-32:9.11.4-16.P2.el8.x86_64                 7/26 
+  Erasing          : sssd-common-pac-2.0.0-43.el8.x86_64                   8/26 
+  Erasing          : python3-bind-32:9.11.4-16.P2.el8.noarch               9/26 
+  Running scriptlet: libwbclient-4.9.1-8.el8.x86_64                       10/26 
+  Erasing          : libwbclient-4.9.1-8.el8.x86_64                       10/26 
+  Erasing          : samba-client-libs-4.9.1-8.el8.x86_64                 11/26 
+  Running scriptlet: samba-client-libs-4.9.1-8.el8.x86_64                 11/26 
+  Erasing          : samba-common-libs-4.9.1-8.el8.x86_64                 12/26 
+  Running scriptlet: samba-common-libs-4.9.1-8.el8.x86_64                 12/26 
+  Erasing          : bind-libs-32:9.11.4-16.P2.el8.x86_64                 13/26 
+  Erasing          : cups-libs-1:2.2.6-25.el8.x86_64                      14/26 
+  Erasing          : bind-libs-lite-32:9.11.4-16.P2.el8.x86_64            15/26 
+  Erasing          : adcli-0.8.2-2.el8.x86_64                             16/26 
+  Running scriptlet: adcli-0.8.2-2.el8.x86_64                             16/26 
+  Erasing          : sssd-krb5-2.0.0-43.el8.x86_64                        17/26 
+  Erasing          : sssd-ldap-2.0.0-43.el8.x86_64                        18/26 
+  Erasing          : bind-license-32:9.11.4-16.P2.el8.noarch              19/26 
+  Erasing          : samba-common-4.9.1-8.el8.noarch                      20/26 
+  Erasing          : python3-sssdconfig-2.0.0-43.el8.noarch               21/26 
+  Erasing          : sssd-krb5-common-2.0.0-43.el8.x86_64                 22/26 
+  Erasing          : cyrus-sasl-gssapi-2.1.27-0.3rc7.el8.x86_64           23/26 
+  Erasing          : avahi-libs-0.7-19.el8.x86_64                         24/26 
+  Erasing          : libipa_hbac-2.0.0-43.el8.x86_64                      25/26 
+  Running scriptlet: libipa_hbac-2.0.0-43.el8.x86_64                      25/26 
+  Erasing          : sssd-proxy-2.0.0-43.el8.x86_64                       26/26 
+  Running scriptlet: sssd-proxy-2.0.0-43.el8.x86_64                       26/26 
+  Verifying        : adcli-0.8.2-2.el8.x86_64                              1/26 
+  Verifying        : avahi-libs-0.7-19.el8.x86_64                          2/26 
+  Verifying        : bind-libs-32:9.11.4-16.P2.el8.x86_64                  3/26 
+  Verifying        : bind-libs-lite-32:9.11.4-16.P2.el8.x86_64             4/26 
+  Verifying        : bind-license-32:9.11.4-16.P2.el8.noarch               5/26 
+  Verifying        : bind-utils-32:9.11.4-16.P2.el8.x86_64                 6/26 
+  Verifying        : cups-libs-1:2.2.6-25.el8.x86_64                       7/26 
+  Verifying        : cyrus-sasl-gssapi-2.1.27-0.3rc7.el8.x86_64            8/26 
+  Verifying        : libipa_hbac-2.0.0-43.el8.x86_64                       9/26 
+  Verifying        : libsmbclient-4.9.1-8.el8.x86_64                      10/26 
+  Verifying        : libwbclient-4.9.1-8.el8.x86_64                       11/26 
+  Verifying        : python3-bind-32:9.11.4-16.P2.el8.noarch              12/26 
+  Verifying        : python3-sssdconfig-2.0.0-43.el8.noarch               13/26 
+  Verifying        : samba-client-libs-4.9.1-8.el8.x86_64                 14/26 
+  Verifying        : samba-common-4.9.1-8.el8.noarch                      15/26 
+  Verifying        : samba-common-libs-4.9.1-8.el8.x86_64                 16/26 
+  Verifying        : samba-common-tools-4.9.1-8.el8.x86_64                17/26 
+  Verifying        : samba-libs-4.9.1-8.el8.x86_64                        18/26 
+  Verifying        : sssd-2.0.0-43.el8.x86_64                             19/26 
+  Verifying        : sssd-ad-2.0.0-43.el8.x86_64                          20/26 
+  Verifying        : sssd-common-pac-2.0.0-43.el8.x86_64                  21/26 
+  Verifying        : sssd-ipa-2.0.0-43.el8.x86_64                         22/26 
+  Verifying        : sssd-krb5-2.0.0-43.el8.x86_64                        23/26 
+  Verifying        : sssd-krb5-common-2.0.0-43.el8.x86_64                 24/26 
+  Verifying        : sssd-ldap-2.0.0-43.el8.x86_64                        25/26 
+  Verifying        : sssd-proxy-2.0.0-43.el8.x86_64                       26/26 
+
+Removed:
+  samba-client-libs-4.9.1-8.el8.x86_64                                          
+  samba-common-4.9.1-8.el8.noarch                                               
+  samba-common-libs-4.9.1-8.el8.x86_64                                          
+  samba-common-tools-4.9.1-8.el8.x86_64                                         
+  samba-libs-4.9.1-8.el8.x86_64                                                 
+  sssd-2.0.0-43.el8.x86_64                                                      
+  adcli-0.8.2-2.el8.x86_64                                                      
+  avahi-libs-0.7-19.el8.x86_64                                                  
+  bind-libs-32:9.11.4-16.P2.el8.x86_64                                          
+  bind-libs-lite-32:9.11.4-16.P2.el8.x86_64                                     
+  bind-license-32:9.11.4-16.P2.el8.noarch                                       
+  bind-utils-32:9.11.4-16.P2.el8.x86_64                                         
+  cups-libs-1:2.2.6-25.el8.x86_64                                               
+  cyrus-sasl-gssapi-2.1.27-0.3rc7.el8.x86_64                                    
+  libipa_hbac-2.0.0-43.el8.x86_64                                               
+  libsmbclient-4.9.1-8.el8.x86_64                                               
+  libwbclient-4.9.1-8.el8.x86_64                                                
+  python3-bind-32:9.11.4-16.P2.el8.noarch                                       
+  python3-sssdconfig-2.0.0-43.el8.noarch                                        
+  sssd-ad-2.0.0-43.el8.x86_64                                                   
+  sssd-common-pac-2.0.0-43.el8.x86_64                                           
+  sssd-ipa-2.0.0-43.el8.x86_64                                                  
+  sssd-krb5-2.0.0-43.el8.x86_64                                                 
+  sssd-krb5-common-2.0.0-43.el8.x86_64                                          
+  sssd-ldap-2.0.0-43.el8.x86_64                                                 
+  sssd-proxy-2.0.0-43.el8.x86_64                                                
+
+Complete!
+
+2021-07-27 10:22:12,664 p=14045 u=student |   [WARNING]: Consider using the yum, dnf or zypper module rather than running 'rpm'.  If you need to use
+command because yum, dnf or zypper is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2021-07-27 10:22:12,664 p=14045 u=student |  serverd.lab.example.com | FAILED | rc=1 >>
+non-zero return code
+
+2021-07-27 10:33:41,925 p=14306 u=student |   [WARNING]: module lvm not found in:
+/home/student/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/usr/lib/python3.6/site-
+packages/ansible/modules
+
+2021-07-27 10:40:50,790 p=14394 u=student |  ERROR! Unexpected Exception, this is probably a bug: [Errno 32] Broken pipe
+2021-07-27 10:40:50,790 p=14394 u=student |  to see the full traceback, use -vvv
+2021-07-27 10:40:50,798 p=14394 u=student |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/bin/ansible-doc", line 110, in <module>
+    exit_code = cli.run()
+  File "/usr/lib/python3.6/site-packages/ansible/cli/doc.py", line 118, in run
+    DocCLI.pager(self.get_plugin_list_text(loader))
+  File "/usr/lib/python3.6/site-packages/ansible/cli/__init__.py", line 416, in pager
+    display.display(text, screen_only=True)
+  File "/usr/lib/python3.6/site-packages/ansible/utils/display.py", line 153, in display
+    fileobj.write(msg2)
+BrokenPipeError: [Errno 32] Broken pipe
+
+2021-07-27 10:47:43,256 p=14507 u=student |  ERROR! failed at splitting arguments, either an unbalanced jinja2 block or quotes: date | tr 'a-z' ''A-Z'
+2021-07-27 10:47:59,225 p=14518 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+TUE JUL 27 10:47:59 IST 2021
+
+2021-07-27 10:48:17,577 p=14544 u=student |  serverd.lab.example.com | FAILED | rc=1 >>
+date: extra operand ‘tr’
+Try 'date --help' for more information.non-zero return code
+
+2021-07-27 10:49:07,976 p=14588 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+2021-07-27 10:49:15,541 p=14607 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+devops
+
+2021-07-27 10:49:33,474 p=14626 u=student |  serverd.lab.example.com | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "module_stderr": "Shared connection to serverd.lab.example.com closed.\r\n",
+    "module_stdout": "sudo: a password is required\r\n",
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error",
+    "rc": 1
+}
+2021-07-27 10:49:49,109 p=14648 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+student
+
+2021-07-27 10:51:27,117 p=14712 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=1000(student) gid=1000(student) groups=1000(student),10(wheel) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+student
+
+2021-07-27 10:51:39,371 p=14734 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+student
+
+2021-07-27 10:55:11,488 p=14810 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+student
+
+2021-07-27 10:56:47,185 p=14853 u=student |  serverd.lab.example.com | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n",
+    "name": "chandra",
+    "rc": 1
+}
+2021-07-27 10:57:29,684 p=14892 u=student |  serverd.lab.example.com | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "comment": "",
+    "create_home": true,
+    "group": 1002,
+    "home": "/home/chandra",
+    "name": "chandra",
+    "shell": "/bin/bash",
+    "state": "present",
+    "system": false,
+    "uid": 1002
+}
+2021-07-27 11:15:19,705 p=15118 u=student |  playbook: playbook.yaml
+2021-07-27 11:15:24,095 p=15124 u=student |  playbook: playbook.yaml
+2021-07-27 11:15:32,505 p=15131 u=student |  PLAY [My 1st play.] *****************************************************************************************
+2021-07-27 11:15:32,513 p=15131 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-27 11:15:34,023 p=15131 u=student |  ok: [servera.lab.example.com]
+2021-07-27 11:15:34,035 p=15131 u=student |  ok: [serverb.lab.example.com]
+2021-07-27 11:15:34,049 p=15131 u=student |  TASK [Group addition] ***************************************************************************************
+2021-07-27 11:15:34,556 p=15131 u=student |  changed: [servera.lab.example.com] => (item=unixadm)
+2021-07-27 11:15:34,558 p=15131 u=student |  changed: [serverb.lab.example.com] => (item=unixadm)
+2021-07-27 11:15:34,892 p=15131 u=student |  changed: [serverb.lab.example.com] => (item=middleware)
+2021-07-27 11:15:34,894 p=15131 u=student |  changed: [servera.lab.example.com] => (item=middleware)
+2021-07-27 11:15:35,234 p=15131 u=student |  changed: [servera.lab.example.com] => (item=dba)
+2021-07-27 11:15:35,238 p=15131 u=student |  changed: [serverb.lab.example.com] => (item=dba)
+2021-07-27 11:15:35,251 p=15131 u=student |  TASK [User creation.] ***************************************************************************************
+2021-07-27 11:15:35,828 p=15131 u=student |  changed: [servera.lab.example.com] => (item={'name': 'prakash', 'grp': 'unixadm'})
+2021-07-27 11:15:35,829 p=15131 u=student |  changed: [serverb.lab.example.com] => (item={'name': 'prakash', 'grp': 'unixadm'})
+2021-07-27 11:15:36,196 p=15131 u=student |  changed: [servera.lab.example.com] => (item={'name': 'john', 'grp': 'middleware'})
+2021-07-27 11:15:36,196 p=15131 u=student |  changed: [serverb.lab.example.com] => (item={'name': 'john', 'grp': 'middleware'})
+2021-07-27 11:15:36,552 p=15131 u=student |  changed: [serverb.lab.example.com] => (item={'name': 'tom', 'grp': 'dba'})
+2021-07-27 11:15:36,554 p=15131 u=student |  changed: [servera.lab.example.com] => (item={'name': 'tom', 'grp': 'dba'})
+2021-07-27 11:15:36,557 p=15131 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-27 11:15:36,557 p=15131 u=student |  servera.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-27 11:15:36,557 p=15131 u=student |  serverb.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-27 11:15:49,714 p=15268 u=student |  PLAY [My 1st play.] *****************************************************************************************
+2021-07-27 11:15:49,721 p=15268 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-27 11:15:50,791 p=15268 u=student |  ok: [serverb.lab.example.com]
+2021-07-27 11:15:50,799 p=15268 u=student |  ok: [servera.lab.example.com]
+2021-07-27 11:15:50,814 p=15268 u=student |  TASK [Group addition] ***************************************************************************************
+2021-07-27 11:15:51,600 p=15268 u=student |  changed: [servera.lab.example.com] => (item=unixadm)
+2021-07-27 11:15:51,607 p=15268 u=student |  changed: [serverb.lab.example.com] => (item=unixadm)
+2021-07-27 11:15:51,947 p=15268 u=student |  failed: [servera.lab.example.com] (item=middleware) => {"ansible_loop_var": "item", "changed": false, "item": "middleware", "msg": "groupadd: GID '550' already exists\n", "name": "middleware"}
+2021-07-27 11:15:51,962 p=15268 u=student |  failed: [serverb.lab.example.com] (item=middleware) => {"ansible_loop_var": "item", "changed": false, "item": "middleware", "msg": "groupadd: GID '550' already exists\n", "name": "middleware"}
+2021-07-27 11:15:52,304 p=15268 u=student |  failed: [servera.lab.example.com] (item=dba) => {"ansible_loop_var": "item", "changed": false, "item": "dba", "msg": "groupadd: GID '550' already exists\n", "name": "dba"}
+2021-07-27 11:15:52,312 p=15268 u=student |  failed: [serverb.lab.example.com] (item=dba) => {"ansible_loop_var": "item", "changed": false, "item": "dba", "msg": "groupadd: GID '550' already exists\n", "name": "dba"}
+2021-07-27 11:15:52,313 p=15268 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-27 11:15:52,314 p=15268 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-27 11:15:52,314 p=15268 u=student |  serverb.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-27 11:16:39,490 p=15351 u=student |  PLAY [My 1st play.] *****************************************************************************************
+2021-07-27 11:16:39,497 p=15351 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-27 11:16:40,584 p=15351 u=student |  ok: [serverb.lab.example.com]
+2021-07-27 11:16:40,590 p=15351 u=student |  ok: [servera.lab.example.com]
+2021-07-27 11:16:40,605 p=15351 u=student |  TASK [Group addition] ***************************************************************************************
+2021-07-27 11:16:41,103 p=15351 u=student |  ok: [serverb.lab.example.com] => (item=unixadm)
+2021-07-27 11:16:41,106 p=15351 u=student |  ok: [servera.lab.example.com] => (item=unixadm)
+2021-07-27 11:16:41,731 p=15351 u=student |  changed: [servera.lab.example.com] => (item=middleware)
+2021-07-27 11:16:41,793 p=15351 u=student |  changed: [serverb.lab.example.com] => (item=middleware)
+2021-07-27 11:16:42,343 p=15351 u=student |  changed: [servera.lab.example.com] => (item=dba)
+2021-07-27 11:16:42,400 p=15351 u=student |  changed: [serverb.lab.example.com] => (item=dba)
+2021-07-27 11:16:42,414 p=15351 u=student |  TASK [User creation.] ***************************************************************************************
+2021-07-27 11:16:43,595 p=15351 u=student |  changed: [serverb.lab.example.com] => (item={'name': 'prakash', 'grp': 'unixadm'})
+2021-07-27 11:16:43,596 p=15351 u=student |  changed: [servera.lab.example.com] => (item={'name': 'prakash', 'grp': 'unixadm'})
+2021-07-27 11:16:44,246 p=15351 u=student |  changed: [serverb.lab.example.com] => (item={'name': 'john', 'grp': 'middleware'})
+2021-07-27 11:16:44,259 p=15351 u=student |  changed: [servera.lab.example.com] => (item={'name': 'john', 'grp': 'middleware'})
+2021-07-27 11:16:44,943 p=15351 u=student |  changed: [serverb.lab.example.com] => (item={'name': 'tom', 'grp': 'dba'})
+2021-07-27 11:16:44,945 p=15351 u=student |  changed: [servera.lab.example.com] => (item={'name': 'tom', 'grp': 'dba'})
+2021-07-27 11:16:44,948 p=15351 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-27 11:16:44,949 p=15351 u=student |  servera.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-27 11:16:44,949 p=15351 u=student |  serverb.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-27 11:17:18,606 p=15480 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+uid=1002(prakash) gid=550(unixadm) groups=550(unixadm)
+uid=1003(john) gid=1002(middleware) groups=1002(middleware)
+uid=1004(tom) gid=1003(dba) groups=1003(dba)
+
+2021-07-27 11:17:18,607 p=15480 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+uid=1002(prakash) gid=550(unixadm) groups=550(unixadm)
+uid=1003(john) gid=1002(middleware) groups=1002(middleware)
+uid=1004(tom) gid=1003(dba) groups=1003(dba)
+
+2021-07-27 11:20:13,807 p=15538 u=student |  - apache was created successfully
+2021-07-28 09:56:21,279 p=9107 u=student |  playbook: user_creation_one_user.yml
+2021-07-28 09:56:24,766 p=9113 u=student |  playbook: user_creation_one_user.yml
+2021-07-28 09:56:40,092 p=9119 u=student |  PLAY [This is my 1st play, any message] *******************************************************
+2021-07-28 09:56:40,099 p=9119 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 09:56:40,133 p=9119 u=student |  fatal: [10.10.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.10.0.1 port 22: Network is unreachable", "unreachable": true}
+2021-07-28 09:56:40,141 p=9119 u=student |  fatal: [10.10.0.2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.10.0.2 port 22: Network is unreachable", "unreachable": true}
+2021-07-28 09:56:41,763 p=9119 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 09:56:41,774 p=9119 u=student |  ok: [serverf.lab.example.com]
+2021-07-28 09:56:41,790 p=9119 u=student |  ok: [servere.lab.example.com]
+2021-07-28 09:56:41,827 p=9119 u=student |  ok: [servera.lab.example.com]
+2021-07-28 09:56:42,854 p=9119 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 09:56:42,911 p=9119 u=student |  ok: [serverc.lab.example.com]
+2021-07-28 09:56:43,240 p=9119 u=student |  fatal: [10.10.0.3]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.10.0.3 port 22: Network is unreachable", "unreachable": true}
+2021-07-28 09:56:43,253 p=9119 u=student |  TASK [Creating user.] *************************************************************************
+2021-07-28 09:56:43,967 p=9119 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 09:56:43,989 p=9119 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 09:56:44,019 p=9119 u=student |  changed: [serverf.lab.example.com]
+2021-07-28 09:56:44,024 p=9119 u=student |  ok: [servera.lab.example.com]
+2021-07-28 09:56:44,027 p=9119 u=student |  changed: [servere.lab.example.com]
+2021-07-28 09:56:44,327 p=9119 u=student |  changed: [serverc.lab.example.com]
+2021-07-28 09:56:44,329 p=9119 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 09:56:44,329 p=9119 u=student |  10.10.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:56:44,329 p=9119 u=student |  10.10.0.2                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:56:44,329 p=9119 u=student |  10.10.0.3                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:56:44,330 p=9119 u=student |  servera.lab.example.com    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:56:44,330 p=9119 u=student |  serverb.lab.example.com    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:56:44,330 p=9119 u=student |  serverc.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:56:44,330 p=9119 u=student |  serverd.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:56:44,330 p=9119 u=student |  servere.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:56:44,330 p=9119 u=student |  serverf.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:57:17,016 p=9286 u=student |  PLAY [This is my 1st play, any message] *******************************************************
+2021-07-28 09:57:17,023 p=9286 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 09:57:18,066 p=9286 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 09:57:18,079 p=9286 u=student |  TASK [Creating user.] *************************************************************************
+2021-07-28 09:57:18,612 p=9286 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 09:57:18,614 p=9286 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 09:57:18,614 p=9286 u=student |  serverd.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:57:26,465 p=9313 u=student |  PLAY [This is my 1st play, any message] *******************************************************
+2021-07-28 09:57:26,472 p=9313 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 09:57:27,495 p=9313 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 09:57:27,508 p=9313 u=student |  TASK [Creating user.] *************************************************************************
+2021-07-28 09:57:28,389 p=9313 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 09:57:28,391 p=9313 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 09:57:28,391 p=9313 u=student |  serverd.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 09:58:20,737 p=9349 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+uid=1003(tom) gid=1003(tom) groups=1003(tom)
+
+2021-07-28 10:08:29,665 p=9511 u=student |  playbook: user_group_creation_user.yml
+2021-07-28 10:08:40,096 p=9518 u=student |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/student/work/avl/user_group_creation_user.yml': line 4, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  hosts: lb
+   tasks:
+        ^ here
+
+2021-07-28 10:09:19,981 p=9532 u=student |  playbook: user_group_creation_user.yml
+2021-07-28 10:09:33,400 p=9539 u=student |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/student/work/avl/user_group_creation_user.yml': line 10, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: User creation.
+    ^ here
+
+2021-07-28 10:09:49,967 p=9544 u=student |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/student/work/avl/user_group_creation_user.yml': line 10, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+     - name: User creation.
+     ^ here
+
+2021-07-28 10:10:18,803 p=9558 u=student |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/student/work/avl/user_group_creation_user.yml': line 11, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: User creation.
+       user:
+           ^ here
+
+2021-07-28 10:10:27,264 p=9563 u=student |  playbook: user_group_creation_user.yml
+2021-07-28 10:10:31,992 p=9569 u=student |  PLAY [My 1st play - any message] **************************************************************
+2021-07-28 10:10:31,999 p=9569 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:10:33,346 p=9569 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:10:33,359 p=9569 u=student |  TASK [Group creation.] ************************************************************************
+2021-07-28 10:10:33,833 p=9569 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 10:10:33,845 p=9569 u=student |  TASK [User creation.] *************************************************************************
+2021-07-28 10:10:34,379 p=9569 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 10:10:34,381 p=9569 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 10:10:34,382 p=9569 u=student |  serverd.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:10:41,682 p=9608 u=student |  PLAY [My 1st play - any message] **************************************************************
+2021-07-28 10:10:41,689 p=9608 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:10:42,718 p=9608 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:10:42,731 p=9608 u=student |  TASK [Group creation.] ************************************************************************
+2021-07-28 10:10:43,466 p=9608 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 10:10:43,480 p=9608 u=student |  TASK [User creation.] *************************************************************************
+2021-07-28 10:10:44,625 p=9608 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 10:10:44,627 p=9608 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 10:10:44,628 p=9608 u=student |  serverd.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:10:59,083 p=9644 u=student |  PLAY [My 1st play - any message] **************************************************************
+2021-07-28 10:10:59,090 p=9644 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:11:00,121 p=9644 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:11:00,133 p=9644 u=student |  TASK [Group creation.] ************************************************************************
+2021-07-28 10:11:00,599 p=9644 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:11:00,612 p=9644 u=student |  TASK [User creation.] *************************************************************************
+2021-07-28 10:11:01,142 p=9644 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:11:01,144 p=9644 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 10:11:01,145 p=9644 u=student |  serverd.lab.example.com    : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:16:24,490 p=9753 u=student |  playbook: user_group_creation_user_multiple_play.yml
+2021-07-28 10:16:28,305 p=9759 u=student |  PLAY [1st play - User and Group creation] *****************************************************
+2021-07-28 10:16:28,312 p=9759 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:16:29,725 p=9759 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:16:29,736 p=9759 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:16:29,749 p=9759 u=student |  TASK [Group creation] *************************************************************************
+2021-07-28 10:16:30,519 p=9759 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:16:30,532 p=9759 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:16:30,545 p=9759 u=student |  TASK [User Creation] **************************************************************************
+2021-07-28 10:16:31,804 p=9759 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:16:31,809 p=9759 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:16:31,813 p=9759 u=student |  PLAY [2nd Play - User and group varification.] ************************************************
+2021-07-28 10:16:31,826 p=9759 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:16:32,488 p=9759 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:16:32,514 p=9759 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:16:32,528 p=9759 u=student |  TASK [Verify the user and group] **************************************************************
+2021-07-28 10:16:33,016 p=9759 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:16:33,035 p=9759 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:16:33,037 p=9759 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 10:16:33,038 p=9759 u=student |  servera.lab.example.com    : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:16:33,038 p=9759 u=student |  serverb.lab.example.com    : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:18:13,097 p=9882 u=student |  PLAY [1st play - User and Group creation] ***************************************************************************************
+2021-07-28 10:18:13,105 p=9882 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:18:14,503 p=9882 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:18:14,518 p=9882 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:18:14,532 p=9882 u=student |  TASK [Group creation] ***********************************************************************************************************
+2021-07-28 10:18:15,032 p=9882 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:18:15,038 p=9882 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:18:15,051 p=9882 u=student |  TASK [User Creation] ************************************************************************************************************
+2021-07-28 10:18:15,619 p=9882 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:18:15,623 p=9882 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:18:15,628 p=9882 u=student |  PLAY [2nd Play - User and group varification.] **********************************************************************************
+2021-07-28 10:18:15,640 p=9882 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:18:16,300 p=9882 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:18:16,324 p=9882 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:18:16,337 p=9882 u=student |  TASK [Verify the user and group] ************************************************************************************************
+2021-07-28 10:18:16,825 p=9882 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:18:16,835 p=9882 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:18:16,848 p=9882 u=student |  TASK [Display output] ***********************************************************************************************************
+2021-07-28 10:18:16,868 p=9882 u=student |  ok: [servera.lab.example.com] => {
+    "output": {
+        "changed": true,
+        "cmd": "id joe2",
+        "delta": "0:00:00.005415",
+        "end": "2021-07-28 10:18:16.785582",
+        "failed": false,
+        "rc": 0,
+        "start": "2021-07-28 10:18:16.780167",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "uid=1005(joe2) gid=1005(joe2) groups=1005(joe2),1004(dbadm)",
+        "stdout_lines": [
+            "uid=1005(joe2) gid=1005(joe2) groups=1005(joe2),1004(dbadm)"
+        ]
+    }
+}
+2021-07-28 10:18:16,879 p=9882 u=student |  ok: [serverb.lab.example.com] => {
+    "output": {
+        "changed": true,
+        "cmd": "id joe2",
+        "delta": "0:00:00.005344",
+        "end": "2021-07-28 10:18:16.780146",
+        "failed": false,
+        "rc": 0,
+        "start": "2021-07-28 10:18:16.774802",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "uid=1005(joe2) gid=1005(joe2) groups=1005(joe2),1004(dbadm)",
+        "stdout_lines": [
+            "uid=1005(joe2) gid=1005(joe2) groups=1005(joe2),1004(dbadm)"
+        ]
+    }
+}
+2021-07-28 10:18:16,881 p=9882 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-28 10:18:16,881 p=9882 u=student |  servera.lab.example.com    : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:18:16,881 p=9882 u=student |  serverb.lab.example.com    : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:19:15,391 p=10002 u=student |  PLAY [1st play - User and Group creation] ***************************************************************************************
+2021-07-28 10:19:15,399 p=10002 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:19:16,486 p=10002 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:19:16,498 p=10002 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:19:16,511 p=10002 u=student |  TASK [Group creation] ***********************************************************************************************************
+2021-07-28 10:19:17,022 p=10002 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:19:17,046 p=10002 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:19:17,067 p=10002 u=student |  TASK [User Creation] ************************************************************************************************************
+2021-07-28 10:19:17,622 p=10002 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:19:17,623 p=10002 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:19:17,628 p=10002 u=student |  PLAY [2nd Play - User and group varification.] **********************************************************************************
+2021-07-28 10:19:17,640 p=10002 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:19:18,309 p=10002 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:19:18,354 p=10002 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:19:18,368 p=10002 u=student |  TASK [Verify the user and group] ************************************************************************************************
+2021-07-28 10:19:18,864 p=10002 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:19:18,875 p=10002 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:19:18,888 p=10002 u=student |  TASK [Display output] ***********************************************************************************************************
+2021-07-28 10:19:18,907 p=10002 u=student |  ok: [servera.lab.example.com] => {
+    "output.stdout": "uid=1005(joe2) gid=1005(joe2) groups=1005(joe2),1004(dbadm)"
+}
+2021-07-28 10:19:18,917 p=10002 u=student |  ok: [serverb.lab.example.com] => {
+    "output.stdout": "uid=1005(joe2) gid=1005(joe2) groups=1005(joe2),1004(dbadm)"
+}
+2021-07-28 10:19:18,919 p=10002 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-28 10:19:18,919 p=10002 u=student |  servera.lab.example.com    : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:19:18,919 p=10002 u=student |  serverb.lab.example.com    : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:32:37,832 p=10270 u=student |    hosts (2):
+2021-07-28 10:32:37,832 p=10270 u=student |      servera.lab.example.com
+2021-07-28 10:32:37,832 p=10270 u=student |      serverb.lab.example.com
+2021-07-28 10:40:55,985 p=10344 u=student |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/student/work/avl/apache_installation.yml': line 25, column 27, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+     - name: Verifing URL : http://servera.lab.example.com
+                          ^ here
+
+2021-07-28 10:41:25,597 p=10357 u=student |  playbook: apache_installation.yml
+2021-07-28 10:41:38,604 p=10364 u=student |  playbook: apache_installation.yml
+2021-07-28 10:41:42,696 p=10370 u=student |  PLAY [1st play - APache installation and Configuration.] ************************************************************************
+2021-07-28 10:41:42,703 p=10370 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:41:44,105 p=10370 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:41:44,109 p=10370 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:41:44,122 p=10370 u=student |  TASK [Installing apache package.] ***********************************************************************************************
+2021-07-28 10:41:45,723 p=10370 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:41:45,724 p=10370 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:41:45,738 p=10370 u=student |  TASK [Start and enable httpd/apache service.] ***********************************************************************************
+2021-07-28 10:41:46,522 p=10370 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:41:46,529 p=10370 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:41:46,543 p=10370 u=student |  TASK [Application/index.html deployment] ****************************************************************************************
+2021-07-28 10:41:47,023 p=10370 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:41:47,030 p=10370 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:41:47,034 p=10370 u=student |  PLAY [2nd play - Verifying apache] **********************************************************************************************
+2021-07-28 10:41:47,039 p=10370 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:41:48,397 p=10370 u=student |  ok: [localhost]
+2021-07-28 10:41:48,412 p=10370 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ****************************************************************************
+2021-07-28 10:41:49,173 p=10370 u=student |  skipping: [localhost]
+2021-07-28 10:41:49,188 p=10370 u=student |  TASK [Verifing URL - http://serverb.lab.example.com] ****************************************************************************
+2021-07-28 10:41:49,766 p=10370 u=student |  skipping: [localhost]
+2021-07-28 10:41:49,768 p=10370 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-28 10:41:49,768 p=10370 u=student |  localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2021-07-28 10:41:49,768 p=10370 u=student |  servera.lab.example.com    : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:41:49,769 p=10370 u=student |  serverb.lab.example.com    : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:42:15,623 p=11135 u=student |  PLAY [1st play - APache installation and Configuration.] ************************************************************************
+2021-07-28 10:42:15,631 p=11135 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:42:16,707 p=11135 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:42:16,710 p=11135 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:42:16,724 p=11135 u=student |  TASK [Installing apache package.] ***********************************************************************************************
+2021-07-28 10:42:21,060 p=11135 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:42:21,080 p=11135 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:42:21,104 p=11135 u=student |  TASK [Start and enable httpd/apache service.] ***********************************************************************************
+2021-07-28 10:42:22,283 p=11135 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:42:22,304 p=11135 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:42:22,330 p=11135 u=student |  TASK [Application/index.html deployment] ****************************************************************************************
+2021-07-28 10:42:23,421 p=11135 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:42:23,433 p=11135 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:42:23,442 p=11135 u=student |  PLAY [2nd play - Verifying apache] **********************************************************************************************
+2021-07-28 10:42:23,451 p=11135 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:42:24,590 p=11135 u=student |  ok: [localhost]
+2021-07-28 10:42:24,607 p=11135 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ****************************************************************************
+2021-07-28 10:42:25,482 p=11135 u=student |  fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 0, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error [Errno 113] No route to host>", "redirected": false, "status": -1, "url": "http://servera.lab.example.com"}
+2021-07-28 10:42:25,483 p=11135 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-28 10:42:25,483 p=11135 u=student |  localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:42:25,483 p=11135 u=student |  servera.lab.example.com    : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:42:25,483 p=11135 u=student |  serverb.lab.example.com    : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:44:05,696 p=11701 u=student |  PLAY [1st play - APache installation and Configuration.] **************************************
+2021-07-28 10:44:05,703 p=11701 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:44:07,122 p=11701 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:44:07,133 p=11701 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:44:07,147 p=11701 u=student |  TASK [Installing apache package.] *************************************************************
+2021-07-28 10:44:08,427 p=11701 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:44:08,428 p=11701 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:44:08,441 p=11701 u=student |  TASK [Start and enable httpd/apache service.] *************************************************
+2021-07-28 10:44:09,248 p=11701 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:44:09,255 p=11701 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:44:09,269 p=11701 u=student |  TASK [Application/index.html deployment] ******************************************************
+2021-07-28 10:44:10,167 p=11701 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:44:10,168 p=11701 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:44:10,172 p=11701 u=student |  PLAY [2nd play - Verifying apache] ************************************************************
+2021-07-28 10:44:10,176 p=11701 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:44:11,490 p=11701 u=student |  ok: [localhost]
+2021-07-28 10:44:11,506 p=11701 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ******************************************
+2021-07-28 10:44:12,270 p=11701 u=student |  ok: [localhost]
+2021-07-28 10:44:12,285 p=11701 u=student |  TASK [Verifing URL - http://serverb.lab.example.com] ******************************************
+2021-07-28 10:44:12,863 p=11701 u=student |  fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 0, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error [Errno 113] No route to host>", "redirected": false, "status": -1, "url": "http://serverb.lab.example.com"}
+2021-07-28 10:44:12,864 p=11701 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 10:44:12,864 p=11701 u=student |  localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:44:12,865 p=11701 u=student |  servera.lab.example.com    : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:44:12,865 p=11701 u=student |  serverb.lab.example.com    : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:44:34,676 p=12459 u=student |  PLAY [1st play - APache installation and Configuration.] ****************************************************
+2021-07-28 10:44:34,686 p=12459 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 10:44:35,773 p=12459 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:44:35,787 p=12459 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:44:35,801 p=12459 u=student |  TASK [Installing apache package.] ***************************************************************************
+2021-07-28 10:44:37,089 p=12459 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:44:37,093 p=12459 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:44:37,107 p=12459 u=student |  TASK [Start and enable httpd/apache service.] ***************************************************************
+2021-07-28 10:44:37,910 p=12459 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:44:37,923 p=12459 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:44:37,937 p=12459 u=student |  TASK [Application/index.html deployment] ********************************************************************
+2021-07-28 10:44:38,831 p=12459 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:44:38,832 p=12459 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:44:38,837 p=12459 u=student |  PLAY [2nd play - Verifying apache] **************************************************************************
+2021-07-28 10:44:38,841 p=12459 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 10:44:39,804 p=12459 u=student |  ok: [localhost]
+2021-07-28 10:44:39,820 p=12459 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ********************************************************
+2021-07-28 10:44:40,576 p=12459 u=student |  fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 0, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error [Errno 113] No route to host>", "redirected": false, "status": -1, "url": "http://servera.lab.example.com"}
+2021-07-28 10:44:40,577 p=12459 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-28 10:44:40,577 p=12459 u=student |  localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:44:40,578 p=12459 u=student |  servera.lab.example.com    : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:44:40,578 p=12459 u=student |  serverb.lab.example.com    : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:47:25,596 p=13050 u=student |  PLAY [1st play - APache installation and Configuration.] ************************************************************************
+2021-07-28 10:47:25,603 p=13050 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:47:27,029 p=13050 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:47:27,039 p=13050 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:47:27,052 p=13050 u=student |  TASK [Installing apache package.] ***********************************************************************************************
+2021-07-28 10:47:28,355 p=13050 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:47:28,355 p=13050 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:47:28,368 p=13050 u=student |  TASK [Start and enable httpd/apache service.] ***********************************************************************************
+2021-07-28 10:47:29,190 p=13050 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:47:29,192 p=13050 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:47:29,206 p=13050 u=student |  TASK [Application/index.html deployment] ****************************************************************************************
+2021-07-28 10:47:30,122 p=13050 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 10:47:30,124 p=13050 u=student |  ok: [servera.lab.example.com]
+2021-07-28 10:47:30,136 p=13050 u=student |  TASK [Adding firewalld rules for apache] ****************************************************************************************
+2021-07-28 10:47:30,849 p=13050 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 10:47:30,854 p=13050 u=student |  changed: [servera.lab.example.com]
+2021-07-28 10:47:30,859 p=13050 u=student |  PLAY [2nd play - Verifying apache] **********************************************************************************************
+2021-07-28 10:47:30,863 p=13050 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-28 10:47:32,141 p=13050 u=student |  ok: [localhost]
+2021-07-28 10:47:32,156 p=13050 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ****************************************************************************
+2021-07-28 10:47:32,921 p=13050 u=student |  ok: [localhost]
+2021-07-28 10:47:32,937 p=13050 u=student |  TASK [Verifing URL - http://serverb.lab.example.com] ****************************************************************************
+2021-07-28 10:47:33,543 p=13050 u=student |  ok: [localhost]
+2021-07-28 10:47:33,545 p=13050 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-28 10:47:33,545 p=13050 u=student |  localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:47:33,545 p=13050 u=student |  servera.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:47:33,545 p=13050 u=student |  serverb.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:50:30,887 p=13886 u=student |  PLAY [1st play - APache installation and Configuration.] **************************************
+2021-07-28 10:50:30,894 p=13886 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:50:32,278 p=13886 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:50:32,291 p=13886 u=student |  TASK [Installing apache package.] *************************************************************
+2021-07-28 10:50:35,787 p=13886 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 10:50:35,800 p=13886 u=student |  TASK [Start and enable httpd/apache service.] *************************************************
+2021-07-28 10:50:36,853 p=13886 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 10:50:36,867 p=13886 u=student |  TASK [Application/index.html deployment] ******************************************************
+2021-07-28 10:50:37,757 p=13886 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 10:50:37,771 p=13886 u=student |  TASK [Adding firewalld rules for apache] ******************************************************
+2021-07-28 10:50:38,470 p=13886 u=student |  changed: [serverd.lab.example.com]
+2021-07-28 10:50:38,476 p=13886 u=student |  PLAY [2nd play - Verifying apache] ************************************************************
+2021-07-28 10:50:38,480 p=13886 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:50:39,791 p=13886 u=student |  ok: [localhost]
+2021-07-28 10:50:39,807 p=13886 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ******************************************
+2021-07-28 10:50:40,570 p=13886 u=student |  ok: [localhost]
+2021-07-28 10:50:40,586 p=13886 u=student |  TASK [Verifing URL - http://serverb.lab.example.com] ******************************************
+2021-07-28 10:50:41,198 p=13886 u=student |  ok: [localhost]
+2021-07-28 10:50:41,200 p=13886 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 10:50:41,200 p=13886 u=student |  localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:50:41,200 p=13886 u=student |  serverd.lab.example.com    : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:52:10,558 p=14658 u=student |  PLAY [1st play - APache installation and Configuration.] **************************************
+2021-07-28 10:52:10,565 p=14658 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:52:11,941 p=14658 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:11,955 p=14658 u=student |  TASK [Installing apache package.] *************************************************************
+2021-07-28 10:52:13,158 p=14658 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:13,171 p=14658 u=student |  TASK [Start and enable httpd/apache service.] *************************************************
+2021-07-28 10:52:13,938 p=14658 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:13,951 p=14658 u=student |  TASK [Application/index.html deployment] ******************************************************
+2021-07-28 10:52:14,791 p=14658 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:14,805 p=14658 u=student |  TASK [Adding firewalld rules for apache] ******************************************************
+2021-07-28 10:52:15,479 p=14658 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:15,483 p=14658 u=student |  PLAY [2nd play - Verifying apache] ************************************************************
+2021-07-28 10:52:15,488 p=14658 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:52:16,818 p=14658 u=student |  ok: [localhost]
+2021-07-28 10:52:16,834 p=14658 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ******************************************
+2021-07-28 10:52:17,595 p=14658 u=student |  ok: [localhost]
+2021-07-28 10:52:17,611 p=14658 u=student |  TASK [Verifing URL - http://serverb.lab.example.com] ******************************************
+2021-07-28 10:52:18,227 p=14658 u=student |  ok: [localhost]
+2021-07-28 10:52:18,229 p=14658 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 10:52:18,229 p=14658 u=student |  localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:52:18,229 p=14658 u=student |  serverd.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:52:42,640 p=15378 u=student |  PLAY [1st play - APache installation and Configuration.] **************************************
+2021-07-28 10:52:42,648 p=15378 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:52:43,709 p=15378 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:43,723 p=15378 u=student |  TASK [Installing apache package.] *************************************************************
+2021-07-28 10:52:44,937 p=15378 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:44,951 p=15378 u=student |  TASK [Start and enable httpd/apache service.] *************************************************
+2021-07-28 10:52:45,738 p=15378 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:45,751 p=15378 u=student |  TASK [Application/index.html deployment] ******************************************************
+2021-07-28 10:52:46,589 p=15378 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:46,602 p=15378 u=student |  TASK [Adding firewalld rules for apache] ******************************************************
+2021-07-28 10:52:47,257 p=15378 u=student |  ok: [serverd.lab.example.com]
+2021-07-28 10:52:47,262 p=15378 u=student |  PLAY [2nd play - Verifying apache] ************************************************************
+2021-07-28 10:52:47,266 p=15378 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 10:52:48,229 p=15378 u=student |  ok: [localhost]
+2021-07-28 10:52:48,245 p=15378 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ******************************************
+2021-07-28 10:52:49,009 p=15378 u=student |  ok: [localhost]
+2021-07-28 10:52:49,024 p=15378 u=student |  TASK [Verifing URL - http://serverb.lab.example.com] ******************************************
+2021-07-28 10:52:49,614 p=15378 u=student |  ok: [localhost]
+2021-07-28 10:52:49,615 p=15378 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 10:52:49,615 p=15378 u=student |  localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 10:52:49,616 p=15378 u=student |  serverd.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:05:31,865 p=16208 u=student |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to be in '/home/student/work/avl/apache_installation_variable.yml': line 46, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+(specified line no longer in file, maybe it changed?)
+2021-07-28 11:05:45,690 p=16213 u=student |  playbook: apache_installation_variable.yml
+2021-07-28 11:05:50,278 p=16219 u=student |  PLAY [1st Play - Apache server installation and configuration.] *******************************
+2021-07-28 11:05:50,285 p=16219 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 11:05:51,702 p=16219 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:05:51,709 p=16219 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:05:51,725 p=16219 u=student |  TASK [Package httpd installation.] ************************************************************
+2021-07-28 11:05:53,007 p=16219 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:05:53,040 p=16219 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:05:53,056 p=16219 u=student |  TASK [Service httpd start and enabled.] *******************************************************
+2021-07-28 11:05:53,866 p=16219 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:05:53,873 p=16219 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:05:53,886 p=16219 u=student |  TASK [firewall rule addition.] ****************************************************************
+2021-07-28 11:05:54,589 p=16219 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:05:54,607 p=16219 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:05:54,622 p=16219 u=student |  TASK [Application/index.html deployment] ******************************************************
+2021-07-28 11:05:55,549 p=16219 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:05:55,550 p=16219 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:05:55,555 p=16219 u=student |  PLAY [2nd play - Verifying apache] ************************************************************
+2021-07-28 11:05:55,559 p=16219 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 11:05:56,885 p=16219 u=student |  ok: [localhost]
+2021-07-28 11:05:56,902 p=16219 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ******************************************
+2021-07-28 11:05:57,670 p=16219 u=student |  skipping: [localhost] => (item=servera) 
+2021-07-28 11:05:58,249 p=16219 u=student |  skipping: [localhost] => (item=serverb) 
+2021-07-28 11:05:58,251 p=16219 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 11:05:58,251 p=16219 u=student |  localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-28 11:05:58,251 p=16219 u=student |  servera.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:05:58,251 p=16219 u=student |  serverb.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:06:01,984 p=16993 u=student |  PLAY [1st Play - Apache server installation and configuration.] *******************************
+2021-07-28 11:06:01,991 p=16993 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 11:06:03,063 p=16993 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:06:03,089 p=16993 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:06:03,106 p=16993 u=student |  TASK [Package httpd installation.] ************************************************************
+2021-07-28 11:06:04,416 p=16993 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:06:04,423 p=16993 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:06:04,438 p=16993 u=student |  TASK [Service httpd start and enabled.] *******************************************************
+2021-07-28 11:06:05,231 p=16993 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:06:05,254 p=16993 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:06:05,267 p=16993 u=student |  TASK [firewall rule addition.] ****************************************************************
+2021-07-28 11:06:05,979 p=16993 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:06:05,980 p=16993 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:06:05,994 p=16993 u=student |  TASK [Application/index.html deployment] ******************************************************
+2021-07-28 11:06:06,930 p=16993 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:06:06,935 p=16993 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:06:06,939 p=16993 u=student |  PLAY [2nd play - Verifying apache] ************************************************************
+2021-07-28 11:06:06,944 p=16993 u=student |  TASK [Gathering Facts] ************************************************************************
+2021-07-28 11:06:07,904 p=16993 u=student |  ok: [localhost]
+2021-07-28 11:06:07,920 p=16993 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ******************************************
+2021-07-28 11:06:08,687 p=16993 u=student |  ok: [localhost] => (item=servera)
+2021-07-28 11:06:09,264 p=16993 u=student |  ok: [localhost] => (item=serverb)
+2021-07-28 11:06:09,267 p=16993 u=student |  PLAY RECAP ************************************************************************************
+2021-07-28 11:06:09,267 p=16993 u=student |  localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:06:09,267 p=16993 u=student |  servera.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:06:09,267 p=16993 u=student |  serverb.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:11:31,261 p=17844 u=student |  ERROR! vars file var.yaml was not found on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2021-07-28 11:12:22,522 p=17860 u=student |  ERROR! vars file var.yaml was not found on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2021-07-28 11:15:34,111 p=17900 u=student |  ERROR! vars file var.yaml was not found on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2021-07-28 11:16:31,610 p=17925 u=student |  playbook: apache_installation_variable_file.yml
+2021-07-28 11:16:37,797 p=17931 u=student |  PLAY [1st Play - Apache server installation and configuration.] *********************************************
+2021-07-28 11:16:37,805 p=17931 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:16:39,226 p=17931 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:16:39,229 p=17931 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:16:39,244 p=17931 u=student |  TASK [Package httpd installation.] **************************************************************************
+2021-07-28 11:16:40,542 p=17931 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:16:40,550 p=17931 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:16:40,565 p=17931 u=student |  TASK [Service httpd start and enabled.] *********************************************************************
+2021-07-28 11:16:41,381 p=17931 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:16:41,384 p=17931 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:16:41,396 p=17931 u=student |  TASK [firewall rule addition.] ******************************************************************************
+2021-07-28 11:16:42,089 p=17931 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:16:42,104 p=17931 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:16:42,117 p=17931 u=student |  TASK [Application/index.html deployment] ********************************************************************
+2021-07-28 11:16:43,024 p=17931 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:16:43,029 p=17931 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:16:43,034 p=17931 u=student |  PLAY [2nd play - Verifying apache] **************************************************************************
+2021-07-28 11:16:43,040 p=17931 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:16:44,341 p=17931 u=student |  ok: [localhost]
+2021-07-28 11:16:44,357 p=17931 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ********************************************************
+2021-07-28 11:16:45,154 p=17931 u=student |  ok: [localhost] => (item=servera)
+2021-07-28 11:16:45,740 p=17931 u=student |  ok: [localhost] => (item=serverb)
+2021-07-28 11:16:45,743 p=17931 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-28 11:16:45,743 p=17931 u=student |  localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:16:45,743 p=17931 u=student |  servera.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:16:45,743 p=17931 u=student |  serverb.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:19:04,328 p=18779 u=student |  playbook: apache_installation_variable_file.yml
+2021-07-28 11:19:08,078 p=18785 u=student |  PLAY [1st Play - Apache server installation and configuration.] *********************************************
+2021-07-28 11:19:08,085 p=18785 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:19:09,485 p=18785 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:19:09,515 p=18785 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:19:09,531 p=18785 u=student |  TASK [Package httpd installation.] **************************************************************************
+2021-07-28 11:19:10,827 p=18785 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:19:10,839 p=18785 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:19:10,854 p=18785 u=student |  TASK [Service httpd start and enabled.] *********************************************************************
+2021-07-28 11:19:11,661 p=18785 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:19:11,662 p=18785 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:19:11,674 p=18785 u=student |  TASK [firewall rule addition.] ******************************************************************************
+2021-07-28 11:19:12,351 p=18785 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:19:12,372 p=18785 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:19:12,385 p=18785 u=student |  TASK [Application/index.html deployment] ********************************************************************
+2021-07-28 11:19:13,303 p=18785 u=student |  changed: [serverb.lab.example.com]
+2021-07-28 11:19:13,304 p=18785 u=student |  changed: [servera.lab.example.com]
+2021-07-28 11:19:13,309 p=18785 u=student |  PLAY [2nd play - Verifying apache] **************************************************************************
+2021-07-28 11:19:13,313 p=18785 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:19:14,597 p=18785 u=student |  ok: [localhost]
+2021-07-28 11:19:14,612 p=18785 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ********************************************************
+2021-07-28 11:19:15,392 p=18785 u=student |  ok: [localhost] => (item=servera)
+2021-07-28 11:19:15,975 p=18785 u=student |  ok: [localhost] => (item=serverb)
+2021-07-28 11:19:15,976 p=18785 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-28 11:19:15,977 p=18785 u=student |  localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:19:15,977 p=18785 u=student |  servera.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:19:15,977 p=18785 u=student |  serverb.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:21:43,352 p=19621 u=student |  PLAY [1st Play - Apache server installation and configuration.] *********************************************
+2021-07-28 11:21:43,359 p=19621 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:21:44,780 p=19621 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:21:44,784 p=19621 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:21:44,806 p=19621 u=student |  TASK [Package httpd installation.] **************************************************************************
+2021-07-28 11:21:46,105 p=19621 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:21:46,112 p=19621 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:21:46,127 p=19621 u=student |  TASK [Service httpd start and enabled.] *********************************************************************
+2021-07-28 11:21:46,948 p=19621 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:21:46,952 p=19621 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:21:46,965 p=19621 u=student |  TASK [firewall rule addition.] ******************************************************************************
+2021-07-28 11:21:47,652 p=19621 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:21:47,656 p=19621 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:21:47,670 p=19621 u=student |  TASK [Application/index.html deployment] ********************************************************************
+2021-07-28 11:21:48,587 p=19621 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:21:48,601 p=19621 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:21:48,606 p=19621 u=student |  PLAY [2nd play - Verifying apache] **************************************************************************
+2021-07-28 11:21:48,611 p=19621 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:21:49,929 p=19621 u=student |  ok: [localhost]
+2021-07-28 11:21:49,945 p=19621 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ********************************************************
+2021-07-28 11:21:50,709 p=19621 u=student |  ok: [localhost] => (item=servera)
+2021-07-28 11:21:51,293 p=19621 u=student |  ok: [localhost] => (item=serverb)
+2021-07-28 11:21:51,309 p=19621 u=student |  TASK [Display output] ***************************************************************************************
+2021-07-28 11:21:51,334 p=19621 u=student |  ok: [localhost] => {
+    "output": {
+        "changed": false,
+        "msg": "All items completed",
+        "results": [
+            {
+                "accept_ranges": "bytes",
+                "ansible_loop_var": "item",
+                "changed": false,
+                "connection": "close",
+                "content": "This is web and db server",
+                "content_length": "25",
+                "content_type": "text/html; charset=UTF-8",
+                "cookies": {},
+                "cookies_string": "",
+                "date": "Wed, 28 Jul 2021 05:51:50 GMT",
+                "elapsed": 0,
+                "etag": "\"19-5c8288bc6f90c\"",
+                "failed": false,
+                "invocation": {
+                    "module_args": {
+                        "attributes": null,
+                        "backup": null,
+                        "body": null,
+                        "body_format": "raw",
+                        "client_cert": null,
+                        "client_key": null,
+                        "content": null,
+                        "creates": null,
+                        "delimiter": null,
+                        "dest": null,
+                        "directory_mode": null,
+                        "follow": false,
+                        "follow_redirects": "safe",
+                        "force": false,
+                        "force_basic_auth": false,
+                        "group": null,
+                        "headers": {},
+                        "http_agent": "ansible-httpget",
+                        "method": "GET",
+                        "mode": null,
+                        "owner": null,
+                        "regexp": null,
+                        "remote_src": null,
+                        "removes": null,
+                        "return_content": true,
+                        "selevel": null,
+                        "serole": null,
+                        "setype": null,
+                        "seuser": null,
+                        "src": null,
+                        "status_code": [
+                            "200"
+                        ],
+                        "timeout": 30,
+                        "unix_socket": null,
+                        "unsafe_writes": null,
+                        "url": "http://servera.lab.example.com",
+                        "url_password": null,
+                        "url_username": null,
+                        "use_proxy": true,
+                        "validate_certs": true
+                    }
+                },
+                "item": "servera",
+                "last_modified": "Wed, 28 Jul 2021 05:49:12 GMT",
+                "msg": "OK (25 bytes)",
+                "redirected": false,
+                "server": "Apache/2.4.37 (Red Hat Enterprise Linux)",
+                "status": 200,
+                "url": "http://servera.lab.example.com"
+            },
+            {
+                "accept_ranges": "bytes",
+                "ansible_loop_var": "item",
+                "changed": false,
+                "connection": "close",
+                "content": "This is web and db server",
+                "content_length": "25",
+                "content_type": "text/html; charset=UTF-8",
+                "cookies": {},
+                "cookies_string": "",
+                "date": "Wed, 28 Jul 2021 05:51:51 GMT",
+                "elapsed": 0,
+                "etag": "\"19-5c8288bc6f8f9\"",
+                "failed": false,
+                "invocation": {
+                    "module_args": {
+                        "attributes": null,
+                        "backup": null,
+                        "body": null,
+                        "body_format": "raw",
+                        "client_cert": null,
+                        "client_key": null,
+                        "content": null,
+                        "creates": null,
+                        "delimiter": null,
+                        "dest": null,
+                        "directory_mode": null,
+                        "follow": false,
+                        "follow_redirects": "safe",
+                        "force": false,
+                        "force_basic_auth": false,
+                        "group": null,
+                        "headers": {},
+                        "http_agent": "ansible-httpget",
+                        "method": "GET",
+                        "mode": null,
+                        "owner": null,
+                        "regexp": null,
+                        "remote_src": null,
+                        "removes": null,
+                        "return_content": true,
+                        "selevel": null,
+                        "serole": null,
+                        "setype": null,
+                        "seuser": null,
+                        "src": null,
+                        "status_code": [
+                            "200"
+                        ],
+                        "timeout": 30,
+                        "unix_socket": null,
+                        "unsafe_writes": null,
+                        "url": "http://serverb.lab.example.com",
+                        "url_password": null,
+                        "url_username": null,
+                        "use_proxy": true,
+                        "validate_certs": true
+                    }
+                },
+                "item": "serverb",
+                "last_modified": "Wed, 28 Jul 2021 05:49:12 GMT",
+                "msg": "OK (25 bytes)",
+                "redirected": false,
+                "server": "Apache/2.4.37 (Red Hat Enterprise Linux)",
+                "status": 200,
+                "url": "http://serverb.lab.example.com"
+            }
+        ]
+    }
+}
+2021-07-28 11:21:51,335 p=19621 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-28 11:21:51,335 p=19621 u=student |  localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:21:51,335 p=19621 u=student |  servera.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:21:51,336 p=19621 u=student |  serverb.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:22:27,963 p=20403 u=student |  PLAY [1st Play - Apache server installation and configuration.] *********************************************
+2021-07-28 11:22:27,970 p=20403 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:22:29,040 p=20403 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:22:29,056 p=20403 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:22:29,072 p=20403 u=student |  TASK [Package httpd installation.] **************************************************************************
+2021-07-28 11:22:30,362 p=20403 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:22:30,373 p=20403 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:22:30,388 p=20403 u=student |  TASK [Service httpd start and enabled.] *********************************************************************
+2021-07-28 11:22:31,203 p=20403 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:22:31,213 p=20403 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:22:31,226 p=20403 u=student |  TASK [firewall rule addition.] ******************************************************************************
+2021-07-28 11:22:31,925 p=20403 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:22:31,962 p=20403 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:22:31,977 p=20403 u=student |  TASK [Application/index.html deployment] ********************************************************************
+2021-07-28 11:22:32,873 p=20403 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:22:32,882 p=20403 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:22:32,887 p=20403 u=student |  PLAY [2nd play - Verifying apache] **************************************************************************
+2021-07-28 11:22:32,892 p=20403 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:22:33,862 p=20403 u=student |  ok: [localhost]
+2021-07-28 11:22:33,877 p=20403 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ********************************************************
+2021-07-28 11:22:34,654 p=20403 u=student |  ok: [localhost] => (item=servera)
+2021-07-28 11:22:35,241 p=20403 u=student |  ok: [localhost] => (item=serverb)
+2021-07-28 11:22:35,259 p=20403 u=student |  TASK [Display output] ***************************************************************************************
+2021-07-28 11:22:35,278 p=20403 u=student |  ok: [localhost] => {
+    "output.content": "VARIABLE IS NOT DEFINED!"
+}
+2021-07-28 11:22:35,280 p=20403 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-28 11:22:35,280 p=20403 u=student |  localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:22:35,280 p=20403 u=student |  servera.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:22:35,280 p=20403 u=student |  serverb.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:23:11,094 p=21118 u=student |  PLAY [1st Play - Apache server installation and configuration.] *********************************************
+2021-07-28 11:23:11,101 p=21118 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:23:12,167 p=21118 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:23:12,179 p=21118 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:23:12,195 p=21118 u=student |  TASK [Package httpd installation.] **************************************************************************
+2021-07-28 11:23:13,476 p=21118 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:23:13,492 p=21118 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:23:13,508 p=21118 u=student |  TASK [Service httpd start and enabled.] *********************************************************************
+2021-07-28 11:23:14,309 p=21118 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:23:14,312 p=21118 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:23:14,324 p=21118 u=student |  TASK [firewall rule addition.] ******************************************************************************
+2021-07-28 11:23:15,053 p=21118 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:23:15,069 p=21118 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:23:15,084 p=21118 u=student |  TASK [Application/index.html deployment] ********************************************************************
+2021-07-28 11:23:15,962 p=21118 u=student |  ok: [serverb.lab.example.com]
+2021-07-28 11:23:15,966 p=21118 u=student |  ok: [servera.lab.example.com]
+2021-07-28 11:23:15,972 p=21118 u=student |  PLAY [2nd play - Verifying apache] **************************************************************************
+2021-07-28 11:23:15,976 p=21118 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-28 11:23:16,930 p=21118 u=student |  ok: [localhost]
+2021-07-28 11:23:16,945 p=21118 u=student |  TASK [Verifing URL - http://servera.lab.example.com] ********************************************************
+2021-07-28 11:23:17,721 p=21118 u=student |  ok: [localhost] => (item=servera)
+2021-07-28 11:23:18,312 p=21118 u=student |  ok: [localhost] => (item=serverb)
+2021-07-28 11:23:18,330 p=21118 u=student |  TASK [Display output] ***************************************************************************************
+2021-07-28 11:23:18,347 p=21118 u=student |  ok: [localhost] => {
+    "output.results.content": "VARIABLE IS NOT DEFINED!"
+}
+2021-07-28 11:23:18,349 p=21118 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-28 11:23:18,349 p=21118 u=student |  localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:23:18,349 p=21118 u=student |  servera.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-28 11:23:18,350 p=21118 u=student |  serverb.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

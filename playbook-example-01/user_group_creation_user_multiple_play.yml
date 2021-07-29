@@ -1,0 +1,27 @@
+---
+- name: 1st play - User and Group creation
+  hosts: web 
+  tasks:
+    - name: Group creation 
+      group:
+        name: dbadm
+        state: present 
+
+    - name: User Creation 
+      user:
+        name: joe2 
+        state: present 
+        groups: dbadm 
+
+
+- name: 2nd Play - User and group varification.
+  hosts: web 
+  tasks:
+    - name: Verify the user and group
+      shell: id joe2
+      register: output 
+
+    - name: Display output 
+      debug:
+        var: output.stdout
+...

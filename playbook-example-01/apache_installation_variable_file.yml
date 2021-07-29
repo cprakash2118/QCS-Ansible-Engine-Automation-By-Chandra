@@ -1,0 +1,48 @@
+---
+- name: 1st Play - Apache server installation and configuration.
+  hosts: web 
+  vars_files:
+     - vars.yml 
+  tasks:
+   - name: Package {{ apache_pkg_name }} installation.
+     yum: 
+       name: "{{ apache_pkg_name }}"
+       state: present 
+
+   - name: Service {{ apache_service_name }} start and enabled.
+     service: 
+       name: "{{ apache_service_name }}"
+       state: started 
+       enabled: yes
+ 
+   - name: firewall rule addition.
+     firewalld:
+       service: "{{ firewall_rule_service }}"
+       permanent: yes
+       state: enabled
+       immediate: yes
+
+   - name: Application/index.html deployment
+     vars:
+        my_message: "This is web and db server"
+     copy:
+        content: "{{ my_message }}"
+        dest: /var/www/html/index.html
+ 
+- name: 2nd play - Verifying apache
+  hosts: myself
+  vars_files:
+    - vars.yml 
+  tasks:
+     - name: Verifing URL - http://servera.lab.example.com
+       uri:
+         url: http://{{item}}.lab.example.com
+         return_content: yes
+         status_code: 200
+       register: output 
+       loop: "{{ server_list }}"
+
+     - name: Display output
+       debug:
+         var: output.results.content
+...
