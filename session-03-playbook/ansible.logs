@@ -1,0 +1,1941 @@
+2021-07-30 09:54:06,596 p=4221 u=student |  servera.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:06,808 p=4221 u=student |  localhost | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:07,180 p=4221 u=student |  serverd.lab.example.com | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: devops@serverd.lab.example.com: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2021-07-30 09:54:07,550 p=4221 u=student |  serverb.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:07,723 p=4221 u=student |  serverc.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:08,568 p=4221 u=student |  serverf.lab.example.com | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host serverf.lab.example.com port 22: No route to host",
+    "unreachable": true
+}
+2021-07-30 09:54:08,568 p=4221 u=student |  servere.lab.example.com | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host servere.lab.example.com port 22: No route to host",
+    "unreachable": true
+}
+2021-07-30 09:54:22,476 p=4579 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+ 09:54:42 up 1 min,  1 user,  load average: 0.14, 0.07, 0.02
+
+2021-07-30 09:54:22,671 p=4579 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+ 09:54:43 up 1 min,  1 user,  load average: 0.23, 0.14, 0.05
+
+2021-07-30 09:54:22,702 p=4579 u=student |  localhost | CHANGED | rc=0 >>
+ 09:54:22 up  1:32,  3 users,  load average: 0.00, 0.00, 0.00
+
+2021-07-30 09:54:22,754 p=4579 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+ 09:54:44 up 1 min,  1 user,  load average: 0.18, 0.12, 0.05
+
+2021-07-30 09:54:22,834 p=4579 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+ 09:54:43 up 1 min,  1 user,  load average: 0.10, 0.06, 0.02
+
+2021-07-30 09:54:23,012 p=4579 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+ 09:54:44 up 1 min,  1 user,  load average: 0.51, 0.20, 0.07
+
+2021-07-30 09:54:23,146 p=4579 u=student |  serverc.lab.example.com | CHANGED | rc=0 >>
+ 09:54:44 up 1 min,  1 user,  load average: 0.32, 0.14, 0.05
+
+2021-07-30 09:54:52,157 p=4908 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:52,213 p=4908 u=student |  servere.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:52,219 p=4908 u=student |  servera.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:52,225 p=4908 u=student |  serverf.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:52,402 p=4908 u=student |  localhost | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:52,629 p=4908 u=student |  serverb.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 09:54:52,666 p=4908 u=student |  serverc.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-30 10:40:20,589 p=5852 u=student |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/student/session-03-playbook/playbook.yml': line 46, column 31, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        content: "This is my web server"
+        dest: {{ remote_dir }}/index.html
+                              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2021-07-30 10:41:28,107 p=5884 u=student |  ERROR! vars file vars.yml was not found on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2021-07-30 10:42:01,372 p=5909 u=student |  ERROR! variable files must contain either a dictionary of variables, or a list of dictionaries. Got: [{'remote_dir': '/var/www/vhost/'}, {'conf_file': '/etc/httpd/conf.d/'}, {'pkg_list': ['httpd', 'firewalld']}, None] (<class 'ansible.parsing.yaml.objects.AnsibleSequence'>)
+2021-07-30 10:42:30,591 p=5925 u=student |  playbook: playbook.yml
+2021-07-30 10:42:36,338 p=5939 u=student |  PLAY [Apache deployment] ************************************************************************************
+2021-07-30 10:42:36,345 p=5939 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-30 10:42:38,147 p=5939 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:42:38,199 p=5939 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:42:38,274 p=5939 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:42:38,295 p=5939 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:42:38,419 p=5939 u=student |  ok: [localhost]
+2021-07-30 10:42:39,249 p=5939 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:42:39,266 p=5939 u=student |  TASK [Apache firewalld Installation.] ***********************************************************************
+2021-07-30 10:42:41,834 p=5939 u=student |  ok: [localhost]
+2021-07-30 10:42:46,169 p=5939 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:42:46,229 p=5939 u=student |  changed: [servere.lab.example.com]
+2021-07-30 10:42:46,305 p=5939 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 10:42:46,326 p=5939 u=student |  changed: [serverf.lab.example.com]
+2021-07-30 10:42:48,349 p=5939 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 10:42:48,375 p=5939 u=student |  TASK [Start and stop services.] *****************************************************************************
+2021-07-30 10:42:51,113 p=5939 u=student |  changed: [servera.lab.example.com] => (item=httpd)
+2021-07-30 10:42:51,116 p=5939 u=student |  changed: [serverd.lab.example.com] => (item=httpd)
+2021-07-30 10:42:51,118 p=5939 u=student |  changed: [servere.lab.example.com] => (item=httpd)
+2021-07-30 10:42:51,120 p=5939 u=student |  changed: [serverf.lab.example.com] => (item=httpd)
+2021-07-30 10:42:51,122 p=5939 u=student |  changed: [localhost] => (item=httpd)
+2021-07-30 10:42:51,124 p=5939 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-07-30 10:42:51,133 p=5939 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-07-30 10:42:51,189 p=5939 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-07-30 10:42:51,195 p=5939 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-07-30 10:42:51,643 p=5939 u=student |  ok: [localhost] => (item=firewalld)
+2021-07-30 10:42:52,308 p=5939 u=student |  changed: [serverc.lab.example.com] => (item=httpd)
+2021-07-30 10:42:52,992 p=5939 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-07-30 10:42:53,025 p=5939 u=student |  TASK [Get default document root.] ***************************************************************************
+2021-07-30 10:42:53,057 p=5939 u=student |  skipping: [localhost]
+2021-07-30 10:42:53,085 p=5939 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:42:53,111 p=5939 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:42:53,174 p=5939 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:42:53,198 p=5939 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:42:53,986 p=5939 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:42:54,013 p=5939 u=student |  TASK [Check default document root.] *************************************************************************
+2021-07-30 10:42:54,076 p=5939 u=student |  skipping: [localhost]
+2021-07-30 10:42:54,103 p=5939 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:42:54,131 p=5939 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:42:54,169 p=5939 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:42:54,185 p=5939 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:42:54,939 p=5939 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:42:54,967 p=5939 u=student |  TASK [Deploy the configration changes.] *********************************************************************
+2021-07-30 10:42:56,474 p=5939 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:42:56,484 p=5939 u=student |  changed: [servere.lab.example.com]
+2021-07-30 10:42:56,527 p=5939 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 10:42:56,543 p=5939 u=student |  changed: [serverf.lab.example.com]
+2021-07-30 10:42:56,643 p=5939 u=student |  changed: [localhost]
+2021-07-30 10:42:57,469 p=5939 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 10:42:57,494 p=5939 u=student |  TASK [Deploying application - index.html] *******************************************************************
+2021-07-30 10:42:58,708 p=5939 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "checksum": "fa4d4f0a47d2c258e94c22da7f2e7edbf0c2f106", "msg": "Destination directory /var/www/vhost does not exist"}
+2021-07-30 10:42:58,745 p=5939 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "checksum": "fa4d4f0a47d2c258e94c22da7f2e7edbf0c2f106", "msg": "Destination directory /var/www/vhost does not exist"}
+2021-07-30 10:42:58,802 p=5939 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:42:58,812 p=5939 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "checksum": "fa4d4f0a47d2c258e94c22da7f2e7edbf0c2f106", "msg": "Destination directory /var/www/vhost does not exist"}
+2021-07-30 10:42:59,066 p=5939 u=student |  fatal: [localhost]: FAILED! => {"changed": false, "checksum": "fa4d4f0a47d2c258e94c22da7f2e7edbf0c2f106", "msg": "Destination directory /var/www/vhost does not exist"}
+2021-07-30 10:42:59,720 p=5939 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "checksum": "fa4d4f0a47d2c258e94c22da7f2e7edbf0c2f106", "msg": "Destination directory /var/www/vhost does not exist"}
+2021-07-30 10:42:59,743 p=5939 u=student |  TASK [firewall rules adding] ********************************************************************************
+2021-07-30 10:43:00,856 p=5939 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:43:00,857 p=5939 u=student |  RUNNING HANDLER [restart httpd] *****************************************************************************
+2021-07-30 10:43:02,470 p=5939 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:43:02,471 p=5939 u=student |  RUNNING HANDLER [display1] **********************************************************************************
+2021-07-30 10:43:02,498 p=5939 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:43:02,498 p=5939 u=student |  RUNNING HANDLER [display2] **********************************************************************************
+2021-07-30 10:43:02,524 p=5939 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:43:02,527 p=5939 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-30 10:43:02,527 p=5939 u=student |  localhost                  : ok=4    changed=2    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2021-07-30 10:43:02,527 p=5939 u=student |  servera.lab.example.com    : ok=11   changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 10:43:02,527 p=5939 u=student |  serverc.lab.example.com    : ok=4    changed=3    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2021-07-30 10:43:02,528 p=5939 u=student |  serverd.lab.example.com    : ok=4    changed=3    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2021-07-30 10:43:02,528 p=5939 u=student |  servere.lab.example.com    : ok=4    changed=3    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2021-07-30 10:43:02,528 p=5939 u=student |  serverf.lab.example.com    : ok=4    changed=3    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2021-07-30 10:44:10,908 p=8108 u=student |  PLAY [Apache deployment] ********************************************************************************************************
+2021-07-30 10:44:10,915 p=8108 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 10:44:12,682 p=8108 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:44:12,692 p=8108 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:44:12,734 p=8108 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:44:12,760 p=8108 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:44:12,998 p=8108 u=student |  ok: [localhost]
+2021-07-30 10:44:13,719 p=8108 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:44:13,736 p=8108 u=student |  TASK [Apache firewalld Installation.] *******************************************************************************************
+2021-07-30 10:44:15,378 p=8108 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:44:15,493 p=8108 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:44:15,577 p=8108 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:44:15,634 p=8108 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:44:15,656 p=8108 u=student |  ok: [localhost]
+2021-07-30 10:44:16,503 p=8108 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:44:16,520 p=8108 u=student |  TASK [Start and stop services.] *************************************************************************************************
+2021-07-30 10:44:18,205 p=8108 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-07-30 10:44:18,207 p=8108 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-07-30 10:44:18,209 p=8108 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-07-30 10:44:18,211 p=8108 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-07-30 10:44:18,213 p=8108 u=student |  ok: [localhost] => (item=httpd)
+2021-07-30 10:44:18,216 p=8108 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-07-30 10:44:18,241 p=8108 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-07-30 10:44:18,265 p=8108 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-07-30 10:44:18,311 p=8108 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-07-30 10:44:18,538 p=8108 u=student |  ok: [localhost] => (item=firewalld)
+2021-07-30 10:44:18,734 p=8108 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-07-30 10:44:19,164 p=8108 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-07-30 10:44:19,183 p=8108 u=student |  TASK [Get default document root.] ***********************************************************************************************
+2021-07-30 10:44:19,203 p=8108 u=student |  skipping: [localhost]
+2021-07-30 10:44:19,220 p=8108 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:44:19,238 p=8108 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:44:19,256 p=8108 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:44:19,284 p=8108 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:44:19,732 p=8108 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:44:19,749 p=8108 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-07-30 10:44:19,771 p=8108 u=student |  skipping: [localhost]
+2021-07-30 10:44:19,788 p=8108 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:44:19,806 p=8108 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:44:19,823 p=8108 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:44:19,843 p=8108 u=student |  skipping: [servera.lab.example.com]
+2021-07-30 10:44:19,853 p=8108 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:44:19,871 p=8108 u=student |  TASK [Deploy the configration changes.] *****************************************************************************************
+2021-07-30 10:44:20,910 p=8108 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:44:20,912 p=8108 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:44:20,936 p=8108 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:44:20,959 p=8108 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:44:21,061 p=8108 u=student |  ok: [localhost]
+2021-07-30 10:44:21,507 p=8108 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:44:21,523 p=8108 u=student |  TASK [Deploying application - index.html] ***************************************************************************************
+2021-07-30 10:44:21,543 p=8108 u=student |  skipping: [localhost]
+2021-07-30 10:44:21,561 p=8108 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:44:21,578 p=8108 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:44:21,595 p=8108 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:44:21,624 p=8108 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:44:22,159 p=8108 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:44:22,175 p=8108 u=student |  TASK [firewall rules adding] ****************************************************************************************************
+2021-07-30 10:44:23,078 p=8108 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 10:44:23,172 p=8108 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:44:23,217 p=8108 u=student |  changed: [servere.lab.example.com]
+2021-07-30 10:44:23,274 p=8108 u=student |  changed: [serverf.lab.example.com]
+2021-07-30 10:44:23,333 p=8108 u=student |  changed: [localhost]
+2021-07-30 10:44:23,681 p=8108 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 10:44:23,684 p=8108 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 10:44:23,684 p=8108 u=student |  localhost                  : ok=5    changed=1    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:44:23,684 p=8108 u=student |  servera.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:44:23,684 p=8108 u=student |  serverc.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:44:23,685 p=8108 u=student |  serverd.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:44:23,685 p=8108 u=student |  servere.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:44:23,685 p=8108 u=student |  serverf.lab.example.com    : ok=5    changed=1    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:46:04,975 p=9826 u=student |  PLAY [Apache deployment] ********************************************************************************************************
+2021-07-30 10:46:04,982 p=9826 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 10:46:06,772 p=9826 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:46:06,774 p=9826 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:46:06,828 p=9826 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:46:06,833 p=9826 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:46:06,998 p=9826 u=student |  ok: [localhost]
+2021-07-30 10:46:07,794 p=9826 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:46:07,810 p=9826 u=student |  TASK [Apache firewalld Installation.] *******************************************************************************************
+2021-07-30 10:46:09,418 p=9826 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:46:09,642 p=9826 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:46:09,685 p=9826 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:46:09,728 p=9826 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:46:09,908 p=9826 u=student |  ok: [localhost]
+2021-07-30 10:46:10,564 p=9826 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:46:10,580 p=9826 u=student |  TASK [Start and stop services.] *************************************************************************************************
+2021-07-30 10:46:12,238 p=9826 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-07-30 10:46:12,240 p=9826 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-07-30 10:46:12,242 p=9826 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-07-30 10:46:12,244 p=9826 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-07-30 10:46:12,246 p=9826 u=student |  ok: [localhost] => (item=httpd)
+2021-07-30 10:46:12,248 p=9826 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-07-30 10:46:12,276 p=9826 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-07-30 10:46:12,319 p=9826 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-07-30 10:46:12,364 p=9826 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-07-30 10:46:12,572 p=9826 u=student |  ok: [localhost] => (item=firewalld)
+2021-07-30 10:46:12,743 p=9826 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-07-30 10:46:13,169 p=9826 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-07-30 10:46:13,188 p=9826 u=student |  TASK [Get default document root.] ***********************************************************************************************
+2021-07-30 10:46:13,207 p=9826 u=student |  skipping: [localhost]
+2021-07-30 10:46:13,226 p=9826 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:46:13,243 p=9826 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:46:13,260 p=9826 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:46:13,289 p=9826 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:46:13,722 p=9826 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:46:13,739 p=9826 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-07-30 10:46:13,760 p=9826 u=student |  skipping: [localhost]
+2021-07-30 10:46:13,776 p=9826 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:46:13,793 p=9826 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:46:13,810 p=9826 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:46:13,840 p=9826 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:46:14,289 p=9826 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:46:14,306 p=9826 u=student |  TASK [Deploy the configration changes.] *****************************************************************************************
+2021-07-30 10:46:15,158 p=9826 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:46:15,263 p=9826 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:46:15,287 p=9826 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:46:15,288 p=9826 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:46:15,465 p=9826 u=student |  ok: [localhost]
+2021-07-30 10:46:15,783 p=9826 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:46:15,800 p=9826 u=student |  TASK [Deploying application - index.html] ***************************************************************************************
+2021-07-30 10:46:15,837 p=9826 u=student |  skipping: [localhost]
+2021-07-30 10:46:15,855 p=9826 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:46:15,871 p=9826 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:46:15,890 p=9826 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:46:15,904 p=9826 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:46:16,442 p=9826 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:46:16,458 p=9826 u=student |  TASK [firewall rules adding] ****************************************************************************************************
+2021-07-30 10:46:17,318 p=9826 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:46:17,456 p=9826 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:46:17,530 p=9826 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:46:17,553 p=9826 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:46:17,579 p=9826 u=student |  ok: [localhost]
+2021-07-30 10:46:17,889 p=9826 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:46:17,891 p=9826 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 10:46:17,891 p=9826 u=student |  localhost                  : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:46:17,892 p=9826 u=student |  servera.lab.example.com    : ok=8    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 10:46:17,892 p=9826 u=student |  serverc.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:46:17,892 p=9826 u=student |  serverd.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:46:17,892 p=9826 u=student |  servere.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:46:17,892 p=9826 u=student |  serverf.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:47:38,251 p=11538 u=student |  PLAY [Apache deployment] ************************************************************************************
+2021-07-30 10:47:38,258 p=11538 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-30 10:47:40,092 p=11538 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:47:40,098 p=11538 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:47:40,101 p=11538 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:47:40,103 p=11538 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:47:41,104 p=11538 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:47:41,340 p=11538 u=student |  ok: [localhost]
+2021-07-30 10:47:41,357 p=11538 u=student |  TASK [Apache firewalld Installation.] ***********************************************************************
+2021-07-30 10:47:42,963 p=11538 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:47:43,021 p=11538 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:47:43,086 p=11538 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:47:43,150 p=11538 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:47:43,439 p=11538 u=student |  ok: [localhost]
+2021-07-30 10:47:44,038 p=11538 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:47:44,054 p=11538 u=student |  TASK [Start and stop services.] *****************************************************************************
+2021-07-30 10:47:45,778 p=11538 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-07-30 10:47:45,779 p=11538 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-07-30 10:47:45,781 p=11538 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-07-30 10:47:45,782 p=11538 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-07-30 10:47:45,783 p=11538 u=student |  ok: [localhost] => (item=httpd)
+2021-07-30 10:47:45,784 p=11538 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-07-30 10:47:45,832 p=11538 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-07-30 10:47:45,895 p=11538 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-07-30 10:47:45,911 p=11538 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-07-30 10:47:46,064 p=11538 u=student |  ok: [localhost] => (item=firewalld)
+2021-07-30 10:47:46,285 p=11538 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-07-30 10:47:46,714 p=11538 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-07-30 10:47:46,733 p=11538 u=student |  TASK [Get default document root.] ***************************************************************************
+2021-07-30 10:47:46,752 p=11538 u=student |  skipping: [localhost]
+2021-07-30 10:47:46,769 p=11538 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:47:46,787 p=11538 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:47:46,804 p=11538 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:47:46,834 p=11538 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:47:47,284 p=11538 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:47:47,300 p=11538 u=student |  TASK [Check default document root.] *************************************************************************
+2021-07-30 10:47:47,328 p=11538 u=student |  skipping: [localhost]
+2021-07-30 10:47:47,350 p=11538 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:47:47,373 p=11538 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:47:47,396 p=11538 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:47:47,421 p=11538 u=student |  skipping: [servera.lab.example.com]
+2021-07-30 10:47:47,431 p=11538 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:47:47,448 p=11538 u=student |  TASK [Deploy the configration changes.] *********************************************************************
+2021-07-30 10:47:48,478 p=11538 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:47:48,516 p=11538 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:47:48,526 p=11538 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:47:48,539 p=11538 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:47:48,668 p=11538 u=student |  ok: [localhost]
+2021-07-30 10:47:49,093 p=11538 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:47:49,110 p=11538 u=student |  TASK [Deploying application - index.html] *******************************************************************
+2021-07-30 10:47:49,132 p=11538 u=student |  skipping: [localhost]
+2021-07-30 10:47:49,150 p=11538 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:47:49,167 p=11538 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:47:49,184 p=11538 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:47:49,214 p=11538 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:47:49,946 p=11538 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:47:49,961 p=11538 u=student |  TASK [firewall rules adding] ********************************************************************************
+2021-07-30 10:47:50,829 p=11538 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:47:50,834 p=11538 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:47:50,960 p=11538 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:47:51,010 p=11538 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:47:51,058 p=11538 u=student |  ok: [localhost]
+2021-07-30 10:47:51,377 p=11538 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:47:51,378 p=11538 u=student |  RUNNING HANDLER [display2] **********************************************************************************
+2021-07-30 10:47:51,405 p=11538 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:47:51,407 p=11538 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-30 10:47:51,407 p=11538 u=student |  localhost                  : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:47:51,407 p=11538 u=student |  servera.lab.example.com    : ok=8    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:47:51,407 p=11538 u=student |  serverc.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:47:51,408 p=11538 u=student |  serverd.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:47:51,408 p=11538 u=student |  servere.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:47:51,408 p=11538 u=student |  serverf.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:49:14,635 p=13252 u=student |  PLAY [Apache deployment] ************************************************************************************
+2021-07-30 10:49:14,642 p=13252 u=student |  TASK [Gathering Facts] **************************************************************************************
+2021-07-30 10:49:16,441 p=13252 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:49:16,463 p=13252 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:49:16,465 p=13252 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:49:16,480 p=13252 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:49:16,759 p=13252 u=student |  ok: [localhost]
+2021-07-30 10:49:17,546 p=13252 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:49:17,603 p=13252 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:49:17,620 p=13252 u=student |  TASK [Apache firewalld Installation.] ***********************************************************************
+2021-07-30 10:49:19,302 p=13252 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:49:19,362 p=13252 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:49:19,390 p=13252 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:49:19,472 p=13252 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:49:19,676 p=13252 u=student |  ok: [localhost]
+2021-07-30 10:49:20,502 p=13252 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:49:23,851 p=13252 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:49:23,868 p=13252 u=student |  TASK [Start and stop services.] *****************************************************************************
+2021-07-30 10:49:25,716 p=13252 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-07-30 10:49:25,718 p=13252 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-07-30 10:49:25,720 p=13252 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-07-30 10:49:25,721 p=13252 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-07-30 10:49:25,723 p=13252 u=student |  ok: [localhost] => (item=httpd)
+2021-07-30 10:49:25,724 p=13252 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-07-30 10:49:25,754 p=13252 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-07-30 10:49:25,783 p=13252 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-07-30 10:49:25,815 p=13252 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-07-30 10:49:26,068 p=13252 u=student |  ok: [localhost] => (item=firewalld)
+2021-07-30 10:49:26,288 p=13252 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-07-30 10:49:26,576 p=13252 u=student |  changed: [serverb.lab.example.com] => (item=httpd)
+2021-07-30 10:49:26,762 p=13252 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-07-30 10:49:27,071 p=13252 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-07-30 10:49:27,090 p=13252 u=student |  TASK [Get default document root.] ***************************************************************************
+2021-07-30 10:49:27,112 p=13252 u=student |  skipping: [localhost]
+2021-07-30 10:49:27,150 p=13252 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:49:27,171 p=13252 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:49:27,695 p=13252 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:49:27,705 p=13252 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:49:27,732 p=13252 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:49:27,739 p=13252 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:49:27,755 p=13252 u=student |  TASK [Check default document root.] *************************************************************************
+2021-07-30 10:49:27,776 p=13252 u=student |  skipping: [localhost]
+2021-07-30 10:49:27,814 p=13252 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:49:27,840 p=13252 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:49:27,866 p=13252 u=student |  skipping: [servera.lab.example.com]
+2021-07-30 10:49:28,381 p=13252 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 10:49:28,383 p=13252 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:49:28,393 p=13252 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 10:49:28,411 p=13252 u=student |  TASK [Deploy the configration changes.] *********************************************************************
+2021-07-30 10:49:29,361 p=13252 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:49:29,440 p=13252 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:49:29,459 p=13252 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:49:29,487 p=13252 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:49:29,684 p=13252 u=student |  ok: [localhost]
+2021-07-30 10:49:30,121 p=13252 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:49:30,309 p=13252 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:49:30,325 p=13252 u=student |  TASK [Deploying application - index.html] *******************************************************************
+2021-07-30 10:49:30,346 p=13252 u=student |  skipping: [localhost]
+2021-07-30 10:49:30,488 p=13252 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:49:30,489 p=13252 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:49:31,178 p=13252 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:49:31,208 p=13252 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 10:49:31,316 p=13252 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 10:49:31,351 p=13252 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:49:31,369 p=13252 u=student |  TASK [firewall rules adding] ********************************************************************************
+2021-07-30 10:49:32,313 p=13252 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:49:32,393 p=13252 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:49:32,423 p=13252 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:49:32,430 p=13252 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:49:32,557 p=13252 u=student |  ok: [localhost]
+2021-07-30 10:49:32,970 p=13252 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:49:32,983 p=13252 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:49:32,984 p=13252 u=student |  RUNNING HANDLER [restart httpd] *****************************************************************************
+2021-07-30 10:49:34,550 p=13252 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:49:34,551 p=13252 u=student |  RUNNING HANDLER [display1] **********************************************************************************
+2021-07-30 10:49:34,581 p=13252 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:49:34,582 p=13252 u=student |  RUNNING HANDLER [display2] **********************************************************************************
+2021-07-30 10:49:34,635 p=13252 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:49:34,635 p=13252 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:49:34,641 p=13252 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:49:34,645 p=13252 u=student |  PLAY RECAP **************************************************************************************************
+2021-07-30 10:49:34,645 p=13252 u=student |  localhost                  : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:49:34,645 p=13252 u=student |  servera.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:49:34,645 p=13252 u=student |  serverb.lab.example.com    : ok=11   changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 10:49:34,645 p=13252 u=student |  serverc.lab.example.com    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 10:49:34,646 p=13252 u=student |  serverd.lab.example.com    : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 10:49:34,646 p=13252 u=student |  servere.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:49:34,646 p=13252 u=student |  serverf.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:51:33,554 p=15127 u=student |  PLAY [Apache deployment] ********************************************************************************************************
+2021-07-30 10:51:33,562 p=15127 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 10:51:35,312 p=15127 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:51:35,377 p=15127 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:51:35,452 p=15127 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:51:35,471 p=15127 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:51:35,536 p=15127 u=student |  ok: [localhost]
+2021-07-30 10:51:36,412 p=15127 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:51:36,466 p=15127 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:51:36,484 p=15127 u=student |  TASK [Apache firewalld Installation.] *******************************************************************************************
+2021-07-30 10:51:38,047 p=15127 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:51:38,265 p=15127 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:51:38,381 p=15127 u=student |  ok: [localhost]
+2021-07-30 10:51:38,388 p=15127 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:51:38,439 p=15127 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:51:39,236 p=15127 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:51:39,408 p=15127 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:51:39,424 p=15127 u=student |  TASK [Start and stop services.] *************************************************************************************************
+2021-07-30 10:51:41,055 p=15127 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-07-30 10:51:41,057 p=15127 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-07-30 10:51:41,059 p=15127 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-07-30 10:51:41,061 p=15127 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-07-30 10:51:41,063 p=15127 u=student |  ok: [localhost] => (item=httpd)
+2021-07-30 10:51:41,064 p=15127 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-07-30 10:51:41,128 p=15127 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-07-30 10:51:41,160 p=15127 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-07-30 10:51:41,213 p=15127 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-07-30 10:51:41,461 p=15127 u=student |  ok: [localhost] => (item=firewalld)
+2021-07-30 10:51:41,608 p=15127 u=student |  ok: [serverb.lab.example.com] => (item=httpd)
+2021-07-30 10:51:41,657 p=15127 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-07-30 10:51:42,073 p=15127 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-07-30 10:51:42,125 p=15127 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-07-30 10:51:42,142 p=15127 u=student |  TASK [Get default document root.] ***********************************************************************************************
+2021-07-30 10:51:42,177 p=15127 u=student |  skipping: [localhost]
+2021-07-30 10:51:42,197 p=15127 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:51:42,216 p=15127 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:51:42,721 p=15127 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:51:42,726 p=15127 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:51:42,736 p=15127 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:51:42,744 p=15127 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:51:42,764 p=15127 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-07-30 10:51:42,786 p=15127 u=student |  skipping: [localhost]
+2021-07-30 10:51:42,802 p=15127 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:51:42,826 p=15127 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:51:42,844 p=15127 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:51:42,863 p=15127 u=student |  skipping: [servera.lab.example.com]
+2021-07-30 10:51:42,880 p=15127 u=student |  skipping: [serverb.lab.example.com]
+2021-07-30 10:51:42,890 p=15127 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:51:42,909 p=15127 u=student |  TASK [Deploy the configration changes.] *****************************************************************************************
+2021-07-30 10:51:44,006 p=15127 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:51:44,089 p=15127 u=student |  changed: [servere.lab.example.com]
+2021-07-30 10:51:44,094 p=15127 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 10:51:44,099 p=15127 u=student |  changed: [serverf.lab.example.com]
+2021-07-30 10:51:44,190 p=15127 u=student |  changed: [localhost]
+2021-07-30 10:51:44,711 p=15127 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:51:44,763 p=15127 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 10:51:44,779 p=15127 u=student |  TASK [Deploying application - index.html] ***************************************************************************************
+2021-07-30 10:51:44,807 p=15127 u=student |  skipping: [localhost]
+2021-07-30 10:51:44,844 p=15127 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:51:44,863 p=15127 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:51:45,731 p=15127 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:51:45,736 p=15127 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:51:45,801 p=15127 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:51:45,802 p=15127 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:51:45,817 p=15127 u=student |  TASK [firewall rules adding] ****************************************************************************************************
+2021-07-30 10:51:46,694 p=15127 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:51:46,724 p=15127 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:51:46,811 p=15127 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:51:46,818 p=15127 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:51:46,963 p=15127 u=student |  ok: [localhost]
+2021-07-30 10:51:47,303 p=15127 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:51:47,314 p=15127 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:51:47,315 p=15127 u=student |  RUNNING HANDLER [restart httpd] *************************************************************************************************
+2021-07-30 10:51:49,178 p=15127 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:51:49,179 p=15127 u=student |  changed: [servere.lab.example.com]
+2021-07-30 10:51:49,201 p=15127 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 10:51:49,221 p=15127 u=student |  changed: [serverf.lab.example.com]
+2021-07-30 10:51:49,293 p=15127 u=student |  changed: [localhost]
+2021-07-30 10:51:50,695 p=15127 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:51:50,745 p=15127 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 10:51:50,746 p=15127 u=student |  RUNNING HANDLER [display1] ******************************************************************************************************
+2021-07-30 10:51:50,874 p=15127 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:51:50,875 p=15127 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:51:50,875 p=15127 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:51:50,875 p=15127 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:51:50,876 p=15127 u=student |  ok: [localhost] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:51:50,876 p=15127 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:51:50,881 p=15127 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "testing 1"
+}
+2021-07-30 10:51:50,883 p=15127 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 10:51:50,883 p=15127 u=student |  localhost                  : ok=7    changed=2    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:51:50,883 p=15127 u=student |  servera.lab.example.com    : ok=9    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:51:50,883 p=15127 u=student |  serverb.lab.example.com    : ok=9    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:51:50,883 p=15127 u=student |  serverc.lab.example.com    : ok=9    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:51:50,883 p=15127 u=student |  serverd.lab.example.com    : ok=9    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:51:50,883 p=15127 u=student |  servere.lab.example.com    : ok=7    changed=2    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:51:50,883 p=15127 u=student |  serverf.lab.example.com    : ok=7    changed=2    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:52:27,544 p=17446 u=student |  PLAY [Apache deployment] ********************************************************************************************************
+2021-07-30 10:52:27,551 p=17446 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 10:52:28,841 p=17446 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:52:28,898 p=17446 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:52:28,954 p=17446 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:52:28,974 p=17446 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:52:29,620 p=17446 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:52:29,668 p=17446 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:52:30,156 p=17446 u=student |  ok: [localhost]
+2021-07-30 10:52:30,174 p=17446 u=student |  TASK [Apache firewalld Installation.] *******************************************************************************************
+2021-07-30 10:52:31,761 p=17446 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:52:32,026 p=17446 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:52:32,029 p=17446 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:52:32,041 p=17446 u=student |  ok: [localhost]
+2021-07-30 10:52:32,049 p=17446 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:52:32,948 p=17446 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:52:33,111 p=17446 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:52:33,127 p=17446 u=student |  TASK [Start and stop services.] *************************************************************************************************
+2021-07-30 10:52:34,811 p=17446 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-07-30 10:52:34,814 p=17446 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-07-30 10:52:34,815 p=17446 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-07-30 10:52:34,817 p=17446 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-07-30 10:52:34,819 p=17446 u=student |  ok: [localhost] => (item=httpd)
+2021-07-30 10:52:34,821 p=17446 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-07-30 10:52:34,876 p=17446 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-07-30 10:52:34,936 p=17446 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-07-30 10:52:34,986 p=17446 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-07-30 10:52:35,159 p=17446 u=student |  ok: [localhost] => (item=firewalld)
+2021-07-30 10:52:35,354 p=17446 u=student |  ok: [serverb.lab.example.com] => (item=httpd)
+2021-07-30 10:52:35,418 p=17446 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-07-30 10:52:35,811 p=17446 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-07-30 10:52:35,870 p=17446 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-07-30 10:52:35,887 p=17446 u=student |  TASK [Get default document root.] ***********************************************************************************************
+2021-07-30 10:52:35,907 p=17446 u=student |  skipping: [localhost]
+2021-07-30 10:52:35,943 p=17446 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:52:35,965 p=17446 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:52:36,465 p=17446 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:52:36,472 p=17446 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:52:36,508 p=17446 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:52:36,516 p=17446 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:52:36,533 p=17446 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-07-30 10:52:36,591 p=17446 u=student |  skipping: [localhost]
+2021-07-30 10:52:36,610 p=17446 u=student |  skipping: [serverd.lab.example.com]
+2021-07-30 10:52:36,635 p=17446 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:52:36,655 p=17446 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:52:36,655 p=17446 u=student |  skipping: [servera.lab.example.com]
+2021-07-30 10:52:36,656 p=17446 u=student |  skipping: [serverb.lab.example.com]
+2021-07-30 10:52:36,665 p=17446 u=student |  skipping: [serverc.lab.example.com]
+2021-07-30 10:52:36,682 p=17446 u=student |  TASK [Deploy the configration changes.] *****************************************************************************************
+2021-07-30 10:52:37,727 p=17446 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:52:37,758 p=17446 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:52:37,796 p=17446 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:52:37,796 p=17446 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:52:37,879 p=17446 u=student |  ok: [localhost]
+2021-07-30 10:52:38,361 p=17446 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:52:38,393 p=17446 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:52:38,410 p=17446 u=student |  TASK [Deploying application - index.html] ***************************************************************************************
+2021-07-30 10:52:38,431 p=17446 u=student |  skipping: [localhost]
+2021-07-30 10:52:38,466 p=17446 u=student |  skipping: [servere.lab.example.com]
+2021-07-30 10:52:38,503 p=17446 u=student |  skipping: [serverf.lab.example.com]
+2021-07-30 10:52:39,437 p=17446 u=student |  changed: [servera.lab.example.com]
+2021-07-30 10:52:39,444 p=17446 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 10:52:39,466 p=17446 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 10:52:39,476 p=17446 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 10:52:39,492 p=17446 u=student |  TASK [firewall rules adding] ****************************************************************************************************
+2021-07-30 10:52:40,312 p=17446 u=student |  ok: [servera.lab.example.com]
+2021-07-30 10:52:40,365 p=17446 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 10:52:40,574 p=17446 u=student |  ok: [servere.lab.example.com]
+2021-07-30 10:52:40,587 p=17446 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 10:52:40,590 p=17446 u=student |  ok: [localhost]
+2021-07-30 10:52:40,915 p=17446 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 10:52:40,951 p=17446 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 10:52:40,952 p=17446 u=student |  RUNNING HANDLER [display2] ******************************************************************************************************
+2021-07-30 10:52:41,021 p=17446 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:52:41,022 p=17446 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:52:41,022 p=17446 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:52:41,027 p=17446 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "testing 2"
+}
+2021-07-30 10:52:41,029 p=17446 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 10:52:41,029 p=17446 u=student |  localhost                  : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:52:41,029 p=17446 u=student |  servera.lab.example.com    : ok=8    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:52:41,029 p=17446 u=student |  serverb.lab.example.com    : ok=8    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:52:41,030 p=17446 u=student |  serverc.lab.example.com    : ok=8    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:52:41,030 p=17446 u=student |  serverd.lab.example.com    : ok=8    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-07-30 10:52:41,030 p=17446 u=student |  servere.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:52:41,030 p=17446 u=student |  serverf.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-07-30 10:59:31,649 p=19278 u=student |  Rekey successful
+2021-07-30 11:00:41,768 p=19331 u=student |  Decryption successful
+2021-07-30 11:01:03,551 p=19350 u=student |  Encryption successful
+2021-07-30 11:01:42,448 p=19398 u=student |  ERROR! Syntax Error while loading YAML.
+  found character that cannot start any token
+
+The error appears to be in '/home/student/session-03-playbook/password_reset.yml': line 10, column 33, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        name: root
+        password: {{ 'password' | password_hash('sha512') }}
+                                ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2021-07-30 11:02:48,242 p=19414 u=student |  ERROR! Attempting to decrypt but no vault secrets found
+2021-07-30 11:05:00,181 p=19440 u=student |  playbook: password_reset.yml
+2021-07-30 11:05:33,562 p=19447 u=student |  PLAY [root password reset] ******************************************************************************************************
+2021-07-30 11:05:33,570 p=19447 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:05:35,340 p=19447 u=student |  ok: [servere.lab.example.com]
+2021-07-30 11:05:35,410 p=19447 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:05:35,432 p=19447 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 11:05:35,445 p=19447 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 11:05:35,624 p=19447 u=student |  ok: [localhost]
+2021-07-30 11:05:36,445 p=19447 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 11:05:36,493 p=19447 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 11:05:36,509 p=19447 u=student |  TASK [root password reset] ******************************************************************************************************
+2021-07-30 11:05:37,593 p=19447 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 11:05:37,615 p=19447 u=student |  changed: [servera.lab.example.com]
+2021-07-30 11:05:37,617 p=19447 u=student |  changed: [serverf.lab.example.com]
+2021-07-30 11:05:37,618 p=19447 u=student |  changed: [servere.lab.example.com]
+2021-07-30 11:05:37,846 p=19447 u=student |  changed: [localhost]
+2021-07-30 11:05:38,295 p=19447 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 11:05:38,333 p=19447 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 11:05:38,336 p=19447 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:05:38,336 p=19447 u=student |  localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:05:38,336 p=19447 u=student |  servera.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:05:38,336 p=19447 u=student |  serverb.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:05:38,337 p=19447 u=student |  serverc.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:05:38,337 p=19447 u=student |  serverd.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:05:38,337 p=19447 u=student |  servere.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:05:38,337 p=19447 u=student |  serverf.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:08:52,433 p=20218 u=student |  PLAY [root password reset] ******************************************************************************************************
+2021-07-30 11:08:52,440 p=20218 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:08:54,205 p=20218 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 11:08:54,208 p=20218 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 11:08:54,287 p=20218 u=student |  ok: [servere.lab.example.com]
+2021-07-30 11:08:54,298 p=20218 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:08:54,539 p=20218 u=student |  ok: [localhost]
+2021-07-30 11:08:55,324 p=20218 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 11:08:55,329 p=20218 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 11:08:55,345 p=20218 u=student |  TASK [root password reset] ******************************************************************************************************
+2021-07-30 11:08:56,402 p=20218 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 11:08:56,427 p=20218 u=student |  changed: [servera.lab.example.com]
+2021-07-30 11:08:56,458 p=20218 u=student |  changed: [servere.lab.example.com]
+2021-07-30 11:08:56,527 p=20218 u=student |  changed: [serverf.lab.example.com]
+2021-07-30 11:08:56,662 p=20218 u=student |  changed: [localhost]
+2021-07-30 11:08:57,112 p=20218 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 11:08:57,136 p=20218 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 11:08:57,139 p=20218 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:08:57,139 p=20218 u=student |  localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:08:57,139 p=20218 u=student |  servera.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:08:57,139 p=20218 u=student |  serverb.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:08:57,139 p=20218 u=student |  serverc.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:08:57,140 p=20218 u=student |  serverd.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:08:57,140 p=20218 u=student |  servere.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:08:57,140 p=20218 u=student |  serverf.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:11:30,519 p=20907 u=student |  PLAY [root password reset] ******************************************************************************************************
+2021-07-30 11:11:30,526 p=20907 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:11:32,285 p=20907 u=student |  ok: [servere.lab.example.com]
+2021-07-30 11:11:32,299 p=20907 u=student |  ok: [serverd.lab.example.com]
+2021-07-30 11:11:32,360 p=20907 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:11:32,425 p=20907 u=student |  ok: [serverf.lab.example.com]
+2021-07-30 11:11:32,565 p=20907 u=student |  ok: [localhost]
+2021-07-30 11:11:33,399 p=20907 u=student |  ok: [serverc.lab.example.com]
+2021-07-30 11:11:33,414 p=20907 u=student |  ok: [serverb.lab.example.com]
+2021-07-30 11:11:33,432 p=20907 u=student |  TASK [root password reset] ******************************************************************************************************
+2021-07-30 11:11:34,463 p=20907 u=student |  changed: [servere.lab.example.com]
+2021-07-30 11:11:34,543 p=20907 u=student |  changed: [serverf.lab.example.com]
+2021-07-30 11:11:34,556 p=20907 u=student |  changed: [serverd.lab.example.com]
+2021-07-30 11:11:34,647 p=20907 u=student |  changed: [servera.lab.example.com]
+2021-07-30 11:11:34,721 p=20907 u=student |  changed: [localhost]
+2021-07-30 11:11:35,187 p=20907 u=student |  changed: [serverb.lab.example.com]
+2021-07-30 11:11:35,222 p=20907 u=student |  changed: [serverc.lab.example.com]
+2021-07-30 11:11:35,225 p=20907 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:11:35,225 p=20907 u=student |  localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:11:35,225 p=20907 u=student |  servera.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:11:35,225 p=20907 u=student |  serverb.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:11:35,226 p=20907 u=student |  serverc.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:11:35,226 p=20907 u=student |  serverd.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:11:35,226 p=20907 u=student |  servere.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:11:35,226 p=20907 u=student |  serverf.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:21:09,277 p=21687 u=student |  servera.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.25.250.10"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::e6c5:468e:edb6:9b52"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_version": "1.11.1-3.module+el8+2529+a9686a4d",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": "ttyS0,115200n8",
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_date_time": {
+            "date": "2021-07-30",
+            "day": "30",
+            "epoch": "1627624269",
+            "hour": "11",
+            "iso8601": "2021-07-30T05:51:09Z",
+            "iso8601_basic": "20210730T112109028531",
+            "iso8601_basic_short": "20210730T112109",
+            "iso8601_micro": "2021-07-30T05:51:09.028664Z",
+            "minute": "21",
+            "month": "07",
+            "second": "09",
+            "time": "11:21:09",
+            "tz": "IST",
+            "tz_offset": "+0530",
+            "weekday": "Friday",
+            "weekday_number": "5",
+            "weeknumber": "30",
+            "year": "2021"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.25.250.10",
+            "alias": "enp1s0",
+            "broadcast": "172.25.250.255",
+            "gateway": "172.25.250.254",
+            "interface": "enp1s0",
+            "macaddress": "52:54:00:00:fa:0a",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "172.25.250.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "vda1": [
+                    "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "vda": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                            ]
+                        },
+                        "sectors": "20969439",
+                        "sectorsize": 512,
+                        "size": "10.00 GB",
+                        "start": "2048",
+                        "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "20971520",
+                "sectorsize": "512",
+                "size": "10.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdb": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097152",
+                "sectorsize": "512",
+                "size": "1.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.0",
+        "ansible_dns": {
+            "nameservers": [
+                "172.25.250.254"
+            ],
+            "search": [
+                "lab.example.com",
+                "example.com"
+            ]
+        },
+        "ansible_domain": "lab.example.com",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_enp1s0": {
+            "active": true,
+            "device": "enp1s0",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "on [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "172.25.250.10",
+                "broadcast": "172.25.250.255",
+                "netmask": "255.255.255.0",
+                "network": "172.25.250.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::e6c5:468e:edb6:9b52",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "52:54:00:00:fa:0a",
+            "module": "virtio_net",
+            "mtu": 1500,
+            "pciid": "virtio1",
+            "promisc": false,
+            "speed": -1,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_env": {
+            "HOME": "/root",
+            "LANG": "en_US.UTF-8",
+            "LOGNAME": "root",
+            "LS_COLORS": "rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+            "MAIL": "/var/mail/devops",
+            "PATH": "/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin",
+            "PWD": "/home/devops",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-yecqtgqkbxawlhpotpnxjiopgahcwuse ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1627624267.907083-56219075221423/AnsiballZ_setup.py",
+            "SUDO_GID": "1001",
+            "SUDO_UID": "1001",
+            "SUDO_USER": "devops",
+            "TERM": "xterm-256color",
+            "USER": "root",
+            "USERNAME": "root",
+            "_": "/usr/libexec/platform-python"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "servera.lab.example.com",
+        "ansible_hostname": "servera",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "lo",
+            "enp1s0"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-80.el8.x86_64",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_lvm": {
+            "lvs": {},
+            "pvs": {},
+            "vgs": {}
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "88394775ca9147439ae63aab9c500045",
+        "ansible_memfree_mb": 141,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 557,
+                "used": 264
+            },
+            "real": {
+                "free": 141,
+                "total": 821,
+                "used": 680
+            },
+            "swap": {
+                "cached": 0,
+                "free": 0,
+                "total": 0,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 821,
+        "ansible_mounts": [
+            {
+                "block_available": 2208803,
+                "block_size": 4096,
+                "block_total": 2618619,
+                "block_used": 409816,
+                "device": "/dev/vda1",
+                "fstype": "xfs",
+                "inode_available": 5196290,
+                "inode_total": 5242304,
+                "inode_used": 46014,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota",
+                "size_available": 9047257088,
+                "size_total": 10725863424,
+                "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+            }
+        ],
+        "ansible_nodename": "servera.lab.example.com",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": [
+                "tty0",
+                "ttyS0,115200n8"
+            ],
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "QEMU Virtual CPU version 2.5+"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 1,
+        "ansible_product_name": "KVM",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "8f6070ad-ed94-45ae-bf7c-5f5abe7044b7",
+        "ansible_product_version": "RHEL-7.6.0 PC (Q35 + ICH9, 2009)",
+        "ansible_python": {
+            "executable": "/usr/libexec/platform-python",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "config_mode": "enforcing",
+            "mode": "enforcing",
+            "policyvers": 31,
+            "status": "enabled",
+            "type": "targeted"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMzl8zujH2mt6wy+3tgViAh/kbAOg/o+5bbNMUqiDX+keObXAIODAEb9EoQLfAcR3ZlEKqYCsweGADkw52HmNCc=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAICduOpoEOEGzWCiFyWpwOPPzo729ugmYJ+z+Xd2VYxTl",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDLXT54GJfAGvnIbzAW8flDln+3QAgHrlut7VBIwdus6+Fwf/GKFvMz28VpL2mRJO/Don1LDcyojxWgmRjaI8nOYQxE58zxWH/rQ05sjD9rtVd529921E5RJjUaiydjW4FXf1EsCyKbt2mxEPKKA5Neg6WTQmGdljh4TqPtv9bqDbMjUUj+cwFV2OoY2RmqDtrxW6bggeZQMYMFmgYEaQDcGUc1n3+3gHHIZDOTj8ice4z/fKMUl2QKmcU619zy4A2jwHYawrFx7s+OkeKSVT6gfrcI7wk9+I2PqbINXXa/WsLNlFzDkmiD0JbOL9ZrjBW3WmoX4SIc2G2BH97ZFXqD",
+        "ansible_swapfree_mb": 0,
+        "ansible_swaptotal_mb": 0,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_dac_read_search",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_linux_immutable",
+            "cap_net_bind_service",
+            "cap_net_broadcast",
+            "cap_net_admin",
+            "cap_net_raw",
+            "cap_ipc_lock",
+            "cap_ipc_owner",
+            "cap_sys_module",
+            "cap_sys_rawio",
+            "cap_sys_chroot",
+            "cap_sys_ptrace",
+            "cap_sys_pacct",
+            "cap_sys_admin",
+            "cap_sys_boot",
+            "cap_sys_nice",
+            "cap_sys_resource",
+            "cap_sys_time",
+            "cap_sys_tty_config",
+            "cap_mknod",
+            "cap_lease",
+            "cap_audit_write",
+            "cap_audit_control",
+            "cap_setfcap",
+            "cap_mac_override",
+            "cap_mac_admin",
+            "cap_syslog",
+            "cap_wake_alarm",
+            "cap_block_suspend",
+            "cap_audit_read+ep"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Red Hat",
+        "ansible_uptime_seconds": 5313,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "kvm",
+        "discovered_interpreter_python": "/usr/libexec/platform-python",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2021-07-30 11:21:27,592 p=21713 u=student |  PLAY [Install remote facts] *****************************************************************************************************
+2021-07-30 11:21:27,599 p=21713 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:21:28,638 p=21713 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:21:28,652 p=21713 u=student |  TASK [Create the remote directory] **********************************************************************************************
+2021-07-30 11:21:29,141 p=21713 u=student |  changed: [servera.lab.example.com]
+2021-07-30 11:21:29,155 p=21713 u=student |  TASK [Install the new facts] ****************************************************************************************************
+2021-07-30 11:21:30,269 p=21713 u=student |  changed: [servera.lab.example.com]
+2021-07-30 11:21:30,271 p=21713 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:21:30,272 p=21713 u=student |  servera.lab.example.com    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:21:37,360 p=21769 u=student |  servera.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.25.250.10"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::e6c5:468e:edb6:9b52"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_version": "1.11.1-3.module+el8+2529+a9686a4d",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": "ttyS0,115200n8",
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_date_time": {
+            "date": "2021-07-30",
+            "day": "30",
+            "epoch": "1627624297",
+            "hour": "11",
+            "iso8601": "2021-07-30T05:51:37Z",
+            "iso8601_basic": "20210730T112137115957",
+            "iso8601_basic_short": "20210730T112137",
+            "iso8601_micro": "2021-07-30T05:51:37.116048Z",
+            "minute": "21",
+            "month": "07",
+            "second": "37",
+            "time": "11:21:37",
+            "tz": "IST",
+            "tz_offset": "+0530",
+            "weekday": "Friday",
+            "weekday_number": "5",
+            "weeknumber": "30",
+            "year": "2021"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.25.250.10",
+            "alias": "enp1s0",
+            "broadcast": "172.25.250.255",
+            "gateway": "172.25.250.254",
+            "interface": "enp1s0",
+            "macaddress": "52:54:00:00:fa:0a",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "172.25.250.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "vda1": [
+                    "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "vda": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                            ]
+                        },
+                        "sectors": "20969439",
+                        "sectorsize": 512,
+                        "size": "10.00 GB",
+                        "start": "2048",
+                        "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "20971520",
+                "sectorsize": "512",
+                "size": "10.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            },
+            "vdb": {
+                "holders": [],
+                "host": "SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097152",
+                "sectorsize": "512",
+                "size": "1.00 GB",
+                "support_discard": "0",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.0",
+        "ansible_dns": {
+            "nameservers": [
+                "172.25.250.254"
+            ],
+            "search": [
+                "lab.example.com",
+                "example.com"
+            ]
+        },
+        "ansible_domain": "lab.example.com",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_enp1s0": {
+            "active": true,
+            "device": "enp1s0",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "on [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "172.25.250.10",
+                "broadcast": "172.25.250.255",
+                "netmask": "255.255.255.0",
+                "network": "172.25.250.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::e6c5:468e:edb6:9b52",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "52:54:00:00:fa:0a",
+            "module": "virtio_net",
+            "mtu": 1500,
+            "pciid": "virtio1",
+            "promisc": false,
+            "speed": -1,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "ether"
+        },
+        "ansible_env": {
+            "HOME": "/root",
+            "LANG": "en_US.UTF-8",
+            "LOGNAME": "root",
+            "LS_COLORS": "rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+            "MAIL": "/var/mail/devops",
+            "PATH": "/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin",
+            "PWD": "/home/devops",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-egqsbdmphrzvdrhhtnjchtnzcjdpallz ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1627624296.320111-102224522791298/AnsiballZ_setup.py",
+            "SUDO_GID": "1001",
+            "SUDO_UID": "1001",
+            "SUDO_USER": "devops",
+            "TERM": "xterm-256color",
+            "USER": "root",
+            "USERNAME": "root",
+            "_": "/usr/libexec/platform-python"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "servera.lab.example.com",
+        "ansible_hostname": "servera",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "lo",
+            "enp1s0"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-80.el8.x86_64",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "udp_fragmentation_offload": "off",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [
+                "tx_software",
+                "rx_software",
+                "software"
+            ],
+            "type": "loopback"
+        },
+        "ansible_local": {
+            "chandra": {
+                "general": {
+                    "enabled": "true",
+                    "package": "httpd",
+                    "service": "httpd",
+                    "state": "started"
+                }
+            }
+        },
+        "ansible_lsb": {},
+        "ansible_lvm": {
+            "lvs": {},
+            "pvs": {},
+            "vgs": {}
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "88394775ca9147439ae63aab9c500045",
+        "ansible_memfree_mb": 141,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 558,
+                "used": 263
+            },
+            "real": {
+                "free": 141,
+                "total": 821,
+                "used": 680
+            },
+            "swap": {
+                "cached": 0,
+                "free": 0,
+                "total": 0,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 821,
+        "ansible_mounts": [
+            {
+                "block_available": 2208730,
+                "block_size": 4096,
+                "block_total": 2618619,
+                "block_used": 409889,
+                "device": "/dev/vda1",
+                "fstype": "xfs",
+                "inode_available": 5196285,
+                "inode_total": 5242304,
+                "inode_used": 46019,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota",
+                "size_available": 9046958080,
+                "size_total": 10725863424,
+                "uuid": "884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+            }
+        ],
+        "ansible_nodename": "servera.lab.example.com",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/boot/vmlinuz-4.18.0-80.el8.x86_64",
+            "console": [
+                "tty0",
+                "ttyS0,115200n8"
+            ],
+            "crashkernel": "auto",
+            "no_timer_check": true,
+            "ro": true,
+            "root": "UUID=884f47c9-a69d-4c5b-915d-6b7c9c74c923"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "QEMU Virtual CPU version 2.5+"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 1,
+        "ansible_product_name": "KVM",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "8f6070ad-ed94-45ae-bf7c-5f5abe7044b7",
+        "ansible_product_version": "RHEL-7.6.0 PC (Q35 + ICH9, 2009)",
+        "ansible_python": {
+            "executable": "/usr/libexec/platform-python",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "config_mode": "enforcing",
+            "mode": "enforcing",
+            "policyvers": 31,
+            "status": "enabled",
+            "type": "targeted"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMzl8zujH2mt6wy+3tgViAh/kbAOg/o+5bbNMUqiDX+keObXAIODAEb9EoQLfAcR3ZlEKqYCsweGADkw52HmNCc=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAICduOpoEOEGzWCiFyWpwOPPzo729ugmYJ+z+Xd2VYxTl",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDLXT54GJfAGvnIbzAW8flDln+3QAgHrlut7VBIwdus6+Fwf/GKFvMz28VpL2mRJO/Don1LDcyojxWgmRjaI8nOYQxE58zxWH/rQ05sjD9rtVd529921E5RJjUaiydjW4FXf1EsCyKbt2mxEPKKA5Neg6WTQmGdljh4TqPtv9bqDbMjUUj+cwFV2OoY2RmqDtrxW6bggeZQMYMFmgYEaQDcGUc1n3+3gHHIZDOTj8ice4z/fKMUl2QKmcU619zy4A2jwHYawrFx7s+OkeKSVT6gfrcI7wk9+I2PqbINXXa/WsLNlFzDkmiD0JbOL9ZrjBW3WmoX4SIc2G2BH97ZFXqD",
+        "ansible_swapfree_mb": 0,
+        "ansible_swaptotal_mb": 0,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_dac_read_search",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_linux_immutable",
+            "cap_net_bind_service",
+            "cap_net_broadcast",
+            "cap_net_admin",
+            "cap_net_raw",
+            "cap_ipc_lock",
+            "cap_ipc_owner",
+            "cap_sys_module",
+            "cap_sys_rawio",
+            "cap_sys_chroot",
+            "cap_sys_ptrace",
+            "cap_sys_pacct",
+            "cap_sys_admin",
+            "cap_sys_boot",
+            "cap_sys_nice",
+            "cap_sys_resource",
+            "cap_sys_time",
+            "cap_sys_tty_config",
+            "cap_mknod",
+            "cap_lease",
+            "cap_audit_write",
+            "cap_audit_control",
+            "cap_setfcap",
+            "cap_mac_override",
+            "cap_mac_admin",
+            "cap_syslog",
+            "cap_wake_alarm",
+            "cap_block_suspend",
+            "cap_audit_read+ep"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Red Hat",
+        "ansible_uptime_seconds": 5341,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "kvm",
+        "discovered_interpreter_python": "/usr/libexec/platform-python",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2021-07-30 11:25:14,072 p=21829 u=student |  playbook: mytask.yml
+2021-07-30 11:25:18,990 p=21835 u=student |  PLAY [Test] *********************************************************************************************************************
+2021-07-30 11:25:18,998 p=21835 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:25:20,341 p=21835 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:25:20,354 p=21835 u=student |  TASK [Install apache] ***********************************************************************************************************
+2021-07-30 11:25:20,366 p=21835 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'chandra' is undefined\n\nThe error appears to be in '/home/student/session-03-playbook/mytask.yml': line 5, column 8, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n     - name:  Install apache\n       ^ here\n"}
+2021-07-30 11:25:20,367 p=21835 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:25:20,367 p=21835 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:26:13,955 p=21871 u=student |  PLAY [Test] *********************************************************************************************************************
+2021-07-30 11:26:13,963 p=21871 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:26:14,995 p=21871 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:26:15,009 p=21871 u=student |  TASK [Install apache] ***********************************************************************************************************
+2021-07-30 11:26:15,020 p=21871 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'chandra' is undefined\n\nThe error appears to be in '/home/student/session-03-playbook/mytask.yml': line 5, column 8, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n     - name:  Install apache\n       ^ here\n"}
+2021-07-30 11:26:15,022 p=21871 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:26:15,022 p=21871 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:27:04,552 p=21901 u=student |  PLAY [Test] *********************************************************************************************************************
+2021-07-30 11:27:04,560 p=21901 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:27:05,593 p=21901 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:27:05,607 p=21901 u=student |  TASK [Install apache] ***********************************************************************************************************
+2021-07-30 11:27:06,883 p=21901 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:27:06,896 p=21901 u=student |  TASK [Start and enable httpd] ***************************************************************************************************
+2021-07-30 11:27:07,673 p=21901 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:27:07,675 p=21901 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:27:07,676 p=21901 u=student |  servera.lab.example.com    : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:27:43,014 p=21947 u=student |  PLAY [Test] *********************************************************************************************************************
+2021-07-30 11:27:43,021 p=21947 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:27:44,078 p=21947 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:27:44,094 p=21947 u=student |  TASK [Install apache] ***********************************************************************************************************
+2021-07-30 11:27:45,319 p=21947 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:27:45,333 p=21947 u=student |  TASK [Start and enable httpd] ***************************************************************************************************
+2021-07-30 11:27:47,184 p=21947 u=student |  changed: [servera.lab.example.com]
+2021-07-30 11:27:47,185 p=21947 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:27:47,186 p=21947 u=student |  servera.lab.example.com    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-30 11:27:55,699 p=21984 u=student |  PLAY [Test] *********************************************************************************************************************
+2021-07-30 11:27:55,706 p=21984 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-07-30 11:27:56,756 p=21984 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:27:56,770 p=21984 u=student |  TASK [Install apache] ***********************************************************************************************************
+2021-07-30 11:27:57,992 p=21984 u=student |  ok: [servera.lab.example.com]
+2021-07-30 11:27:58,005 p=21984 u=student |  TASK [Start and enable httpd] ***************************************************************************************************
+2021-07-30 11:27:59,857 p=21984 u=student |  changed: [servera.lab.example.com]
+2021-07-30 11:27:59,859 p=21984 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-07-30 11:27:59,859 p=21984 u=student |  servera.lab.example.com    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

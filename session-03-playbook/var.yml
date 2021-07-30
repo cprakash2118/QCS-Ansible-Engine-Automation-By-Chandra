@@ -1,0 +1,6 @@
+---
+ - remote_dir: /var/www/vhosts/ 
+ - conf_file: /etc/httpd/conf.d/
+ - pkg_list: 
+       - httpd
+       - firewalld 

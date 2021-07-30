@@ -1,0 +1,72 @@
+---
+- name: Apache deployment
+  hosts: all
+  vars_files:
+      - var.yml 
+  tasks:
+    - name: Apache firewalld Installation.
+      yum:
+        name: "{{ pkg_list }}"
+        state: present 
+
+
+    - name:  Start and stop services.
+      service:
+        name: "{{ item }}"
+        state: started
+        enabled: yes
+      loop:
+         - httpd
+         - firewalld
+
+    - name: Get default document root.
+      stat:
+        path: "{{ remote_dir }}"
+      register: output_document_root
+      when: inventory_hostname in groups['web']
+
+    - name: Check default document root.
+      file:
+        path: "{{ remote_dir }}" 
+        state: directory
+      when: inventory_hostname in groups['web'] and output_document_root.stat.exists == false
+        
+
+    - name: Deploy the configration changes.
+      copy:
+        src: httpd.conf 
+        dest: "{{ conf_file }}"
+      notify: 
+          - restart httpd
+          - display1 
+
+    - name: Deploying application - index.html
+      copy:
+        content: "This is my web server !!!!!!!!!!!!!!!!!!!"
+        dest:  /var/www/vhosts/index.html
+      when: inventory_hostname in groups['web']  
+      notify:
+         - display2
+
+    - name: firewall rules adding 
+      firewalld:
+        immediate: yes 
+        service: http
+        permanent: yes
+        state: enabled
+
+
+  handlers:
+      - name: restart httpd 
+        service: 
+           name: httpd
+           state: restarted
+
+      - name: display1
+        debug:
+          msg: testing 1
+
+      - name: display2
+        debug:
+          msg: testing 2
+...

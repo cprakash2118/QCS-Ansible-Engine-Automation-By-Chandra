@@ -1,0 +1,15 @@
+---
+- name: Test
+  hosts: web 
+  tasks:
+     - name:  Install apache 
+       yum:
+         name: "{{ ansible_facts.ansible_local.chandra.general.package }}"
+         state: present 
+
+     - name: Start and enable httpd
+       service:
+         name: "{{  ansible_facts.ansible_local.chandra.general.service }}"
+         state: "{{  ansible_facts.ansible_local.chandra.general.state }}"
+         enabled: "{{ ansible_facts.ansible_local.chandra.general.enabled }}"
+...
