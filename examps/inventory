@@ -1,0 +1,8 @@
+
+[myself]
+localhost
+
+[web]
+server[a:f].lab.example.com
+
+

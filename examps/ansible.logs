@@ -1,0 +1,1245 @@
+2021-08-02 10:39:29,075 p=3685 u=student |  playbook: playbook.yml
+2021-08-02 10:41:38,087 p=3709 u=student |  playbook: playbook.yml
+2021-08-02 10:41:58,153 p=3718 u=student |  serverc.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-08-02 10:41:58,178 p=3718 u=student |  serverb.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-08-02 10:41:58,226 p=3718 u=student |  serverd.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-08-02 10:41:58,230 p=3718 u=student |  servera.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-08-02 10:41:58,307 p=3718 u=student |  localhost | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-08-02 10:41:59,014 p=3718 u=student |  servere.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-08-02 10:41:59,035 p=3718 u=student |  serverf.lab.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-08-02 10:42:09,654 p=4104 u=student |  serverb.lab.example.com | CHANGED | rc=0 >>
+ 10:42:09 up 34 min,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-08-02 10:42:09,697 p=4104 u=student |  servera.lab.example.com | CHANGED | rc=0 >>
+ 10:42:09 up 34 min,  1 user,  load average: 0.07, 0.02, 0.00
+
+2021-08-02 10:42:09,698 p=4104 u=student |  serverd.lab.example.com | CHANGED | rc=0 >>
+ 10:42:09 up 34 min,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-08-02 10:42:09,721 p=4104 u=student |  serverc.lab.example.com | CHANGED | rc=0 >>
+ 10:42:09 up 34 min,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-08-02 10:42:10,112 p=4104 u=student |  servere.lab.example.com | CHANGED | rc=0 >>
+ 10:42:10 up 34 min,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-08-02 10:42:10,153 p=4104 u=student |  serverf.lab.example.com | CHANGED | rc=0 >>
+ 10:42:10 up 34 min,  1 user,  load average: 0.00, 0.00, 0.00
+
+2021-08-02 10:42:10,842 p=4104 u=student |  localhost | CHANGED | rc=0 >>
+ 10:42:09 up  1:58,  2 users,  load average: 0.00, 0.00, 0.00
+
+2021-08-02 10:42:28,595 p=4424 u=student |  PLAY [1st Play -  Apache server deployment (multiple web servers)] **************************************************************
+2021-08-02 10:42:28,603 p=4424 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 10:42:30,013 p=4424 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:42:30,018 p=4424 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:42:30,115 p=4424 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:42:30,140 p=4424 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:42:30,161 p=4424 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:42:30,785 p=4424 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:42:30,800 p=4424 u=student |  TASK [INstallation.] ************************************************************************************************************
+2021-08-02 10:42:37,966 p=4424 u=student |  changed: [servere.lab.example.com]
+2021-08-02 10:42:37,997 p=4424 u=student |  changed: [servera.lab.example.com]
+2021-08-02 10:42:38,100 p=4424 u=student |  changed: [serverc.lab.example.com]
+2021-08-02 10:42:38,146 p=4424 u=student |  changed: [serverb.lab.example.com]
+2021-08-02 10:42:38,233 p=4424 u=student |  changed: [serverd.lab.example.com]
+2021-08-02 10:42:44,141 p=4424 u=student |  changed: [serverf.lab.example.com]
+2021-08-02 10:42:44,166 p=4424 u=student |  TASK [Service start and enabled.] ***********************************************************************************************
+2021-08-02 10:42:46,854 p=4424 u=student |  changed: [servere.lab.example.com] => (item=httpd)
+2021-08-02 10:42:46,856 p=4424 u=student |  changed: [serverd.lab.example.com] => (item=httpd)
+2021-08-02 10:42:46,858 p=4424 u=student |  changed: [serverb.lab.example.com] => (item=httpd)
+2021-08-02 10:42:46,860 p=4424 u=student |  changed: [serverc.lab.example.com] => (item=httpd)
+2021-08-02 10:42:46,862 p=4424 u=student |  changed: [servera.lab.example.com] => (item=httpd)
+2021-08-02 10:42:46,864 p=4424 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-08-02 10:42:46,927 p=4424 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-08-02 10:42:46,929 p=4424 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-08-02 10:42:46,968 p=4424 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-08-02 10:42:47,012 p=4424 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-08-02 10:42:48,075 p=4424 u=student |  changed: [serverf.lab.example.com] => (item=httpd)
+2021-08-02 10:42:48,865 p=4424 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-08-02 10:42:48,895 p=4424 u=student |  TASK [Configuration changes (apache)] *******************************************************************************************
+2021-08-02 10:42:49,137 p=4424 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'rh294.conf'\nSearched in:\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2021-08-02 10:42:49,139 p=4424 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'rh294.conf'\nSearched in:\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2021-08-02 10:42:49,162 p=4424 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'rh294.conf'\nSearched in:\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2021-08-02 10:42:49,207 p=4424 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'rh294.conf'\nSearched in:\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2021-08-02 10:42:49,252 p=4424 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'rh294.conf'\nSearched in:\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2021-08-02 10:42:49,329 p=4424 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'rh294.conf'\nSearched in:\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf\n\t/home/student/work/examps/templates/rh294.conf\n\t/home/student/work/examps/rh294.conf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2021-08-02 10:42:49,331 p=4424 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 10:42:49,331 p=4424 u=student |  servera.lab.example.com    : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:42:49,331 p=4424 u=student |  serverb.lab.example.com    : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:42:49,331 p=4424 u=student |  serverc.lab.example.com    : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:42:49,332 p=4424 u=student |  serverd.lab.example.com    : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:42:49,332 p=4424 u=student |  servere.lab.example.com    : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:42:49,332 p=4424 u=student |  serverf.lab.example.com    : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:43:28,997 p=4710 u=student |  PLAY [1st Play -  Apache server deployment (multiple web servers)] **************************************************************
+2021-08-02 10:43:29,004 p=4710 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 10:43:30,252 p=4710 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:43:30,338 p=4710 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:43:30,354 p=4710 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:43:30,382 p=4710 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:43:30,398 p=4710 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:43:30,982 p=4710 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:43:30,998 p=4710 u=student |  TASK [INstallation.] ************************************************************************************************************
+2021-08-02 10:43:32,409 p=4710 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:43:32,895 p=4710 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:43:32,898 p=4710 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:43:32,909 p=4710 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:43:32,940 p=4710 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:43:33,537 p=4710 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:43:33,551 p=4710 u=student |  TASK [Service start and enabled.] ***********************************************************************************************
+2021-08-02 10:43:35,129 p=4710 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-08-02 10:43:35,131 p=4710 u=student |  ok: [serverb.lab.example.com] => (item=httpd)
+2021-08-02 10:43:35,133 p=4710 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-08-02 10:43:35,135 p=4710 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-08-02 10:43:35,137 p=4710 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-08-02 10:43:35,139 p=4710 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-08-02 10:43:35,219 p=4710 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-08-02 10:43:35,316 p=4710 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-08-02 10:43:35,318 p=4710 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-08-02 10:43:35,340 p=4710 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-08-02 10:43:35,639 p=4710 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-08-02 10:43:36,065 p=4710 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-08-02 10:43:36,082 p=4710 u=student |  TASK [Configuration changes (apache)] *******************************************************************************************
+2021-08-02 10:43:37,227 p=4710 u=student |  changed: [servere.lab.example.com]
+2021-08-02 10:43:37,268 p=4710 u=student |  changed: [serverc.lab.example.com]
+2021-08-02 10:43:37,317 p=4710 u=student |  changed: [serverb.lab.example.com]
+2021-08-02 10:43:37,353 p=4710 u=student |  changed: [servera.lab.example.com]
+2021-08-02 10:43:37,359 p=4710 u=student |  changed: [serverd.lab.example.com]
+2021-08-02 10:43:37,862 p=4710 u=student |  changed: [serverf.lab.example.com]
+2021-08-02 10:43:37,875 p=4710 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-08-02 10:43:38,300 p=4710 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:43:38,389 p=4710 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:43:38,422 p=4710 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:43:38,425 p=4710 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:43:38,429 p=4710 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:43:38,651 p=4710 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:43:38,663 p=4710 u=student |  TASK [Create default doc root.] *************************************************************************************************
+2021-08-02 10:43:38,687 p=4710 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The conditional check 'output_document_root.stat.exist ==  false' failed. The error was: error while evaluating conditional (output_document_root.stat.exist ==  false): 'dict object' has no attribute 'exist'\n\nThe error appears to be in '/home/student/work/examps/playbook.yml': line 34, column 8, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n     - name: Create default doc root.\n       ^ here\n"}
+2021-08-02 10:43:38,721 p=4710 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"msg": "The conditional check 'output_document_root.stat.exist ==  false' failed. The error was: error while evaluating conditional (output_document_root.stat.exist ==  false): 'dict object' has no attribute 'exist'\n\nThe error appears to be in '/home/student/work/examps/playbook.yml': line 34, column 8, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n     - name: Create default doc root.\n       ^ here\n"}
+2021-08-02 10:43:38,737 p=4710 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"msg": "The conditional check 'output_document_root.stat.exist ==  false' failed. The error was: error while evaluating conditional (output_document_root.stat.exist ==  false): 'dict object' has no attribute 'exist'\n\nThe error appears to be in '/home/student/work/examps/playbook.yml': line 34, column 8, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n     - name: Create default doc root.\n       ^ here\n"}
+2021-08-02 10:43:38,754 p=4710 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"msg": "The conditional check 'output_document_root.stat.exist ==  false' failed. The error was: error while evaluating conditional (output_document_root.stat.exist ==  false): 'dict object' has no attribute 'exist'\n\nThe error appears to be in '/home/student/work/examps/playbook.yml': line 34, column 8, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n     - name: Create default doc root.\n       ^ here\n"}
+2021-08-02 10:43:38,755 p=4710 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"msg": "The conditional check 'output_document_root.stat.exist ==  false' failed. The error was: error while evaluating conditional (output_document_root.stat.exist ==  false): 'dict object' has no attribute 'exist'\n\nThe error appears to be in '/home/student/work/examps/playbook.yml': line 34, column 8, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n     - name: Create default doc root.\n       ^ here\n"}
+2021-08-02 10:43:38,766 p=4710 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"msg": "The conditional check 'output_document_root.stat.exist ==  false' failed. The error was: error while evaluating conditional (output_document_root.stat.exist ==  false): 'dict object' has no attribute 'exist'\n\nThe error appears to be in '/home/student/work/examps/playbook.yml': line 34, column 8, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n     - name: Create default doc root.\n       ^ here\n"}
+2021-08-02 10:43:38,766 p=4710 u=student |  RUNNING HANDLER [httpd_restart] *************************************************************************************************
+2021-08-02 10:43:38,768 p=4710 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 10:43:38,768 p=4710 u=student |  servera.lab.example.com    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:43:38,768 p=4710 u=student |  serverb.lab.example.com    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:43:38,768 p=4710 u=student |  serverc.lab.example.com    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:43:38,768 p=4710 u=student |  serverd.lab.example.com    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:43:38,768 p=4710 u=student |  servere.lab.example.com    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:43:38,768 p=4710 u=student |  serverf.lab.example.com    : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:44:58,829 p=5156 u=student |  PLAY [1st Play -  Apache server deployment (multiple web servers)] **************************************************************
+2021-08-02 10:44:58,837 p=5156 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 10:45:00,470 p=5156 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:45:00,474 p=5156 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:45:00,533 p=5156 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:45:00,617 p=5156 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:45:00,633 p=5156 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:45:01,496 p=5156 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:45:01,510 p=5156 u=student |  TASK [INstallation.] ************************************************************************************************************
+2021-08-02 10:45:02,947 p=5156 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:45:03,301 p=5156 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:45:03,353 p=5156 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:45:03,398 p=5156 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:45:03,434 p=5156 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:45:04,074 p=5156 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:45:04,088 p=5156 u=student |  TASK [Service start and enabled.] ***********************************************************************************************
+2021-08-02 10:45:05,694 p=5156 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-08-02 10:45:05,697 p=5156 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-08-02 10:45:05,699 p=5156 u=student |  ok: [serverb.lab.example.com] => (item=httpd)
+2021-08-02 10:45:05,701 p=5156 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-08-02 10:45:05,702 p=5156 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-08-02 10:45:05,704 p=5156 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-08-02 10:45:05,711 p=5156 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-08-02 10:45:05,761 p=5156 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-08-02 10:45:05,864 p=5156 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-08-02 10:45:05,872 p=5156 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-08-02 10:45:06,185 p=5156 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-08-02 10:45:06,620 p=5156 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-08-02 10:45:06,636 p=5156 u=student |  TASK [Configuration changes (apache)] *******************************************************************************************
+2021-08-02 10:45:07,769 p=5156 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:45:07,769 p=5156 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:45:07,816 p=5156 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:45:07,822 p=5156 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:45:07,828 p=5156 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:45:08,344 p=5156 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:45:08,358 p=5156 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-08-02 10:45:08,833 p=5156 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:45:08,837 p=5156 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:45:08,862 p=5156 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:45:08,901 p=5156 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:45:08,920 p=5156 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:45:09,161 p=5156 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:45:09,174 p=5156 u=student |  TASK [Create default doc root.] *************************************************************************************************
+2021-08-02 10:45:09,685 p=5156 u=student |  changed: [serverc.lab.example.com]
+2021-08-02 10:45:09,696 p=5156 u=student |  changed: [serverb.lab.example.com]
+2021-08-02 10:45:09,718 p=5156 u=student |  changed: [servere.lab.example.com]
+2021-08-02 10:45:09,723 p=5156 u=student |  changed: [servera.lab.example.com]
+2021-08-02 10:45:09,742 p=5156 u=student |  changed: [serverd.lab.example.com]
+2021-08-02 10:45:10,025 p=5156 u=student |  changed: [serverf.lab.example.com]
+2021-08-02 10:45:10,038 p=5156 u=student |  TASK [Deployment index.html] ****************************************************************************************************
+2021-08-02 10:45:11,079 p=5156 u=student |  changed: [serverb.lab.example.com]
+2021-08-02 10:45:11,084 p=5156 u=student |  changed: [servere.lab.example.com]
+2021-08-02 10:45:11,135 p=5156 u=student |  changed: [servera.lab.example.com]
+2021-08-02 10:45:11,139 p=5156 u=student |  changed: [serverd.lab.example.com]
+2021-08-02 10:45:11,150 p=5156 u=student |  changed: [serverc.lab.example.com]
+2021-08-02 10:45:11,711 p=5156 u=student |  changed: [serverf.lab.example.com]
+2021-08-02 10:45:11,725 p=5156 u=student |  TASK [Firewalld rules.] *********************************************************************************************************
+2021-08-02 10:45:13,519 p=5156 u=student |  changed: [serverc.lab.example.com] => (item=http)
+2021-08-02 10:45:13,520 p=5156 u=student |  changed: [serverb.lab.example.com] => (item=http)
+2021-08-02 10:45:13,521 p=5156 u=student |  changed: [servere.lab.example.com] => (item=http)
+2021-08-02 10:45:13,521 p=5156 u=student |  changed: [serverd.lab.example.com] => (item=http)
+2021-08-02 10:45:13,522 p=5156 u=student |  changed: [servera.lab.example.com] => (item=http)
+2021-08-02 10:45:13,522 p=5156 u=student |  changed: [serverc.lab.example.com] => (item=https)
+2021-08-02 10:45:13,530 p=5156 u=student |  changed: [serverb.lab.example.com] => (item=https)
+2021-08-02 10:45:13,592 p=5156 u=student |  changed: [serverd.lab.example.com] => (item=https)
+2021-08-02 10:45:13,651 p=5156 u=student |  changed: [servere.lab.example.com] => (item=https)
+2021-08-02 10:45:13,685 p=5156 u=student |  changed: [servera.lab.example.com] => (item=https)
+2021-08-02 10:45:14,110 p=5156 u=student |  changed: [serverf.lab.example.com] => (item=http)
+2021-08-02 10:45:14,635 p=5156 u=student |  changed: [serverf.lab.example.com] => (item=https)
+2021-08-02 10:45:14,641 p=5156 u=student |  PLAY [Check deployment.] ********************************************************************************************************
+2021-08-02 10:45:14,646 p=5156 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 10:45:15,862 p=5156 u=student |  ok: [localhost]
+2021-08-02 10:45:15,904 p=5156 u=student |  TASK [Check deployment] *********************************************************************************************************
+2021-08-02 10:45:15,916 p=5156 u=student |  fatal: [localhost]: FAILED! => {"msg": "'server_list' is undefined"}
+2021-08-02 10:45:15,917 p=5156 u=student |  ...ignoring
+2021-08-02 10:45:15,918 p=5156 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 10:45:15,919 p=5156 u=student |  localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2021-08-02 10:45:15,919 p=5156 u=student |  servera.lab.example.com    : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:45:15,919 p=5156 u=student |  serverb.lab.example.com    : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:45:15,919 p=5156 u=student |  serverc.lab.example.com    : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:45:15,920 p=5156 u=student |  serverd.lab.example.com    : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:45:15,920 p=5156 u=student |  servere.lab.example.com    : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:45:15,920 p=5156 u=student |  serverf.lab.example.com    : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-02 10:48:35,299 p=6134 u=student |  PLAY [1st Play -  Apache server deployment (multiple web servers)] **************************************************************
+2021-08-02 10:48:35,307 p=6134 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 10:48:36,927 p=6134 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:48:36,944 p=6134 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:48:37,035 p=6134 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:48:37,046 p=6134 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:48:37,087 p=6134 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:48:37,936 p=6134 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:48:37,950 p=6134 u=student |  TASK [INstallation.] ************************************************************************************************************
+2021-08-02 10:48:39,393 p=6134 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:48:39,408 p=6134 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:48:39,782 p=6134 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:48:39,823 p=6134 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:48:39,824 p=6134 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:48:40,491 p=6134 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:48:40,505 p=6134 u=student |  TASK [Service start and enabled.] ***********************************************************************************************
+2021-08-02 10:48:42,148 p=6134 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-08-02 10:48:42,150 p=6134 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-08-02 10:48:42,152 p=6134 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-08-02 10:48:42,154 p=6134 u=student |  ok: [serverb.lab.example.com] => (item=httpd)
+2021-08-02 10:48:42,157 p=6134 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-08-02 10:48:42,159 p=6134 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-08-02 10:48:42,197 p=6134 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-08-02 10:48:42,230 p=6134 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-08-02 10:48:42,242 p=6134 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-08-02 10:48:42,318 p=6134 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-08-02 10:48:42,648 p=6134 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-08-02 10:48:43,075 p=6134 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-08-02 10:48:43,090 p=6134 u=student |  TASK [Configuration changes (apache)] *******************************************************************************************
+2021-08-02 10:48:44,165 p=6134 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:48:44,168 p=6134 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:48:44,249 p=6134 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:48:44,257 p=6134 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:48:44,263 p=6134 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:48:44,764 p=6134 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:48:44,776 p=6134 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-08-02 10:48:45,273 p=6134 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:48:45,304 p=6134 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:48:45,318 p=6134 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:48:45,347 p=6134 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:48:45,357 p=6134 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:48:45,628 p=6134 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:48:45,641 p=6134 u=student |  TASK [Create default doc root.] *************************************************************************************************
+2021-08-02 10:48:45,661 p=6134 u=student |  skipping: [servera.lab.example.com]
+2021-08-02 10:48:45,682 p=6134 u=student |  skipping: [serverb.lab.example.com]
+2021-08-02 10:48:45,699 p=6134 u=student |  skipping: [serverc.lab.example.com]
+2021-08-02 10:48:45,718 p=6134 u=student |  skipping: [serverd.lab.example.com]
+2021-08-02 10:48:45,737 p=6134 u=student |  skipping: [servere.lab.example.com]
+2021-08-02 10:48:45,747 p=6134 u=student |  skipping: [serverf.lab.example.com]
+2021-08-02 10:48:45,761 p=6134 u=student |  TASK [Deployment index.html] ****************************************************************************************************
+2021-08-02 10:48:46,509 p=6134 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:48:46,710 p=6134 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:48:46,711 p=6134 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:48:46,727 p=6134 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:48:46,739 p=6134 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:48:47,120 p=6134 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:48:47,134 p=6134 u=student |  TASK [Firewalld rules.] *********************************************************************************************************
+2021-08-02 10:48:48,701 p=6134 u=student |  ok: [servera.lab.example.com] => (item=http)
+2021-08-02 10:48:48,702 p=6134 u=student |  ok: [serverb.lab.example.com] => (item=http)
+2021-08-02 10:48:48,702 p=6134 u=student |  ok: [servere.lab.example.com] => (item=http)
+2021-08-02 10:48:48,703 p=6134 u=student |  ok: [serverd.lab.example.com] => (item=http)
+2021-08-02 10:48:48,703 p=6134 u=student |  ok: [serverc.lab.example.com] => (item=http)
+2021-08-02 10:48:48,703 p=6134 u=student |  ok: [servera.lab.example.com] => (item=https)
+2021-08-02 10:48:48,824 p=6134 u=student |  ok: [serverb.lab.example.com] => (item=https)
+2021-08-02 10:48:48,863 p=6134 u=student |  ok: [serverd.lab.example.com] => (item=https)
+2021-08-02 10:48:48,895 p=6134 u=student |  ok: [serverc.lab.example.com] => (item=https)
+2021-08-02 10:48:48,930 p=6134 u=student |  ok: [servere.lab.example.com] => (item=https)
+2021-08-02 10:48:49,302 p=6134 u=student |  ok: [serverf.lab.example.com] => (item=http)
+2021-08-02 10:48:49,791 p=6134 u=student |  ok: [serverf.lab.example.com] => (item=https)
+2021-08-02 10:48:49,798 p=6134 u=student |  PLAY [Check deployment.] ********************************************************************************************************
+2021-08-02 10:48:49,802 p=6134 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 10:48:51,981 p=6134 u=student |  ok: [localhost]
+2021-08-02 10:48:51,997 p=6134 u=student |  TASK [Check deployment] *********************************************************************************************************
+2021-08-02 10:48:52,742 p=6134 u=student |  failed: [localhost] (item=servera) => {"accept_ranges": "bytes", "ansible_loop_var": "item", "changed": false, "connection": "close", "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Test Page for the Apache HTTP Server on Red Hat Enterprise Linux</title>\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\t\t<style type=\"text/css\">\n\t\t\t/*<![CDATA[*/\n\t\t\tbody {\n\t\t\t\tbackground-color: #fff;\n\t\t\t\tcolor: #000;\n\t\t\t\tfont-size: 0.9em;\n\t\t\t\tfont-family: sans-serif,helvetica;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0;\n\t\t\t}\n\t\t\t:link {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\t:visited {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\ta:hover {\n\t\t\t\tcolor: #f50;\n\t\t\t}\n\t\t\th1 {\n\t\t\t\ttext-align: center;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0.6em 2em 0.4em;\n\t\t\t\tbackground-color: #900;\n\t\t\t\tcolor: #fff;\n\t\t\t\tfont-weight: normal;\n\t\t\t\tfont-size: 1.75em;\n\t\t\t\tborder-bottom: 2px solid #000;\n\t\t\t}\n\t\t\th1 strong {\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tfont-size: 1.1em;\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\thr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content {\n\t\t\t\tpadding: 1em 5em;\n\t\t\t}\n\t\t\t.content-columns {\n\t\t\t\t/* Setting relative positioning allows for \n\t\t\t\tabsolute positioning for sub-classes */\n\t\t\t\tposition: relative;\n\t\t\t\tpadding-top: 1em;\n\t\t\t}\n\t\t\t.content-column-left {\n\t\t\t\t/* Value for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-right: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-column-left hr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content-column-right {\n\t\t\t\t/* Values for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-left: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-columns>.content-column-left, .content-columns>.content-column-right {\n\t\t\t\t/* Non-IE/Win */\n\t\t\t}\n\t\t\timg {\n\t\t\t\tborder: 2px solid #fff;\n\t\t\t\tpadding: 2px;\n\t\t\t\tmargin: 2px;\n\t\t\t}\n\t\t\ta:hover img {\n\t\t\t\tborder: 2px solid #f50;\n\t\t\t}\n\t\t\t/*]]>*/\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<h1>Red Hat Enterprise Linux <strong>Test Page</strong></h1>\n\n\t\t<div class=\"content\">\n\t\t\t<div class=\"content-middle\">\n\t\t\t\t<p>This page is used to test the proper operation of the Apache HTTP server after it has been installed. If you can read this page, it means that the Apache HTTP server installed at this site is working properly.</p>\n\t\t\t</div>\n\t\t\t<hr />\n\n\t\t\t<div class=\"content-columns\">\n\t\t\t\t<div class=\"content-column-left\">\n\t\t\t\t\t<h2>If you are a member of the general public:</h2>\n\n\t\t\t\t\t<p>The fact that you are seeing this page indicates that the website you just visited is either experiencing problems, or is undergoing routine maintenance.</p>\n\n\t\t\t\t\t<p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name \"webmaster\" and directed to the website's domain should reach the appropriate person.</p>\n\n\t\t\t\t\t<p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to \"webmaster@example.com\".</p>\n\n\t\t\t\t\t<p>For information on Red Hat Enterprise Linux, please visit the <a href=\"http://www.redhat.com/\">Red Hat, Inc. website</a>. The documentation for Red Hat Enterprise Linux is <a href=\"http://www.redhat.com/docs/manuals/enterprise/\">available on the Red Hat, Inc. website</a>.</p>\n\t\t\t\t\t<hr />\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"content-column-right\">\n\t\t\t\t\t<h2>If you are the website administrator:</h2>\n\n\t\t\t\t\t<p>You may now add content to the directory <tt>/var/www/html/</tt>. Note that until you do so, people visiting your website will see this page, and not your content. To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>\n\n                                        <p>You are free to use the image below on web sites powered by the Apache HTTP Server:</p>\n\t\t\t\t\t\n                                        <p align=\"center\"><a href=\"http://httpd.apache.org/\"><img src=\"/icons/apache_pb2.gif\" alt=\"[ Powered by Apache ]\"/></a></p>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n", "content_length": "3985", "content_type": "text/html; charset=UTF-8", "date": "Mon, 02 Aug 2021 05:18:52 GMT", "elapsed": 0, "etag": "\"f91-5813acaad6200\"", "item": "servera", "last_modified": "Wed, 06 Feb 2019 14:46:32 GMT", "msg": "Status code was 403 and not [200]: HTTP Error 403: Forbidden", "redirected": false, "server": "Apache/2.4.37 (Red Hat Enterprise Linux)", "status": 403, "url": "http://servera.lab.example.com"}
+2021-08-02 10:48:53,303 p=6134 u=student |  failed: [localhost] (item=serverb) => {"accept_ranges": "bytes", "ansible_loop_var": "item", "changed": false, "connection": "close", "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Test Page for the Apache HTTP Server on Red Hat Enterprise Linux</title>\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\t\t<style type=\"text/css\">\n\t\t\t/*<![CDATA[*/\n\t\t\tbody {\n\t\t\t\tbackground-color: #fff;\n\t\t\t\tcolor: #000;\n\t\t\t\tfont-size: 0.9em;\n\t\t\t\tfont-family: sans-serif,helvetica;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0;\n\t\t\t}\n\t\t\t:link {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\t:visited {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\ta:hover {\n\t\t\t\tcolor: #f50;\n\t\t\t}\n\t\t\th1 {\n\t\t\t\ttext-align: center;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0.6em 2em 0.4em;\n\t\t\t\tbackground-color: #900;\n\t\t\t\tcolor: #fff;\n\t\t\t\tfont-weight: normal;\n\t\t\t\tfont-size: 1.75em;\n\t\t\t\tborder-bottom: 2px solid #000;\n\t\t\t}\n\t\t\th1 strong {\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tfont-size: 1.1em;\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\thr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content {\n\t\t\t\tpadding: 1em 5em;\n\t\t\t}\n\t\t\t.content-columns {\n\t\t\t\t/* Setting relative positioning allows for \n\t\t\t\tabsolute positioning for sub-classes */\n\t\t\t\tposition: relative;\n\t\t\t\tpadding-top: 1em;\n\t\t\t}\n\t\t\t.content-column-left {\n\t\t\t\t/* Value for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-right: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-column-left hr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content-column-right {\n\t\t\t\t/* Values for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-left: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-columns>.content-column-left, .content-columns>.content-column-right {\n\t\t\t\t/* Non-IE/Win */\n\t\t\t}\n\t\t\timg {\n\t\t\t\tborder: 2px solid #fff;\n\t\t\t\tpadding: 2px;\n\t\t\t\tmargin: 2px;\n\t\t\t}\n\t\t\ta:hover img {\n\t\t\t\tborder: 2px solid #f50;\n\t\t\t}\n\t\t\t/*]]>*/\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<h1>Red Hat Enterprise Linux <strong>Test Page</strong></h1>\n\n\t\t<div class=\"content\">\n\t\t\t<div class=\"content-middle\">\n\t\t\t\t<p>This page is used to test the proper operation of the Apache HTTP server after it has been installed. If you can read this page, it means that the Apache HTTP server installed at this site is working properly.</p>\n\t\t\t</div>\n\t\t\t<hr />\n\n\t\t\t<div class=\"content-columns\">\n\t\t\t\t<div class=\"content-column-left\">\n\t\t\t\t\t<h2>If you are a member of the general public:</h2>\n\n\t\t\t\t\t<p>The fact that you are seeing this page indicates that the website you just visited is either experiencing problems, or is undergoing routine maintenance.</p>\n\n\t\t\t\t\t<p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name \"webmaster\" and directed to the website's domain should reach the appropriate person.</p>\n\n\t\t\t\t\t<p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to \"webmaster@example.com\".</p>\n\n\t\t\t\t\t<p>For information on Red Hat Enterprise Linux, please visit the <a href=\"http://www.redhat.com/\">Red Hat, Inc. website</a>. The documentation for Red Hat Enterprise Linux is <a href=\"http://www.redhat.com/docs/manuals/enterprise/\">available on the Red Hat, Inc. website</a>.</p>\n\t\t\t\t\t<hr />\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"content-column-right\">\n\t\t\t\t\t<h2>If you are the website administrator:</h2>\n\n\t\t\t\t\t<p>You may now add content to the directory <tt>/var/www/html/</tt>. Note that until you do so, people visiting your website will see this page, and not your content. To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>\n\n                                        <p>You are free to use the image below on web sites powered by the Apache HTTP Server:</p>\n\t\t\t\t\t\n                                        <p align=\"center\"><a href=\"http://httpd.apache.org/\"><img src=\"/icons/apache_pb2.gif\" alt=\"[ Powered by Apache ]\"/></a></p>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n", "content_length": "3985", "content_type": "text/html; charset=UTF-8", "date": "Mon, 02 Aug 2021 05:18:53 GMT", "elapsed": 0, "etag": "\"f91-5813acaad6200\"", "item": "serverb", "last_modified": "Wed, 06 Feb 2019 14:46:32 GMT", "msg": "Status code was 403 and not [200]: HTTP Error 403: Forbidden", "redirected": false, "server": "Apache/2.4.37 (Red Hat Enterprise Linux)", "status": 403, "url": "http://serverb.lab.example.com"}
+2021-08-02 10:48:53,868 p=6134 u=student |  failed: [localhost] (item=serverc) => {"accept_ranges": "bytes", "ansible_loop_var": "item", "changed": false, "connection": "close", "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Test Page for the Apache HTTP Server on Red Hat Enterprise Linux</title>\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\t\t<style type=\"text/css\">\n\t\t\t/*<![CDATA[*/\n\t\t\tbody {\n\t\t\t\tbackground-color: #fff;\n\t\t\t\tcolor: #000;\n\t\t\t\tfont-size: 0.9em;\n\t\t\t\tfont-family: sans-serif,helvetica;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0;\n\t\t\t}\n\t\t\t:link {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\t:visited {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\ta:hover {\n\t\t\t\tcolor: #f50;\n\t\t\t}\n\t\t\th1 {\n\t\t\t\ttext-align: center;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0.6em 2em 0.4em;\n\t\t\t\tbackground-color: #900;\n\t\t\t\tcolor: #fff;\n\t\t\t\tfont-weight: normal;\n\t\t\t\tfont-size: 1.75em;\n\t\t\t\tborder-bottom: 2px solid #000;\n\t\t\t}\n\t\t\th1 strong {\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tfont-size: 1.1em;\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\thr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content {\n\t\t\t\tpadding: 1em 5em;\n\t\t\t}\n\t\t\t.content-columns {\n\t\t\t\t/* Setting relative positioning allows for \n\t\t\t\tabsolute positioning for sub-classes */\n\t\t\t\tposition: relative;\n\t\t\t\tpadding-top: 1em;\n\t\t\t}\n\t\t\t.content-column-left {\n\t\t\t\t/* Value for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-right: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-column-left hr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content-column-right {\n\t\t\t\t/* Values for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-left: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-columns>.content-column-left, .content-columns>.content-column-right {\n\t\t\t\t/* Non-IE/Win */\n\t\t\t}\n\t\t\timg {\n\t\t\t\tborder: 2px solid #fff;\n\t\t\t\tpadding: 2px;\n\t\t\t\tmargin: 2px;\n\t\t\t}\n\t\t\ta:hover img {\n\t\t\t\tborder: 2px solid #f50;\n\t\t\t}\n\t\t\t/*]]>*/\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<h1>Red Hat Enterprise Linux <strong>Test Page</strong></h1>\n\n\t\t<div class=\"content\">\n\t\t\t<div class=\"content-middle\">\n\t\t\t\t<p>This page is used to test the proper operation of the Apache HTTP server after it has been installed. If you can read this page, it means that the Apache HTTP server installed at this site is working properly.</p>\n\t\t\t</div>\n\t\t\t<hr />\n\n\t\t\t<div class=\"content-columns\">\n\t\t\t\t<div class=\"content-column-left\">\n\t\t\t\t\t<h2>If you are a member of the general public:</h2>\n\n\t\t\t\t\t<p>The fact that you are seeing this page indicates that the website you just visited is either experiencing problems, or is undergoing routine maintenance.</p>\n\n\t\t\t\t\t<p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name \"webmaster\" and directed to the website's domain should reach the appropriate person.</p>\n\n\t\t\t\t\t<p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to \"webmaster@example.com\".</p>\n\n\t\t\t\t\t<p>For information on Red Hat Enterprise Linux, please visit the <a href=\"http://www.redhat.com/\">Red Hat, Inc. website</a>. The documentation for Red Hat Enterprise Linux is <a href=\"http://www.redhat.com/docs/manuals/enterprise/\">available on the Red Hat, Inc. website</a>.</p>\n\t\t\t\t\t<hr />\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"content-column-right\">\n\t\t\t\t\t<h2>If you are the website administrator:</h2>\n\n\t\t\t\t\t<p>You may now add content to the directory <tt>/var/www/html/</tt>. Note that until you do so, people visiting your website will see this page, and not your content. To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>\n\n                                        <p>You are free to use the image below on web sites powered by the Apache HTTP Server:</p>\n\t\t\t\t\t\n                                        <p align=\"center\"><a href=\"http://httpd.apache.org/\"><img src=\"/icons/apache_pb2.gif\" alt=\"[ Powered by Apache ]\"/></a></p>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n", "content_length": "3985", "content_type": "text/html; charset=UTF-8", "date": "Mon, 02 Aug 2021 05:18:53 GMT", "elapsed": 0, "etag": "\"f91-5813acaad6200\"", "item": "serverc", "last_modified": "Wed, 06 Feb 2019 14:46:32 GMT", "msg": "Status code was 403 and not [200]: HTTP Error 403: Forbidden", "redirected": false, "server": "Apache/2.4.37 (Red Hat Enterprise Linux)", "status": 403, "url": "http://serverc.lab.example.com"}
+2021-08-02 10:48:54,426 p=6134 u=student |  failed: [localhost] (item=serverd) => {"accept_ranges": "bytes", "ansible_loop_var": "item", "changed": false, "connection": "close", "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Test Page for the Apache HTTP Server on Red Hat Enterprise Linux</title>\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\t\t<style type=\"text/css\">\n\t\t\t/*<![CDATA[*/\n\t\t\tbody {\n\t\t\t\tbackground-color: #fff;\n\t\t\t\tcolor: #000;\n\t\t\t\tfont-size: 0.9em;\n\t\t\t\tfont-family: sans-serif,helvetica;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0;\n\t\t\t}\n\t\t\t:link {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\t:visited {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\ta:hover {\n\t\t\t\tcolor: #f50;\n\t\t\t}\n\t\t\th1 {\n\t\t\t\ttext-align: center;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0.6em 2em 0.4em;\n\t\t\t\tbackground-color: #900;\n\t\t\t\tcolor: #fff;\n\t\t\t\tfont-weight: normal;\n\t\t\t\tfont-size: 1.75em;\n\t\t\t\tborder-bottom: 2px solid #000;\n\t\t\t}\n\t\t\th1 strong {\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tfont-size: 1.1em;\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\thr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content {\n\t\t\t\tpadding: 1em 5em;\n\t\t\t}\n\t\t\t.content-columns {\n\t\t\t\t/* Setting relative positioning allows for \n\t\t\t\tabsolute positioning for sub-classes */\n\t\t\t\tposition: relative;\n\t\t\t\tpadding-top: 1em;\n\t\t\t}\n\t\t\t.content-column-left {\n\t\t\t\t/* Value for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-right: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-column-left hr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content-column-right {\n\t\t\t\t/* Values for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-left: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-columns>.content-column-left, .content-columns>.content-column-right {\n\t\t\t\t/* Non-IE/Win */\n\t\t\t}\n\t\t\timg {\n\t\t\t\tborder: 2px solid #fff;\n\t\t\t\tpadding: 2px;\n\t\t\t\tmargin: 2px;\n\t\t\t}\n\t\t\ta:hover img {\n\t\t\t\tborder: 2px solid #f50;\n\t\t\t}\n\t\t\t/*]]>*/\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<h1>Red Hat Enterprise Linux <strong>Test Page</strong></h1>\n\n\t\t<div class=\"content\">\n\t\t\t<div class=\"content-middle\">\n\t\t\t\t<p>This page is used to test the proper operation of the Apache HTTP server after it has been installed. If you can read this page, it means that the Apache HTTP server installed at this site is working properly.</p>\n\t\t\t</div>\n\t\t\t<hr />\n\n\t\t\t<div class=\"content-columns\">\n\t\t\t\t<div class=\"content-column-left\">\n\t\t\t\t\t<h2>If you are a member of the general public:</h2>\n\n\t\t\t\t\t<p>The fact that you are seeing this page indicates that the website you just visited is either experiencing problems, or is undergoing routine maintenance.</p>\n\n\t\t\t\t\t<p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name \"webmaster\" and directed to the website's domain should reach the appropriate person.</p>\n\n\t\t\t\t\t<p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to \"webmaster@example.com\".</p>\n\n\t\t\t\t\t<p>For information on Red Hat Enterprise Linux, please visit the <a href=\"http://www.redhat.com/\">Red Hat, Inc. website</a>. The documentation for Red Hat Enterprise Linux is <a href=\"http://www.redhat.com/docs/manuals/enterprise/\">available on the Red Hat, Inc. website</a>.</p>\n\t\t\t\t\t<hr />\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"content-column-right\">\n\t\t\t\t\t<h2>If you are the website administrator:</h2>\n\n\t\t\t\t\t<p>You may now add content to the directory <tt>/var/www/html/</tt>. Note that until you do so, people visiting your website will see this page, and not your content. To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>\n\n                                        <p>You are free to use the image below on web sites powered by the Apache HTTP Server:</p>\n\t\t\t\t\t\n                                        <p align=\"center\"><a href=\"http://httpd.apache.org/\"><img src=\"/icons/apache_pb2.gif\" alt=\"[ Powered by Apache ]\"/></a></p>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n", "content_length": "3985", "content_type": "text/html; charset=UTF-8", "date": "Mon, 02 Aug 2021 05:18:54 GMT", "elapsed": 0, "etag": "\"f91-5813acaad6200\"", "item": "serverd", "last_modified": "Wed, 06 Feb 2019 14:46:32 GMT", "msg": "Status code was 403 and not [200]: HTTP Error 403: Forbidden", "redirected": false, "server": "Apache/2.4.37 (Red Hat Enterprise Linux)", "status": 403, "url": "http://serverd.lab.example.com"}
+2021-08-02 10:48:54,985 p=6134 u=student |  failed: [localhost] (item=serverz) => {"ansible_loop_var": "item", "changed": false, "content": "", "elapsed": 0, "item": "serverz", "msg": "Status code was -1 and not [200]: Request failed: <urlopen error [Errno -2] Name or service not known>", "redirected": false, "status": -1, "url": "http://serverz.lab.example.com"}
+2021-08-02 10:48:55,553 p=6134 u=student |  failed: [localhost] (item=servere) => {"accept_ranges": "bytes", "ansible_loop_var": "item", "changed": false, "connection": "close", "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Test Page for the Apache HTTP Server on Red Hat Enterprise Linux</title>\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\t\t<style type=\"text/css\">\n\t\t\t/*<![CDATA[*/\n\t\t\tbody {\n\t\t\t\tbackground-color: #fff;\n\t\t\t\tcolor: #000;\n\t\t\t\tfont-size: 0.9em;\n\t\t\t\tfont-family: sans-serif,helvetica;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0;\n\t\t\t}\n\t\t\t:link {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\t:visited {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\ta:hover {\n\t\t\t\tcolor: #f50;\n\t\t\t}\n\t\t\th1 {\n\t\t\t\ttext-align: center;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0.6em 2em 0.4em;\n\t\t\t\tbackground-color: #900;\n\t\t\t\tcolor: #fff;\n\t\t\t\tfont-weight: normal;\n\t\t\t\tfont-size: 1.75em;\n\t\t\t\tborder-bottom: 2px solid #000;\n\t\t\t}\n\t\t\th1 strong {\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tfont-size: 1.1em;\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\thr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content {\n\t\t\t\tpadding: 1em 5em;\n\t\t\t}\n\t\t\t.content-columns {\n\t\t\t\t/* Setting relative positioning allows for \n\t\t\t\tabsolute positioning for sub-classes */\n\t\t\t\tposition: relative;\n\t\t\t\tpadding-top: 1em;\n\t\t\t}\n\t\t\t.content-column-left {\n\t\t\t\t/* Value for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-right: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-column-left hr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content-column-right {\n\t\t\t\t/* Values for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-left: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-columns>.content-column-left, .content-columns>.content-column-right {\n\t\t\t\t/* Non-IE/Win */\n\t\t\t}\n\t\t\timg {\n\t\t\t\tborder: 2px solid #fff;\n\t\t\t\tpadding: 2px;\n\t\t\t\tmargin: 2px;\n\t\t\t}\n\t\t\ta:hover img {\n\t\t\t\tborder: 2px solid #f50;\n\t\t\t}\n\t\t\t/*]]>*/\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<h1>Red Hat Enterprise Linux <strong>Test Page</strong></h1>\n\n\t\t<div class=\"content\">\n\t\t\t<div class=\"content-middle\">\n\t\t\t\t<p>This page is used to test the proper operation of the Apache HTTP server after it has been installed. If you can read this page, it means that the Apache HTTP server installed at this site is working properly.</p>\n\t\t\t</div>\n\t\t\t<hr />\n\n\t\t\t<div class=\"content-columns\">\n\t\t\t\t<div class=\"content-column-left\">\n\t\t\t\t\t<h2>If you are a member of the general public:</h2>\n\n\t\t\t\t\t<p>The fact that you are seeing this page indicates that the website you just visited is either experiencing problems, or is undergoing routine maintenance.</p>\n\n\t\t\t\t\t<p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name \"webmaster\" and directed to the website's domain should reach the appropriate person.</p>\n\n\t\t\t\t\t<p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to \"webmaster@example.com\".</p>\n\n\t\t\t\t\t<p>For information on Red Hat Enterprise Linux, please visit the <a href=\"http://www.redhat.com/\">Red Hat, Inc. website</a>. The documentation for Red Hat Enterprise Linux is <a href=\"http://www.redhat.com/docs/manuals/enterprise/\">available on the Red Hat, Inc. website</a>.</p>\n\t\t\t\t\t<hr />\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"content-column-right\">\n\t\t\t\t\t<h2>If you are the website administrator:</h2>\n\n\t\t\t\t\t<p>You may now add content to the directory <tt>/var/www/html/</tt>. Note that until you do so, people visiting your website will see this page, and not your content. To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>\n\n                                        <p>You are free to use the image below on web sites powered by the Apache HTTP Server:</p>\n\t\t\t\t\t\n                                        <p align=\"center\"><a href=\"http://httpd.apache.org/\"><img src=\"/icons/apache_pb2.gif\" alt=\"[ Powered by Apache ]\"/></a></p>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n", "content_length": "3985", "content_type": "text/html; charset=UTF-8", "date": "Mon, 02 Aug 2021 05:18:55 GMT", "elapsed": 0, "etag": "\"f91-5813acaad6200\"", "item": "servere", "last_modified": "Wed, 06 Feb 2019 14:46:32 GMT", "msg": "Status code was 403 and not [200]: HTTP Error 403: Forbidden", "redirected": false, "server": "Apache/2.4.37 (Red Hat Enterprise Linux)", "status": 403, "url": "http://servere.lab.example.com"}
+2021-08-02 10:48:56,112 p=6134 u=student |  failed: [localhost] (item=serverf) => {"accept_ranges": "bytes", "ansible_loop_var": "item", "changed": false, "connection": "close", "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Test Page for the Apache HTTP Server on Red Hat Enterprise Linux</title>\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\t\t<style type=\"text/css\">\n\t\t\t/*<![CDATA[*/\n\t\t\tbody {\n\t\t\t\tbackground-color: #fff;\n\t\t\t\tcolor: #000;\n\t\t\t\tfont-size: 0.9em;\n\t\t\t\tfont-family: sans-serif,helvetica;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0;\n\t\t\t}\n\t\t\t:link {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\t:visited {\n\t\t\t\tcolor: #c00;\n\t\t\t}\n\t\t\ta:hover {\n\t\t\t\tcolor: #f50;\n\t\t\t}\n\t\t\th1 {\n\t\t\t\ttext-align: center;\n\t\t\t\tmargin: 0;\n\t\t\t\tpadding: 0.6em 2em 0.4em;\n\t\t\t\tbackground-color: #900;\n\t\t\t\tcolor: #fff;\n\t\t\t\tfont-weight: normal;\n\t\t\t\tfont-size: 1.75em;\n\t\t\t\tborder-bottom: 2px solid #000;\n\t\t\t}\n\t\t\th1 strong {\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tfont-size: 1.1em;\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\thr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content {\n\t\t\t\tpadding: 1em 5em;\n\t\t\t}\n\t\t\t.content-columns {\n\t\t\t\t/* Setting relative positioning allows for \n\t\t\t\tabsolute positioning for sub-classes */\n\t\t\t\tposition: relative;\n\t\t\t\tpadding-top: 1em;\n\t\t\t}\n\t\t\t.content-column-left {\n\t\t\t\t/* Value for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-right: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-column-left hr {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.content-column-right {\n\t\t\t\t/* Values for IE/Win; will be overwritten for other browsers */\n\t\t\t\twidth: 47%;\n\t\t\t\tpadding-left: 3%;\n\t\t\t\tfloat: left;\n\t\t\t\tpadding-bottom: 2em;\n\t\t\t}\n\t\t\t.content-columns>.content-column-left, .content-columns>.content-column-right {\n\t\t\t\t/* Non-IE/Win */\n\t\t\t}\n\t\t\timg {\n\t\t\t\tborder: 2px solid #fff;\n\t\t\t\tpadding: 2px;\n\t\t\t\tmargin: 2px;\n\t\t\t}\n\t\t\ta:hover img {\n\t\t\t\tborder: 2px solid #f50;\n\t\t\t}\n\t\t\t/*]]>*/\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<h1>Red Hat Enterprise Linux <strong>Test Page</strong></h1>\n\n\t\t<div class=\"content\">\n\t\t\t<div class=\"content-middle\">\n\t\t\t\t<p>This page is used to test the proper operation of the Apache HTTP server after it has been installed. If you can read this page, it means that the Apache HTTP server installed at this site is working properly.</p>\n\t\t\t</div>\n\t\t\t<hr />\n\n\t\t\t<div class=\"content-columns\">\n\t\t\t\t<div class=\"content-column-left\">\n\t\t\t\t\t<h2>If you are a member of the general public:</h2>\n\n\t\t\t\t\t<p>The fact that you are seeing this page indicates that the website you just visited is either experiencing problems, or is undergoing routine maintenance.</p>\n\n\t\t\t\t\t<p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name \"webmaster\" and directed to the website's domain should reach the appropriate person.</p>\n\n\t\t\t\t\t<p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to \"webmaster@example.com\".</p>\n\n\t\t\t\t\t<p>For information on Red Hat Enterprise Linux, please visit the <a href=\"http://www.redhat.com/\">Red Hat, Inc. website</a>. The documentation for Red Hat Enterprise Linux is <a href=\"http://www.redhat.com/docs/manuals/enterprise/\">available on the Red Hat, Inc. website</a>.</p>\n\t\t\t\t\t<hr />\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"content-column-right\">\n\t\t\t\t\t<h2>If you are the website administrator:</h2>\n\n\t\t\t\t\t<p>You may now add content to the directory <tt>/var/www/html/</tt>. Note that until you do so, people visiting your website will see this page, and not your content. To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>\n\n                                        <p>You are free to use the image below on web sites powered by the Apache HTTP Server:</p>\n\t\t\t\t\t\n                                        <p align=\"center\"><a href=\"http://httpd.apache.org/\"><img src=\"/icons/apache_pb2.gif\" alt=\"[ Powered by Apache ]\"/></a></p>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n", "content_length": "3985", "content_type": "text/html; charset=UTF-8", "date": "Mon, 02 Aug 2021 05:18:56 GMT", "elapsed": 0, "etag": "\"f91-5813acaad6200\"", "item": "serverf", "last_modified": "Wed, 06 Feb 2019 14:46:32 GMT", "msg": "Status code was 403 and not [200]: HTTP Error 403: Forbidden", "redirected": false, "server": "Apache/2.4.37 (Red Hat Enterprise Linux)", "status": 403, "url": "http://serverf.lab.example.com"}
+2021-08-02 10:48:56,116 p=6134 u=student |  ...ignoring
+2021-08-02 10:48:56,117 p=6134 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 10:48:56,117 p=6134 u=student |  localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2021-08-02 10:48:56,117 p=6134 u=student |  servera.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:48:56,118 p=6134 u=student |  serverb.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:48:56,118 p=6134 u=student |  serverc.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:48:56,118 p=6134 u=student |  serverd.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:48:56,118 p=6134 u=student |  servere.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:48:56,118 p=6134 u=student |  serverf.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:49:35,059 p=8207 u=student |  PLAY [1st Play -  Apache server deployment (multiple web servers)] **************************************************************
+2021-08-02 10:49:35,067 p=8207 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 10:49:36,356 p=8207 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:49:36,358 p=8207 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:49:36,473 p=8207 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:49:36,484 p=8207 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:49:36,499 p=8207 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:49:37,087 p=8207 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:49:37,101 p=8207 u=student |  TASK [INstallation.] ************************************************************************************************************
+2021-08-02 10:49:38,552 p=8207 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:49:38,581 p=8207 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:49:38,869 p=8207 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:49:38,984 p=8207 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:49:39,017 p=8207 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:49:39,655 p=8207 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:49:39,668 p=8207 u=student |  TASK [Service start and enabled.] ***********************************************************************************************
+2021-08-02 10:49:41,205 p=8207 u=student |  ok: [serverb.lab.example.com] => (item=httpd)
+2021-08-02 10:49:41,207 p=8207 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-08-02 10:49:41,208 p=8207 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-08-02 10:49:41,209 p=8207 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-08-02 10:49:41,210 p=8207 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-08-02 10:49:41,211 p=8207 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-08-02 10:49:41,344 p=8207 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-08-02 10:49:41,348 p=8207 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-08-02 10:49:41,434 p=8207 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-08-02 10:49:41,468 p=8207 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-08-02 10:49:41,719 p=8207 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-08-02 10:49:42,147 p=8207 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-08-02 10:49:42,162 p=8207 u=student |  TASK [Configuration changes (apache)] *******************************************************************************************
+2021-08-02 10:49:43,374 p=8207 u=student |  changed: [servere.lab.example.com]
+2021-08-02 10:49:43,376 p=8207 u=student |  changed: [serverb.lab.example.com]
+2021-08-02 10:49:43,429 p=8207 u=student |  changed: [serverd.lab.example.com]
+2021-08-02 10:49:43,458 p=8207 u=student |  changed: [servera.lab.example.com]
+2021-08-02 10:49:43,482 p=8207 u=student |  changed: [serverc.lab.example.com]
+2021-08-02 10:49:44,019 p=8207 u=student |  changed: [serverf.lab.example.com]
+2021-08-02 10:49:44,032 p=8207 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-08-02 10:49:44,483 p=8207 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:49:44,546 p=8207 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:49:44,584 p=8207 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:49:44,599 p=8207 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:49:44,603 p=8207 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:49:44,829 p=8207 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:49:44,842 p=8207 u=student |  TASK [Create default doc root.] *************************************************************************************************
+2021-08-02 10:49:44,861 p=8207 u=student |  skipping: [servera.lab.example.com]
+2021-08-02 10:49:44,880 p=8207 u=student |  skipping: [serverb.lab.example.com]
+2021-08-02 10:49:44,903 p=8207 u=student |  skipping: [serverc.lab.example.com]
+2021-08-02 10:49:44,927 p=8207 u=student |  skipping: [serverd.lab.example.com]
+2021-08-02 10:49:44,949 p=8207 u=student |  skipping: [servere.lab.example.com]
+2021-08-02 10:49:44,960 p=8207 u=student |  skipping: [serverf.lab.example.com]
+2021-08-02 10:49:44,974 p=8207 u=student |  TASK [Deployment index.html] ****************************************************************************************************
+2021-08-02 10:49:45,950 p=8207 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 10:49:46,043 p=8207 u=student |  ok: [servera.lab.example.com]
+2021-08-02 10:49:46,050 p=8207 u=student |  ok: [servere.lab.example.com]
+2021-08-02 10:49:46,053 p=8207 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 10:49:46,076 p=8207 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 10:49:46,540 p=8207 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 10:49:46,554 p=8207 u=student |  TASK [Firewalld rules.] *********************************************************************************************************
+2021-08-02 10:49:48,017 p=8207 u=student |  ok: [servere.lab.example.com] => (item=http)
+2021-08-02 10:49:48,019 p=8207 u=student |  ok: [serverd.lab.example.com] => (item=http)
+2021-08-02 10:49:48,019 p=8207 u=student |  ok: [serverc.lab.example.com] => (item=http)
+2021-08-02 10:49:48,020 p=8207 u=student |  ok: [servera.lab.example.com] => (item=http)
+2021-08-02 10:49:48,021 p=8207 u=student |  ok: [serverb.lab.example.com] => (item=http)
+2021-08-02 10:49:48,022 p=8207 u=student |  ok: [servere.lab.example.com] => (item=https)
+2021-08-02 10:49:48,286 p=8207 u=student |  ok: [serverd.lab.example.com] => (item=https)
+2021-08-02 10:49:48,303 p=8207 u=student |  ok: [serverc.lab.example.com] => (item=https)
+2021-08-02 10:49:48,374 p=8207 u=student |  ok: [servera.lab.example.com] => (item=https)
+2021-08-02 10:49:48,440 p=8207 u=student |  ok: [serverb.lab.example.com] => (item=https)
+2021-08-02 10:49:48,659 p=8207 u=student |  ok: [serverf.lab.example.com] => (item=http)
+2021-08-02 10:49:49,146 p=8207 u=student |  ok: [serverf.lab.example.com] => (item=https)
+2021-08-02 10:49:49,148 p=8207 u=student |  RUNNING HANDLER [httpd_restart] *************************************************************************************************
+2021-08-02 10:49:50,819 p=8207 u=student |  changed: [serverb.lab.example.com]
+2021-08-02 10:49:50,909 p=8207 u=student |  changed: [serverd.lab.example.com]
+2021-08-02 10:49:50,942 p=8207 u=student |  changed: [servere.lab.example.com]
+2021-08-02 10:49:51,016 p=8207 u=student |  changed: [servera.lab.example.com]
+2021-08-02 10:49:51,047 p=8207 u=student |  changed: [serverc.lab.example.com]
+2021-08-02 10:49:52,386 p=8207 u=student |  changed: [serverf.lab.example.com]
+2021-08-02 10:49:52,390 p=8207 u=student |  PLAY [Check deployment.] ********************************************************************************************************
+2021-08-02 10:49:52,394 p=8207 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 10:49:53,224 p=8207 u=student |  ok: [localhost]
+2021-08-02 10:49:53,239 p=8207 u=student |  TASK [Check deployment] *********************************************************************************************************
+2021-08-02 10:49:53,947 p=8207 u=student |  ok: [localhost] => (item=servera)
+2021-08-02 10:49:54,490 p=8207 u=student |  ok: [localhost] => (item=serverb)
+2021-08-02 10:49:55,031 p=8207 u=student |  ok: [localhost] => (item=serverc)
+2021-08-02 10:49:55,588 p=8207 u=student |  ok: [localhost] => (item=serverd)
+2021-08-02 10:49:56,136 p=8207 u=student |  failed: [localhost] (item=serverz) => {"ansible_loop_var": "item", "changed": false, "content": "", "elapsed": 0, "item": "serverz", "msg": "Status code was -1 and not [200]: Request failed: <urlopen error [Errno -2] Name or service not known>", "redirected": false, "status": -1, "url": "http://serverz.lab.example.com"}
+2021-08-02 10:49:56,691 p=8207 u=student |  ok: [localhost] => (item=servere)
+2021-08-02 10:49:57,244 p=8207 u=student |  ok: [localhost] => (item=serverf)
+2021-08-02 10:49:57,246 p=8207 u=student |  ...ignoring
+2021-08-02 10:49:57,247 p=8207 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 10:49:57,248 p=8207 u=student |  localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2021-08-02 10:49:57,248 p=8207 u=student |  servera.lab.example.com    : ok=8    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:49:57,248 p=8207 u=student |  serverb.lab.example.com    : ok=8    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:49:57,248 p=8207 u=student |  serverc.lab.example.com    : ok=8    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:49:57,248 p=8207 u=student |  serverd.lab.example.com    : ok=8    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:49:57,248 p=8207 u=student |  servere.lab.example.com    : ok=8    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 10:49:57,249 p=8207 u=student |  serverf.lab.example.com    : ok=8    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-02 11:04:30,012 p=10544 u=student |  PLAY [1st Play -  Apache server deployment (multiple web servers)] **************************************************************
+2021-08-02 11:04:30,020 p=10544 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:04:31,716 p=10544 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:04:31,737 p=10544 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:04:31,845 p=10544 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:04:31,848 p=10544 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:04:31,879 p=10544 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:04:32,725 p=10544 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:04:32,739 p=10544 u=student |  TASK [INstallation.] ************************************************************************************************************
+2021-08-02 11:04:34,179 p=10544 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:04:34,514 p=10544 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:04:34,586 p=10544 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:04:34,597 p=10544 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:04:34,603 p=10544 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:04:35,310 p=10544 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:04:35,312 p=10544 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:04:35,312 p=10544 u=student |  servera.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 11:04:35,312 p=10544 u=student |  serverb.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 11:04:35,312 p=10544 u=student |  serverc.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 11:04:35,313 p=10544 u=student |  serverd.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 11:04:35,313 p=10544 u=student |  servere.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 11:04:35,313 p=10544 u=student |  serverf.lab.example.com    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-02 11:05:06,323 p=10690 u=student |  PLAY [1st Play -  Apache server deployment (multiple web servers)] **************************************************************
+2021-08-02 11:05:06,330 p=10690 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:05:07,568 p=10690 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:05:07,589 p=10690 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:05:07,690 p=10690 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:05:07,696 p=10690 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:05:07,774 p=10690 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:05:08,283 p=10690 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:05:08,297 p=10690 u=student |  TASK [INstallation.] ************************************************************************************************************
+2021-08-02 11:05:09,750 p=10690 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:05:09,751 p=10690 u=student |  ...ignoring
+2021-08-02 11:05:09,815 p=10690 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:05:09,816 p=10690 u=student |  ...ignoring
+2021-08-02 11:05:10,006 p=10690 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:05:10,006 p=10690 u=student |  ...ignoring
+2021-08-02 11:05:10,151 p=10690 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:05:10,151 p=10690 u=student |  ...ignoring
+2021-08-02 11:05:10,171 p=10690 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:05:10,171 p=10690 u=student |  ...ignoring
+2021-08-02 11:05:10,833 p=10690 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package httpddddddddddddddddd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:05:10,833 p=10690 u=student |  ...ignoring
+2021-08-02 11:05:10,846 p=10690 u=student |  TASK [Service start and enabled.] ***********************************************************************************************
+2021-08-02 11:05:12,453 p=10690 u=student |  ok: [servera.lab.example.com] => (item=httpd)
+2021-08-02 11:05:12,455 p=10690 u=student |  ok: [serverc.lab.example.com] => (item=httpd)
+2021-08-02 11:05:12,457 p=10690 u=student |  ok: [serverb.lab.example.com] => (item=httpd)
+2021-08-02 11:05:12,459 p=10690 u=student |  ok: [serverd.lab.example.com] => (item=httpd)
+2021-08-02 11:05:12,461 p=10690 u=student |  ok: [servere.lab.example.com] => (item=httpd)
+2021-08-02 11:05:12,463 p=10690 u=student |  ok: [servera.lab.example.com] => (item=firewalld)
+2021-08-02 11:05:12,517 p=10690 u=student |  ok: [serverc.lab.example.com] => (item=firewalld)
+2021-08-02 11:05:12,536 p=10690 u=student |  ok: [serverd.lab.example.com] => (item=firewalld)
+2021-08-02 11:05:12,607 p=10690 u=student |  ok: [serverb.lab.example.com] => (item=firewalld)
+2021-08-02 11:05:12,627 p=10690 u=student |  ok: [servere.lab.example.com] => (item=firewalld)
+2021-08-02 11:05:12,949 p=10690 u=student |  ok: [serverf.lab.example.com] => (item=httpd)
+2021-08-02 11:05:13,380 p=10690 u=student |  ok: [serverf.lab.example.com] => (item=firewalld)
+2021-08-02 11:05:13,396 p=10690 u=student |  TASK [Configuration changes (apache)] *******************************************************************************************
+2021-08-02 11:05:14,509 p=10690 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:05:14,569 p=10690 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:05:14,595 p=10690 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:05:14,596 p=10690 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:05:14,598 p=10690 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:05:15,105 p=10690 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:05:15,118 p=10690 u=student |  TASK [Check default document root.] *********************************************************************************************
+2021-08-02 11:05:15,552 p=10690 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:05:15,683 p=10690 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:05:15,694 p=10690 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:05:15,714 p=10690 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:05:15,726 p=10690 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:05:15,919 p=10690 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:05:15,932 p=10690 u=student |  TASK [Create default doc root.] *************************************************************************************************
+2021-08-02 11:05:15,980 p=10690 u=student |  skipping: [servera.lab.example.com]
+2021-08-02 11:05:16,003 p=10690 u=student |  skipping: [serverb.lab.example.com]
+2021-08-02 11:05:16,027 p=10690 u=student |  skipping: [serverc.lab.example.com]
+2021-08-02 11:05:16,049 p=10690 u=student |  skipping: [serverd.lab.example.com]
+2021-08-02 11:05:16,050 p=10690 u=student |  skipping: [servere.lab.example.com]
+2021-08-02 11:05:16,059 p=10690 u=student |  skipping: [serverf.lab.example.com]
+2021-08-02 11:05:16,073 p=10690 u=student |  TASK [Deployment index.html] ****************************************************************************************************
+2021-08-02 11:05:16,907 p=10690 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:05:16,910 p=10690 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:05:16,981 p=10690 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:05:17,047 p=10690 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:05:17,058 p=10690 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:05:17,504 p=10690 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:05:17,517 p=10690 u=student |  TASK [Firewalld rules.] *********************************************************************************************************
+2021-08-02 11:05:19,006 p=10690 u=student |  ok: [servera.lab.example.com] => (item=http)
+2021-08-02 11:05:19,007 p=10690 u=student |  ok: [serverd.lab.example.com] => (item=http)
+2021-08-02 11:05:19,007 p=10690 u=student |  ok: [serverc.lab.example.com] => (item=http)
+2021-08-02 11:05:19,008 p=10690 u=student |  ok: [serverb.lab.example.com] => (item=http)
+2021-08-02 11:05:19,008 p=10690 u=student |  ok: [servere.lab.example.com] => (item=http)
+2021-08-02 11:05:19,009 p=10690 u=student |  ok: [servera.lab.example.com] => (item=https)
+2021-08-02 11:05:19,309 p=10690 u=student |  ok: [serverd.lab.example.com] => (item=https)
+2021-08-02 11:05:19,354 p=10690 u=student |  ok: [serverb.lab.example.com] => (item=https)
+2021-08-02 11:05:19,365 p=10690 u=student |  ok: [serverc.lab.example.com] => (item=https)
+2021-08-02 11:05:19,416 p=10690 u=student |  ok: [servere.lab.example.com] => (item=https)
+2021-08-02 11:05:19,604 p=10690 u=student |  ok: [serverf.lab.example.com] => (item=http)
+2021-08-02 11:05:20,102 p=10690 u=student |  ok: [serverf.lab.example.com] => (item=https)
+2021-08-02 11:05:20,109 p=10690 u=student |  PLAY [Check deployment.] ********************************************************************************************************
+2021-08-02 11:05:20,113 p=10690 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:05:23,320 p=10690 u=student |  ok: [localhost]
+2021-08-02 11:05:23,335 p=10690 u=student |  TASK [Check deployment] *********************************************************************************************************
+2021-08-02 11:05:24,078 p=10690 u=student |  ok: [localhost] => (item=servera)
+2021-08-02 11:05:24,626 p=10690 u=student |  ok: [localhost] => (item=serverb)
+2021-08-02 11:05:25,185 p=10690 u=student |  ok: [localhost] => (item=serverc)
+2021-08-02 11:05:25,735 p=10690 u=student |  ok: [localhost] => (item=serverd)
+2021-08-02 11:05:26,291 p=10690 u=student |  failed: [localhost] (item=serverz) => {"ansible_loop_var": "item", "changed": false, "content": "", "elapsed": 0, "item": "serverz", "msg": "Status code was -1 and not [200]: Request failed: <urlopen error [Errno -2] Name or service not known>", "redirected": false, "status": -1, "url": "http://serverz.lab.example.com"}
+2021-08-02 11:05:26,838 p=10690 u=student |  ok: [localhost] => (item=servere)
+2021-08-02 11:05:27,418 p=10690 u=student |  ok: [localhost] => (item=serverf)
+2021-08-02 11:05:27,419 p=10690 u=student |  ...ignoring
+2021-08-02 11:05:27,421 p=10690 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:05:27,421 p=10690 u=student |  localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2021-08-02 11:05:27,421 p=10690 u=student |  servera.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-08-02 11:05:27,421 p=10690 u=student |  serverb.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-08-02 11:05:27,422 p=10690 u=student |  serverc.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-08-02 11:05:27,422 p=10690 u=student |  serverd.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-08-02 11:05:27,422 p=10690 u=student |  servere.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-08-02 11:05:27,422 p=10690 u=student |  serverf.lab.example.com    : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=1   
+2021-08-02 11:10:48,029 p=12799 u=student |   [WARNING]: While constructing a mapping from /home/student/work/examps/block_rescue-example.yml, line 20, column 10, found a
+duplicate dict key (name). Using last defined value only.
+
+2021-08-02 11:10:48,030 p=12799 u=student |   [WARNING]: While constructing a mapping from /home/student/work/examps/block_rescue-example.yml, line 20, column 10, found a
+duplicate dict key (debug). Using last defined value only.
+
+2021-08-02 11:10:48,185 p=12799 u=student |  ERROR! A malformed block was encountered while loading rescue.
+
+The error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - block:
+      ^ here
+
+2021-08-02 11:13:06,960 p=12828 u=student |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 11, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+           state: present
+         register: install.output
+         ^ here
+
+2021-08-02 11:13:24,787 p=12842 u=student |  playbook: block_rescue-example.yml
+2021-08-02 11:13:28,117 p=12848 u=student |  PLAY [Block rescue.] ************************************************************************************************************
+2021-08-02 11:13:28,125 p=12848 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:13:29,777 p=12848 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:13:29,837 p=12848 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:13:29,871 p=12848 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:13:29,929 p=12848 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:13:29,960 p=12848 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:13:30,795 p=12848 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:13:30,809 p=12848 u=student |  TASK [INstall] ******************************************************************************************************************
+2021-08-02 11:13:32,298 p=12848 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:13:32,317 p=12848 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:13:32,565 p=12848 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:13:32,611 p=12848 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:13:32,663 p=12848 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:13:33,377 p=12848 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:13:33,390 p=12848 u=student |  TASK [Display1] *****************************************************************************************************************
+2021-08-02 11:13:33,408 p=12848 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1\n        ^ here\n"}
+2021-08-02 11:13:33,425 p=12848 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1\n        ^ here\n"}
+2021-08-02 11:13:33,445 p=12848 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1\n        ^ here\n"}
+2021-08-02 11:13:33,463 p=12848 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1\n        ^ here\n"}
+2021-08-02 11:13:33,482 p=12848 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1\n        ^ here\n"}
+2021-08-02 11:13:33,489 p=12848 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1\n        ^ here\n"}
+2021-08-02 11:13:33,504 p=12848 u=student |  TASK [Display 3] ****************************************************************************************************************
+2021-08-02 11:13:33,524 p=12848 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:13:33,541 p=12848 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:13:33,559 p=12848 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:13:33,576 p=12848 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:13:33,594 p=12848 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:13:33,602 p=12848 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:13:33,604 p=12848 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:13:33,604 p=12848 u=student |  servera.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:13:33,605 p=12848 u=student |  serverb.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:13:33,605 p=12848 u=student |  serverc.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:13:33,605 p=12848 u=student |  serverd.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:13:33,605 p=12848 u=student |  servere.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:13:33,605 p=12848 u=student |  serverf.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:14:43,632 p=13024 u=student |  PLAY [Block rescue.] ************************************************************************************************************
+2021-08-02 11:14:43,641 p=13024 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:14:45,300 p=13024 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:14:45,319 p=13024 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:14:45,345 p=13024 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:14:45,380 p=13024 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:14:45,418 p=13024 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:14:46,306 p=13024 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:14:46,320 p=13024 u=student |  TASK [INstall - block] **********************************************************************************************************
+2021-08-02 11:14:47,913 p=13024 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:14:47,916 p=13024 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:14:48,051 p=13024 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:14:48,107 p=13024 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:14:48,161 p=13024 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:14:48,985 p=13024 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:14:48,998 p=13024 u=student |  TASK [Display1  - rescue] *******************************************************************************************************
+2021-08-02 11:14:49,018 p=13024 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:14:49,035 p=13024 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:14:49,053 p=13024 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:14:49,071 p=13024 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:14:49,088 p=13024 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:14:49,095 p=13024 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 21, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:14:49,109 p=13024 u=student |  TASK [Display 3 - always] *******************************************************************************************************
+2021-08-02 11:14:49,130 p=13024 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:14:49,147 p=13024 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:14:49,164 p=13024 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:14:49,182 p=13024 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:14:49,199 p=13024 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:14:49,207 p=13024 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:14:49,208 p=13024 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:14:49,208 p=13024 u=student |  servera.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:14:49,209 p=13024 u=student |  serverb.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:14:49,209 p=13024 u=student |  serverc.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:14:49,209 p=13024 u=student |  serverd.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:14:49,209 p=13024 u=student |  servere.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:14:49,209 p=13024 u=student |  serverf.lab.example.com    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=0   
+2021-08-02 11:17:19,560 p=13206 u=student |  PLAY [Block rescue.] ************************************************************************************************************
+2021-08-02 11:17:19,568 p=13206 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:17:21,205 p=13206 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:17:21,263 p=13206 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:17:21,279 p=13206 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:17:21,363 p=13206 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:17:21,383 p=13206 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:17:22,225 p=13206 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:17:22,239 p=13206 u=student |  TASK [INstall - block] **********************************************************************************************************
+2021-08-02 11:17:23,743 p=13206 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:17:23,744 p=13206 u=student |  ...ignoring
+2021-08-02 11:17:23,868 p=13206 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:17:23,868 p=13206 u=student |  ...ignoring
+2021-08-02 11:17:23,992 p=13206 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:17:23,992 p=13206 u=student |  ...ignoring
+2021-08-02 11:17:24,080 p=13206 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:17:24,080 p=13206 u=student |  ...ignoring
+2021-08-02 11:17:24,081 p=13206 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:17:24,081 p=13206 u=student |  ...ignoring
+2021-08-02 11:17:24,847 p=13206 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:17:24,847 p=13206 u=student |  ...ignoring
+2021-08-02 11:17:24,860 p=13206 u=student |  TASK [Start and enable service - block] *****************************************************************************************
+2021-08-02 11:17:25,792 p=13206 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:17:25,808 p=13206 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:17:25,869 p=13206 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:17:25,938 p=13206 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:17:25,945 p=13206 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:17:26,257 p=13206 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:17:26,272 p=13206 u=student |  TASK [Display1  - rescue] *******************************************************************************************************
+2021-08-02 11:17:26,297 p=13206 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 22, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:17:26,314 p=13206 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 22, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:17:26,332 p=13206 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 22, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:17:26,350 p=13206 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 22, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:17:26,367 p=13206 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 22, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:17:26,375 p=13206 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'install' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 22, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      rescue:\n      - name: Display1  - rescue\n        ^ here\n"}
+2021-08-02 11:17:26,390 p=13206 u=student |  TASK [Display 3 - always] *******************************************************************************************************
+2021-08-02 11:17:26,411 p=13206 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:17:26,427 p=13206 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:17:26,444 p=13206 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:17:26,462 p=13206 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:17:26,479 p=13206 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:17:26,487 p=13206 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:17:26,488 p=13206 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:17:26,489 p=13206 u=student |  servera.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:17:26,489 p=13206 u=student |  serverb.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:17:26,489 p=13206 u=student |  serverc.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:17:26,489 p=13206 u=student |  serverd.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:17:26,489 p=13206 u=student |  servere.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:17:26,489 p=13206 u=student |  serverf.lab.example.com    : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:19:06,282 p=13443 u=student |  PLAY [Block rescue.] ************************************************************************************************************
+2021-08-02 11:19:06,289 p=13443 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:19:07,948 p=13443 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:19:08,103 p=13443 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:19:08,119 p=13443 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:19:08,139 p=13443 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:19:08,143 p=13443 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:19:08,972 p=13443 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:19:08,985 p=13443 u=student |  TASK [INstall - block] **********************************************************************************************************
+2021-08-02 11:19:10,493 p=13443 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:19:10,493 p=13443 u=student |  ...ignoring
+2021-08-02 11:19:10,746 p=13443 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:19:10,746 p=13443 u=student |  ...ignoring
+2021-08-02 11:19:10,794 p=13443 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:19:10,794 p=13443 u=student |  ...ignoring
+2021-08-02 11:19:10,887 p=13443 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:19:10,887 p=13443 u=student |  ...ignoring
+2021-08-02 11:19:10,894 p=13443 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:19:10,894 p=13443 u=student |  ...ignoring
+2021-08-02 11:19:11,600 p=13443 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:19:11,600 p=13443 u=student |  ...ignoring
+2021-08-02 11:19:11,613 p=13443 u=student |  TASK [Start and enable service - block] *****************************************************************************************
+2021-08-02 11:19:12,537 p=13443 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:19:12,545 p=13443 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:19:12,678 p=13443 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:19:12,682 p=13443 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:19:12,682 p=13443 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:19:13,001 p=13443 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:19:13,014 p=13443 u=student |  TASK [Display1  - rescue] *******************************************************************************************************
+2021-08-02 11:19:13,034 p=13443 u=student |  ok: [servera.lab.example.com] => {
+    "install.output": "VARIABLE IS NOT DEFINED!"
+}
+2021-08-02 11:19:13,054 p=13443 u=student |  ok: [serverb.lab.example.com] => {
+    "install.output": "VARIABLE IS NOT DEFINED!"
+}
+2021-08-02 11:19:13,071 p=13443 u=student |  ok: [serverc.lab.example.com] => {
+    "install.output": "VARIABLE IS NOT DEFINED!"
+}
+2021-08-02 11:19:13,087 p=13443 u=student |  ok: [serverd.lab.example.com] => {
+    "install.output": "VARIABLE IS NOT DEFINED!"
+}
+2021-08-02 11:19:13,106 p=13443 u=student |  ok: [servere.lab.example.com] => {
+    "install.output": "VARIABLE IS NOT DEFINED!"
+}
+2021-08-02 11:19:13,120 p=13443 u=student |  ok: [serverf.lab.example.com] => {
+    "install.output": "VARIABLE IS NOT DEFINED!"
+}
+2021-08-02 11:19:13,137 p=13443 u=student |  TASK [Display2  - rescue] *******************************************************************************************************
+2021-08-02 11:19:13,158 p=13443 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'service' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:19:13,174 p=13443 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'service' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:19:13,193 p=13443 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'service' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:19:13,215 p=13443 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'service' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:19:13,231 p=13443 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'service' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:19:13,238 p=13443 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'service' is undefined\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:19:13,253 p=13443 u=student |  TASK [Display 3 - always] *******************************************************************************************************
+2021-08-02 11:19:13,274 p=13443 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:19:13,291 p=13443 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:19:13,309 p=13443 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:19:13,327 p=13443 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:19:13,345 p=13443 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:19:13,352 p=13443 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:19:13,354 p=13443 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:19:13,354 p=13443 u=student |  servera.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:19:13,354 p=13443 u=student |  serverb.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:19:13,354 p=13443 u=student |  serverc.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:19:13,355 p=13443 u=student |  serverd.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:19:13,355 p=13443 u=student |  servere.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:19:13,355 p=13443 u=student |  serverf.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:20:21,664 p=13690 u=student |  PLAY [Block rescue.] ************************************************************************************************************
+2021-08-02 11:20:21,672 p=13690 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:20:23,367 p=13690 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:20:23,416 p=13690 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:20:23,440 p=13690 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:20:23,468 p=13690 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:20:23,507 p=13690 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:20:24,379 p=13690 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:20:24,393 p=13690 u=student |  TASK [INstall - block] **********************************************************************************************************
+2021-08-02 11:20:25,877 p=13690 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:20:25,878 p=13690 u=student |  ...ignoring
+2021-08-02 11:20:26,186 p=13690 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:20:26,186 p=13690 u=student |  ...ignoring
+2021-08-02 11:20:26,195 p=13690 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:20:26,195 p=13690 u=student |  ...ignoring
+2021-08-02 11:20:26,237 p=13690 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:20:26,237 p=13690 u=student |  ...ignoring
+2021-08-02 11:20:26,331 p=13690 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:20:26,331 p=13690 u=student |  ...ignoring
+2021-08-02 11:20:26,994 p=13690 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:20:26,994 p=13690 u=student |  ...ignoring
+2021-08-02 11:20:27,007 p=13690 u=student |  TASK [Start and enable service - block] *****************************************************************************************
+2021-08-02 11:20:28,021 p=13690 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:20:28,024 p=13690 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:20:28,033 p=13690 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:20:28,086 p=13690 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:20:28,090 p=13690 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:20:28,466 p=13690 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:20:28,480 p=13690 u=student |  TASK [Display1  - rescue] *******************************************************************************************************
+2021-08-02 11:20:28,508 p=13690 u=student |  ok: [servera.lab.example.com] => {
+    "install_output": {
+        "changed": false,
+        "failed": true,
+        "failures": [
+            "No package ex294 available."
+        ],
+        "msg": "Failed to install some of the specified packages",
+        "rc": 1,
+        "results": []
+    }
+}
+2021-08-02 11:20:28,528 p=13690 u=student |  ok: [serverb.lab.example.com] => {
+    "install_output": {
+        "changed": false,
+        "failed": true,
+        "failures": [
+            "No package ex294 available."
+        ],
+        "msg": "Failed to install some of the specified packages",
+        "rc": 1,
+        "results": []
+    }
+}
+2021-08-02 11:20:28,548 p=13690 u=student |  ok: [serverc.lab.example.com] => {
+    "install_output": {
+        "changed": false,
+        "failed": true,
+        "failures": [
+            "No package ex294 available."
+        ],
+        "msg": "Failed to install some of the specified packages",
+        "rc": 1,
+        "results": []
+    }
+}
+2021-08-02 11:20:28,566 p=13690 u=student |  ok: [serverd.lab.example.com] => {
+    "install_output": {
+        "changed": false,
+        "failed": true,
+        "failures": [
+            "No package ex294 available."
+        ],
+        "msg": "Failed to install some of the specified packages",
+        "rc": 1,
+        "results": []
+    }
+}
+2021-08-02 11:20:28,585 p=13690 u=student |  ok: [servere.lab.example.com] => {
+    "install_output": {
+        "changed": false,
+        "failed": true,
+        "failures": [
+            "No package ex294 available."
+        ],
+        "msg": "Failed to install some of the specified packages",
+        "rc": 1,
+        "results": []
+    }
+}
+2021-08-02 11:20:28,595 p=13690 u=student |  ok: [serverf.lab.example.com] => {
+    "install_output": {
+        "changed": false,
+        "failed": true,
+        "failures": [
+            "No package ex294 available."
+        ],
+        "msg": "Failed to install some of the specified packages",
+        "rc": 1,
+        "results": []
+    }
+}
+2021-08-02 11:20:28,608 p=13690 u=student |  TASK [Display2  - rescue] *******************************************************************************************************
+2021-08-02 11:20:28,629 p=13690 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:20:28,646 p=13690 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:20:28,665 p=13690 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:20:28,683 p=13690 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:20:28,702 p=13690 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:20:28,711 p=13690 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:20:28,724 p=13690 u=student |  TASK [Display 3 - always] *******************************************************************************************************
+2021-08-02 11:20:28,749 p=13690 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:20:28,766 p=13690 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:20:28,785 p=13690 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:20:28,802 p=13690 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:20:28,819 p=13690 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:20:28,827 p=13690 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:20:28,829 p=13690 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:20:28,829 p=13690 u=student |  servera.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:20:28,829 p=13690 u=student |  serverb.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:20:28,830 p=13690 u=student |  serverc.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:20:28,830 p=13690 u=student |  serverd.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:20:28,830 p=13690 u=student |  servere.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:20:28,830 p=13690 u=student |  serverf.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:20:57,638 p=13921 u=student |  PLAY [Block rescue.] ************************************************************************************************************
+2021-08-02 11:20:57,646 p=13921 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:20:58,957 p=13921 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:20:59,064 p=13921 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:20:59,067 p=13921 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:20:59,076 p=13921 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:20:59,089 p=13921 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:20:59,678 p=13921 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:20:59,691 p=13921 u=student |  TASK [INstall - block] **********************************************************************************************************
+2021-08-02 11:21:01,150 p=13921 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:21:01,150 p=13921 u=student |  ...ignoring
+2021-08-02 11:21:01,181 p=13921 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:21:01,181 p=13921 u=student |  ...ignoring
+2021-08-02 11:21:01,481 p=13921 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:21:01,481 p=13921 u=student |  ...ignoring
+2021-08-02 11:21:01,535 p=13921 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:21:01,535 p=13921 u=student |  ...ignoring
+2021-08-02 11:21:01,577 p=13921 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:21:01,577 p=13921 u=student |  ...ignoring
+2021-08-02 11:21:02,228 p=13921 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:21:02,228 p=13921 u=student |  ...ignoring
+2021-08-02 11:21:02,241 p=13921 u=student |  TASK [Start and enable service - block] *****************************************************************************************
+2021-08-02 11:21:03,125 p=13921 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:21:03,166 p=13921 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:21:03,253 p=13921 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:21:03,262 p=13921 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:21:03,304 p=13921 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:21:03,591 p=13921 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:21:03,603 p=13921 u=student |  TASK [Display1  - rescue] *******************************************************************************************************
+2021-08-02 11:21:03,630 p=13921 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:21:03,648 p=13921 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:21:03,671 p=13921 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:21:03,688 p=13921 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:21:03,712 p=13921 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:21:03,722 p=13921 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:21:03,735 p=13921 u=student |  TASK [Display2  - rescue] *******************************************************************************************************
+2021-08-02 11:21:03,760 p=13921 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:21:03,781 p=13921 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:21:03,802 p=13921 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:21:03,818 p=13921 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:21:03,837 p=13921 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:21:03,845 p=13921 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'rc'\n\nThe error appears to be in '/home/student/work/examps/block_rescue-example.yml': line 27, column 9, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n      - name: Display2  - rescue\n        ^ here\n"}
+2021-08-02 11:21:03,859 p=13921 u=student |  TASK [Display 3 - always] *******************************************************************************************************
+2021-08-02 11:21:03,880 p=13921 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:21:03,896 p=13921 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:21:03,914 p=13921 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:21:03,929 p=13921 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:21:03,947 p=13921 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:21:03,954 p=13921 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:21:03,956 p=13921 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:21:03,956 p=13921 u=student |  servera.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:21:03,956 p=13921 u=student |  serverb.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:21:03,956 p=13921 u=student |  serverc.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:21:03,956 p=13921 u=student |  serverd.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:21:03,957 p=13921 u=student |  servere.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:21:03,957 p=13921 u=student |  serverf.lab.example.com    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:22:18,397 p=14142 u=student |  PLAY [Block rescue.] ************************************************************************************************************
+2021-08-02 11:22:18,404 p=14142 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:22:20,043 p=14142 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:22:20,051 p=14142 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:22:20,103 p=14142 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:22:20,172 p=14142 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:22:20,184 p=14142 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:22:21,057 p=14142 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:22:21,078 p=14142 u=student |  TASK [INstall - block] **********************************************************************************************************
+2021-08-02 11:22:22,584 p=14142 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:22:22,585 p=14142 u=student |  ...ignoring
+2021-08-02 11:22:22,590 p=14142 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:22:22,590 p=14142 u=student |  ...ignoring
+2021-08-02 11:22:22,794 p=14142 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:22:22,795 p=14142 u=student |  ...ignoring
+2021-08-02 11:22:22,934 p=14142 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:22:22,934 p=14142 u=student |  ...ignoring
+2021-08-02 11:22:23,001 p=14142 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:22:23,001 p=14142 u=student |  ...ignoring
+2021-08-02 11:22:23,666 p=14142 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:22:23,666 p=14142 u=student |  ...ignoring
+2021-08-02 11:22:23,680 p=14142 u=student |  TASK [Start and enable service - block] *****************************************************************************************
+2021-08-02 11:22:24,574 p=14142 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:22:24,740 p=14142 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:22:24,744 p=14142 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:22:24,751 p=14142 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:22:24,757 p=14142 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:22:25,039 p=14142 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:22:25,053 p=14142 u=student |  TASK [Display1  - rescue] *******************************************************************************************************
+2021-08-02 11:22:25,074 p=14142 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:22:25,091 p=14142 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:22:25,110 p=14142 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:22:25,152 p=14142 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:22:25,153 p=14142 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:22:25,163 p=14142 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:22:25,177 p=14142 u=student |  TASK [Display2  - rescue] *******************************************************************************************************
+2021-08-02 11:22:25,197 p=14142 u=student |  ok: [servera.lab.example.com] => {
+    "service_output": {
+        "changed": false,
+        "failed": true,
+        "msg": "Could not find the requested service ex294.service: host"
+    }
+}
+2021-08-02 11:22:25,214 p=14142 u=student |  ok: [serverb.lab.example.com] => {
+    "service_output": {
+        "changed": false,
+        "failed": true,
+        "msg": "Could not find the requested service ex294.service: host"
+    }
+}
+2021-08-02 11:22:25,233 p=14142 u=student |  ok: [serverc.lab.example.com] => {
+    "service_output": {
+        "changed": false,
+        "failed": true,
+        "msg": "Could not find the requested service ex294.service: host"
+    }
+}
+2021-08-02 11:22:25,250 p=14142 u=student |  ok: [serverd.lab.example.com] => {
+    "service_output": {
+        "changed": false,
+        "failed": true,
+        "msg": "Could not find the requested service ex294.service: host"
+    }
+}
+2021-08-02 11:22:25,269 p=14142 u=student |  ok: [servere.lab.example.com] => {
+    "service_output": {
+        "changed": false,
+        "failed": true,
+        "msg": "Could not find the requested service ex294.service: host"
+    }
+}
+2021-08-02 11:22:25,280 p=14142 u=student |  ok: [serverf.lab.example.com] => {
+    "service_output": {
+        "changed": false,
+        "failed": true,
+        "msg": "Could not find the requested service ex294.service: host"
+    }
+}
+2021-08-02 11:22:25,293 p=14142 u=student |  TASK [Display 3 - always] *******************************************************************************************************
+2021-08-02 11:22:25,314 p=14142 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:22:25,332 p=14142 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:22:25,349 p=14142 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:22:25,367 p=14142 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:22:25,384 p=14142 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:22:25,391 p=14142 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:22:25,393 p=14142 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:22:25,394 p=14142 u=student |  servera.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:22:25,394 p=14142 u=student |  serverb.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:22:25,394 p=14142 u=student |  serverc.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:22:25,394 p=14142 u=student |  serverd.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:22:25,394 p=14142 u=student |  servere.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:22:25,395 p=14142 u=student |  serverf.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:23:04,211 p=14382 u=student |  PLAY [Block rescue.] ************************************************************************************************************
+2021-08-02 11:23:04,219 p=14382 u=student |  TASK [Gathering Facts] **********************************************************************************************************
+2021-08-02 11:23:05,467 p=14382 u=student |  ok: [serverd.lab.example.com]
+2021-08-02 11:23:05,584 p=14382 u=student |  ok: [servere.lab.example.com]
+2021-08-02 11:23:05,618 p=14382 u=student |  ok: [serverc.lab.example.com]
+2021-08-02 11:23:05,643 p=14382 u=student |  ok: [servera.lab.example.com]
+2021-08-02 11:23:05,661 p=14382 u=student |  ok: [serverb.lab.example.com]
+2021-08-02 11:23:06,196 p=14382 u=student |  ok: [serverf.lab.example.com]
+2021-08-02 11:23:06,210 p=14382 u=student |  TASK [INstall - block] **********************************************************************************************************
+2021-08-02 11:23:07,745 p=14382 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:23:07,745 p=14382 u=student |  ...ignoring
+2021-08-02 11:23:07,757 p=14382 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:23:07,757 p=14382 u=student |  ...ignoring
+2021-08-02 11:23:07,999 p=14382 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:23:07,999 p=14382 u=student |  ...ignoring
+2021-08-02 11:23:08,062 p=14382 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:23:08,062 p=14382 u=student |  ...ignoring
+2021-08-02 11:23:08,075 p=14382 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:23:08,075 p=14382 u=student |  ...ignoring
+2021-08-02 11:23:08,834 p=14382 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "failures": ["No package ex294 available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2021-08-02 11:23:08,834 p=14382 u=student |  ...ignoring
+2021-08-02 11:23:08,848 p=14382 u=student |  TASK [Start and enable service - block] *****************************************************************************************
+2021-08-02 11:23:09,813 p=14382 u=student |  fatal: [serverd.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:23:09,822 p=14382 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:23:09,823 p=14382 u=student |  fatal: [servere.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:23:09,826 p=14382 u=student |  fatal: [serverb.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:23:09,886 p=14382 u=student |  fatal: [serverc.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:23:10,250 p=14382 u=student |  fatal: [serverf.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find the requested service ex294.service: host"}
+2021-08-02 11:23:10,263 p=14382 u=student |  TASK [Display1  - rescue] *******************************************************************************************************
+2021-08-02 11:23:10,284 p=14382 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:23:10,301 p=14382 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:23:10,317 p=14382 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:23:10,333 p=14382 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:23:10,351 p=14382 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:23:10,361 p=14382 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "This is installation : 1"
+}
+2021-08-02 11:23:10,374 p=14382 u=student |  TASK [Display2  - rescue] *******************************************************************************************************
+2021-08-02 11:23:10,395 p=14382 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "This is installation : True"
+}
+2021-08-02 11:23:10,412 p=14382 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "This is installation : True"
+}
+2021-08-02 11:23:10,429 p=14382 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "This is installation : True"
+}
+2021-08-02 11:23:10,445 p=14382 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "This is installation : True"
+}
+2021-08-02 11:23:10,464 p=14382 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "This is installation : True"
+}
+2021-08-02 11:23:10,474 p=14382 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "This is installation : True"
+}
+2021-08-02 11:23:10,487 p=14382 u=student |  TASK [Display 3 - always] *******************************************************************************************************
+2021-08-02 11:23:10,507 p=14382 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:23:10,525 p=14382 u=student |  ok: [serverb.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:23:10,542 p=14382 u=student |  ok: [serverc.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:23:10,561 p=14382 u=student |  ok: [serverd.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:23:10,577 p=14382 u=student |  ok: [servere.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:23:10,585 p=14382 u=student |  ok: [serverf.lab.example.com] => {
+    "msg": "Alway work"
+}
+2021-08-02 11:23:10,588 p=14382 u=student |  PLAY RECAP **********************************************************************************************************************
+2021-08-02 11:23:10,588 p=14382 u=student |  servera.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:23:10,589 p=14382 u=student |  serverb.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:23:10,589 p=14382 u=student |  serverc.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:23:10,589 p=14382 u=student |  serverd.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:23:10,589 p=14382 u=student |  servere.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   
+2021-08-02 11:23:10,589 p=14382 u=student |  serverf.lab.example.com    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   

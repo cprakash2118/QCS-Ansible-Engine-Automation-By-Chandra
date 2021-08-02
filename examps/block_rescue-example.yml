@@ -1,0 +1,36 @@
+---
+- name: Block rescue.
+  hosts: web
+  tasks:
+    - name: Block and rescue concepts
+      block:
+      - name: INstall - block
+        yum:
+           name: ex294
+           state: present 
+        register: install_output
+        ignore_errors: yes
+
+      - name: Start and enable service - block
+        service:
+           name: ex294.service
+           state: started
+           enabled: yes
+        register: service_output
+
+      rescue:
+      - name: Display1  - rescue
+        debug:
+        #  var: install_output
+           msg: "This is installation : {{ install_output.rc }}"
+        
+      - name: Display2  - rescue
+        debug:
+         # var: service_output 
+          msg: "This is installation : {{ service_output.failed }}"
+
+      always:
+      - name: Display 3 - always
+        debug:
+           msg: "Alway work" 
+...

@@ -1,0 +1,20 @@
+---
+- package_list:
+    - httpddddddddddddddddd
+    - firewalld 
+- service_list :
+    - httpd
+    - firewalld
+
+- rule:
+    - http
+    - https
+
+- server_list:
+    - servera
+    - serverb
+    - serverc
+    - serverd
+    - serverz
+    - servere
+    - serverf

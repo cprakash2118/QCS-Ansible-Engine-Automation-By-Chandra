@@ -1,0 +1,78 @@
+---
+- name: 1st Play -  Apache server deployment (multiple web servers)
+  hosts: web 
+  vars_files:
+     - var.yml 
+  tasks:
+     - name: INstallation.
+       yum:
+         name: "{{ package_list }}"
+         state: present 
+       ignore_errors: yes
+       
+     - name: Service start and enabled.
+       service:
+          name: "{{ item }}"
+          state: started
+          enabled: yes 
+       loop: "{{ service_list }}"
+
+     - name: Configuration changes (apache)
+       template:
+         src: rh294.conf.j2
+         dest: /etc/httpd/conf.d/rh294.conf
+         owner: apache 
+         group: apache
+         mode: '0644'
+       notify: 
+           - httpd_restart
+    
+     - name: Check default document root.
+       stat:
+         path: /var/www/vhosts/{{ ansible_hostname }}
+       register: output_document_root
+
+     - name: Create default doc root.
+       file:
+          path: /var/www/vhosts/{{ ansible_hostname }}
+          recurse: yes
+          state: directory
+       when: output_document_root.stat.exists ==  false 
+
+     - name: Deployment index.html
+       template:
+         src: index.html.j2 
+         dest:  /var/www/vhosts/{{ ansible_hostname }}/index.html
+
+     
+     - name: Firewalld rules.
+       firewalld:
+         service: "{{ item }}"
+         immediate: yes
+         permanent: yes
+         state: enabled
+       loop: "{{ rule }}"
+ 
+  handlers:
+      - name: httpd_restart
+        service:
+           name: httpd
+           state: restarted
+
+- name: Check deployment.
+  become: false 
+  hosts: myself 
+  vars_files:
+       - var.yml 
+  tasks:
+      - name: Check deployment 
+        uri:
+          url: http://{{item}}.lab.example.com
+          return_content: yes
+          status_code: 200
+        ignore_errors: yes
+        loop: "{{ server_list }}"
+           
+...        
+
+
