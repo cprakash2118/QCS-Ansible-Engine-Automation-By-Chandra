@@ -1,0 +1,14 @@
+---
+- name: First play - Two tasks, deploying on qcs_dc_labs_bangalore host group.
+  hosts: qcs_dc_labs_bangalore
+  tasks: 
+     - name: Group deletion - unixadm
+       group: 
+          name: unixadm
+          state: absent 
+
+     - name: User deletion - cprakash
+       user:
+          name: cprakash
+          state: absent
+...

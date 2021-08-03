@@ -1,0 +1,15 @@
+---
+- name: First play - Two tasks, deploying on qcs_dc_labs_bangalore host group.
+  hosts: qcs_dc_labs_bangalore
+  tasks: 
+     - name: Package installation
+       yum: 
+          name: httpd
+          state: present
+
+     - name: Service enable and start
+       service:
+          name: httpd
+          enabled: yes
+          state: started
+...

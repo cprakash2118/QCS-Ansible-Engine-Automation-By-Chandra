@@ -1,0 +1,20 @@
+---
+- name: First play - Two tasks, deploying on qcs_dc_labs_bangalore host group.
+  hosts: qcs_dc_labs_bangalore
+  tasks: 
+     - name: Group creation - unixadm
+       group: 
+          name: unixadm
+          gid: 2118
+          state: present
+
+     - name: User creation - cprakash
+       user:
+          name: cprakash
+          uid: 1807
+          comment: cprakash@qcsdclabs.com, DevOps team
+          group: unixadm
+          groups: middleware
+          shell: /bin/sh
+          state: present
+...
