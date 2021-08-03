@@ -5,11 +5,15 @@ Live Virtual or Classroom training delivered by domain experts.
 
 Solution Architect at HawkStack /Ex Nokia/Ex Accenture/ Ex Qualcomm/ RHCA/RHCI
 
+
+
 Instructor name: Chandra Prakash
 
 RHCI - Red Hat Certified Instructor.
 
 RHCA - Red Hat Certified Architect.
+
+
 
 
 Official Email ID: cprakash@qcsdclabs.com
