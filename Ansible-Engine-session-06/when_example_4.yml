@@ -1,0 +1,25 @@
+---
+- name: When condition
+  hosts: all
+  #gather_facts: no
+  vars:
+     - date: value1 
+  tasks:
+    - name: Example - task 1
+      debug:
+        #msg: "Hello, task 1 has been done {{ ansible_fqdn }} and {{ ansible_hostname }}" 
+        msg: "Hello, task 1 has been done, {{inventory_hostname}} and {{ansible_date_time.month}}" 
+
+      #when: date is defined 
+      #when: data is defined 
+      #when: data is not defined 
+      #when: ansible_fqdn in groups['web']
+      #when: ansible_hostname in groups['web']
+      #when: inventory_hostname in groups['web'] and ansible_architecture == "x86_6"
+      #when: inventory_hostname in groups['web'] and ansible_architecture[0] == "x"
+      #when: inventory_hostname in groups['web'] and ansible_architecture == "x86_64"
+      ignore_errors: yes
+      when: 
+         - inventory_hostname in groups['web'] 
+         - ansible_architecture == "x86_64" or  ansible_date_time.month == 08
+...

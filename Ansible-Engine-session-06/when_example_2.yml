@@ -1,0 +1,14 @@
+---
+- name: When condition
+  hosts: all
+  vars:
+     - date: value1 
+  tasks:
+    - name: Example - task 1
+      debug:
+        msg: "Hello, task 1 has been done" 
+      #when: date is defined 
+      #when: data is defined 
+      #when: data is not defined 
+      when: date is not defined 
+...

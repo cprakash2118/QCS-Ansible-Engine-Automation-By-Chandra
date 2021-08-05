@@ -1,0 +1,10 @@
+---
+- name: When condition
+  hosts: all
+  tasks:
+    - name: Example - task 1
+      debug:
+        msg: "Hello, task 1 has been done"
+      #when: true 
+      when: false 
+...
