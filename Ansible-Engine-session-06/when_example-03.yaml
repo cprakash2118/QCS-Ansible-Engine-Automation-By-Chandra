@@ -1,0 +1,12 @@
+---
+- name: When example
+  hosts: servera.lab.example.com
+  vars: 
+    - service_list: ['']
+    #- service_list:
+  tasks:  
+    - name: This is when example 
+      debug: 
+        msg: "Display output, COndition true"
+      #when: service_list is defined and false 
+      when: service_list is defined or false  

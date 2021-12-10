@@ -1,0 +1,19 @@
+---
+- name: When example
+  hosts: servera.lab.example.com
+  tasks:  
+
+    - name: Execute any command.
+      shell: "systemctl status sssd"
+      register: output_shell
+      ignore_errors: yes
+
+    - name: This is when example 
+      debug: 
+        var: output_shell
+
+    - name: This is for output 
+      debug: 
+        msg: "This can be anything"
+      when: output_shell.rc == 0
+            

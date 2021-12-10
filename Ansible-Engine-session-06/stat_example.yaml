@@ -1,0 +1,19 @@
+---
+- name: Stat example 
+  hosts: servera.lab.example.com
+  tasks:
+    - name: CHeck dir location via stat
+      stat:
+        path: /var/test
+      register: stat_output
+
+    - name: Display output.
+      debug:
+        var: stat_output
+    
+    - name: Create Directory.
+      file: 
+        path: /var/test/
+        state: directory
+      when: stat_output.stat.exists==false
+...

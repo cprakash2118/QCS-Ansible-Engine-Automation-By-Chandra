@@ -1,22 +1,5 @@
-[myself]
-localhost
-
 [web]
-servera.lab.example.com
+server[a:b].lab.example.com
 
 [db]
-serverc.lab.example.com
-
-[lb]
-serverd.lab.example.com
-
-[apps]
-servere.lab.example.com 
-
-[other]
-serverf.lab.example.com
-
-[prod:children]
-web
-db
-
+server[c:d].lab.example.com
