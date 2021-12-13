@@ -1,0 +1,12 @@
+---
+- package_list:
+     - httpd
+     - firewalld
+
+- service_list:
+     - httpd
+     - firewalld 
+
+- rule_list:
+     - http
+     - https

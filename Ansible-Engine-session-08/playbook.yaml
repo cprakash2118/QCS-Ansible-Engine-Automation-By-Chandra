@@ -1,0 +1,49 @@
+---
+- name: Handler's example - 1st play
+  hosts: all 
+  vars_files:
+     - vars.yaml 
+  tasks:
+    - name: INstallation process.
+      yum:
+        name: "{{package_list}}"
+        state: present 
+      when: inventory_hostname in groups['web']
+
+
+    - name: Start and enable service.
+      service:
+        name: "{{ item }}"
+        state: started
+        enabled: yes
+      loop: "{{ service_list}}"
+      when: inventory_hostname in groups['web']
+
+    - name: Adding firewalld rules
+      firewalld:
+        service: "{{ item }}"
+        immediate: yes
+        permanent: yes
+        state: enabled
+      loop: "{{ rule_list }}" 
+      when: inventory_hostname in groups['web']
+
+    - name: index.html deployment.
+      copy: 
+        content: "This is my web server - {{ inventory_hostname }}"
+        dest: /var/www/html/index.html 
+      when: inventory_hostname in groups['web']
+
+    - name: Configuration changes.
+      copy:
+        src: httpd.conf
+        dest: /etc/httpd/conf.d/httpd.conf
+      when: inventory_hostname in groups['web']
+      notify:
+         - restart httpd
+  handlers:
+      - name: restart httpd
+        service: 
+           name: httpd
+           state: restarted
+...

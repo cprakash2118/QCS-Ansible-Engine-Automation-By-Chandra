@@ -1,0 +1,14 @@
+[web]
+server[a:d].lab.example.com
+
+[db]
+serverb.lab.example.com
+
+[lb]
+serverc.lab.example.com
+
+[other]
+serverd.lab.example.com
+
+[myself]
+localhost
