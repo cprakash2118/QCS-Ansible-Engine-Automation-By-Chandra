@@ -1,0 +1,33 @@
+---
+- name: Block rescue 
+  hosts: all 
+  tasks:
+    - name: Block start here 
+      block:
+        - name: abc package installation.
+          yum:
+            name: abc 
+            state: present 
+          ignore_errors: yes
+
+        - name: Start and enable abc service.
+          service:
+            name: abc 
+            state: started
+            enabled: yes 
+          #ignore_errors: yes
+      rescue: 
+        - name: Correct package nume and repo URL given for installation.
+          debug: 
+            msg: "Recovered from rescue"
+
+        - name: 2nd resuce task.
+          debug: 
+            msg: 2nd rescue part 
+      always:
+        - name: Always correct 
+          debug: 
+            msg: "Recovered from always"
+        
+
+...

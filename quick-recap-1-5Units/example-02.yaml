@@ -1,0 +1,37 @@
+---
+- name: 1st play 
+  hosts: dev
+  tasks: 
+     - name: Installing apache 
+       yum:
+          name: httpd 
+          state: present 
+
+     - name: STart and enable service.
+       service:
+          name: httpd 
+          enabled: yes
+          state: started 
+
+     - name: Deploy index.html file.
+       copy:
+         content: "This is my web server"
+         dest: /var/www/html/index.html 
+
+     - name: Enable firewalld 
+       firewalld:
+          service: http
+          immediate: yes 
+          permanent: yes
+          state: enabled
+
+- name: 2nd play 
+  hosts: localhost
+  become: false 
+  tasks:
+     - name: Verify the deployment 
+       uri:
+         url: http://serverc.lab.example.com
+         status_code: 200 
+         return_content: yes 
+

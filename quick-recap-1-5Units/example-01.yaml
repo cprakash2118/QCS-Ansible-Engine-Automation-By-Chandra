@@ -1,0 +1,17 @@
+---
+- name: 1st play - User & Group task.
+  hosts: dev
+  tasks:
+    - name: Group creation - unixadm 
+      group: 
+        name: unixadm 
+        state: present 
+
+
+    - name: User Creation - john 
+      user:
+        name: john 
+        state: present 
+        group: unixadm
+        password: "{{ 'redhat' | password_hash('sha512')}}"
+...

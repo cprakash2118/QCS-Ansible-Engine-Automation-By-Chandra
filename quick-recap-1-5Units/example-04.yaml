@@ -1,0 +1,61 @@
+---
+- name: 1st play 
+  hosts: all
+  #force_handlers: yes
+  vars:
+    - port_list:
+       - http
+       - https
+       - clock 
+  tasks: 
+     - name: Installing apache 
+       yum:
+          name: httpd 
+          state: present 
+       when: inventory_hostname in groups['dev'] or inventory_hostname in groups['qa']
+
+     - name: STart and enable service.
+       service:
+          name: httpd 
+          enabled: yes
+          state: started 
+       when: inventory_hostname in groups['dev'] or inventory_hostname in groups['qa']
+
+     - name: Deploy index.html file.
+       copy:
+         content: "***888*** This is my web server --- {{ inventory_hostname }} \n"
+         dest: /var/www/html/index.html 
+       when: inventory_hostname in groups['dev'] or inventory_hostname in groups['qa']
+       notify: 
+           - apache restart
+
+     - name: Enable firewalld 
+       firewalld:
+          service: "{{ item }}"
+          immediate: yes 
+          permanent: yes
+          state: enabled
+       when: inventory_hostname in groups['dev'] or inventory_hostname in groups['qa']
+       loop: "{{ port_list }}"
+       
+  handlers:
+     - name: apache restart
+       service:
+          name: httpd
+          state: restarted
+
+- name: 2nd play 
+  hosts: localhost
+  vars:
+    - server_list: 
+        - serverc.lab.example.com 
+        - serverd.lab.example.com
+          
+  become: false 
+  tasks:
+     - name: Verify the deployment 
+       uri:
+         url: "http://{{item}}"
+         status_code: 200 
+         return_content: yes 
+       loop: "{{ server_list }}"
