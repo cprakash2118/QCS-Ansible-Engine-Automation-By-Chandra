@@ -1,0 +1,8 @@
+- Invertory hostname  - {{ ansible_facts['fqdn'] }}
+- Total Memory in MB  - {{ ansible_facts['memtotal_mb'] }}
+- BIOS version        - {{ ansible_facts['bios_version'] }}
+- Size of the disk-vda- {{ ansible_facts['device']['vda']['size'] }}
+- Size of the disk-vdb- {{ ansible_facts['device']['vdb']['size'] }}
+{% if 'AnsibleUndefinedVariable' in hwreport.msg % }
+- Size of the disk-vdc- NULL
+{% endif %}

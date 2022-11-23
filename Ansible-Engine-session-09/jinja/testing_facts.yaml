@@ -1,0 +1,10 @@
+---
+- name: Test
+  hosts: dev
+  tasks:
+     - name: Display 
+       debug:
+         msg: |
+            "{{ ansible_facts.fqdn }}"
+            "{{ ansible_facts.memtotal_mb }}"
+            "{{ ansible_facts.bios_version }}"

@@ -1,0 +1,11 @@
+---
+- name: Template example - jinja
+  hosts: all 
+  tasks:
+     - name: Task-01    
+       template:
+         src: motd.j2
+         dest: /etc/motd.d/motd
+         owner: root
+         group: wheel
+...

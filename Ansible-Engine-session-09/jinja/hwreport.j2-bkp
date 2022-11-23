@@ -1,0 +1,6 @@
+- Invertory hostname  - {{ ansible_facts['fqdn'] }}
+- Total Memory in MB  - {{ ansible_facts['memtotal_mb'] }}
+- BIOS version        - {{ ansible_facts['bios_version'] }}
+- Size of the disk-vda- {{ ansible_facts['device']['vda']['size'] }}
+- Size of the disk-vdb- {{ ansible_facts['device']['vdb']['size'] }}
+- Size of the disk-vdc- {{ ansible_facts['device']['vdc']['size'] }}

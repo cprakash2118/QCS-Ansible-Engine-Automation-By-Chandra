@@ -1,0 +1,10 @@
+[prod]
+server[a:b].lab.example.com 
+
+[dev]
+serverc.lab.example.com 
+
+[qa]
+serverd.lab.example.com 
+
+

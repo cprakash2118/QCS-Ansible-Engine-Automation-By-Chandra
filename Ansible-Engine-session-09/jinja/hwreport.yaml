@@ -1,0 +1,19 @@
+---
+- name: Template example 
+  hosts: all 
+  tasks: 
+     - block:
+         - name: Generate hwreport 
+           template: 
+                src: hwreport.j2 
+                dest: /root/hwreport.txt 
+           register: hwreport
+
+       rescue:
+         - debug:
+             var: hwreport
+
+         - template: 
+                src: hwreport2.j2
+                dest: /root/hwreport.txt 
+... 
