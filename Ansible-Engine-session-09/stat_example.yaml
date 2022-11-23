@@ -1,0 +1,18 @@
+---
+- name: Stat example.
+  hosts: dev 
+  tasks:
+    - name: Stat example
+      stat:
+        path: /var/www/html/vhost/
+      register: stat_output
+
+    - name: DIsplay stat_output 
+      debug:
+       # msg: "output stat -{{ stat_output}}"
+        var: stat_output
+    - name: Dir creation based on this condition.
+      file:
+       path: /var/www/html/vhost/
+       state: directory 
+      when: stat_output.stat.exists == false 

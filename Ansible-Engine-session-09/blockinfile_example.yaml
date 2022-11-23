@@ -1,0 +1,15 @@
+---
+- name: Lineinfile example
+  hosts: dev
+  tasks:
+     - name: Task-01 - update via block In file.
+       blockinfile: 
+         path: /opt/data
+         backup: yes
+         #block: >
+         block: | 
+          data2
+            default 0.0.0.0
+            loopback 127.0.0.0
+            link-local 169.254.0.0
+

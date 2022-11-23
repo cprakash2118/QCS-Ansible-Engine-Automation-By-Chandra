@@ -1,0 +1,12 @@
+---
+- name: Copy and fetch.
+  hosts: dev
+  tasks:
+    - name: Task-01 - copy the data/file 
+      copy: 
+        src: ansible.cfg 
+        dest: /tmp/ansible.cfg
+    - name: Task-02 - fetch the data/file.
+      fetch:
+        src: /tmp/ansible.cfg
+        dest: /home/student/ansible.cfg 

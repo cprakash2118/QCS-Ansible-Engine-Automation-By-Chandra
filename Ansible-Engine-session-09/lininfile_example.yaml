@@ -1,0 +1,16 @@
+---
+- name: Lineinfile example
+  hosts: dev
+  tasks:
+     - name: Task-01 - update via line In file.
+       lineinfile: 
+         path: /etc/selinux/config
+         regexp: '^SELINUX='
+         #line: SELINUX=enforcing
+         line: SELINUX=disabled
+       notify:
+           reboot 
+  handlers:
+     - name: reboot
+       reboot: 
+...
