@@ -1,0 +1,19 @@
+all:
+  children:
+    atlanta:
+      hosts:
+        serverd.lab.example.com: {}
+    europe:
+      children:
+        berlin:
+          hosts:
+            serverb.lab.example.com: {}
+        london:
+          hosts:
+            servera.lab.example.com: {}
+    tokyo:
+      hosts:
+        serverc.lab.example.com: {}
+    ungrouped:
+      hosts:
+        workstation.lab.example.com: {}

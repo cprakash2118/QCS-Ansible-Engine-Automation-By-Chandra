@@ -1,0 +1,16 @@
+---
+- name: Dynamic example
+  hosts: webservers
+  tasks:
+
+    - name: file1.yaml execution 
+      include_tasks: file1.yaml
+      #import_tasks: file1.yaml
+
+    - name: task-02 
+      debug:
+        msg: "This is task-02"
+
+- name: Include playbook 2nd play
+  import_playbook: playbook.yml
+

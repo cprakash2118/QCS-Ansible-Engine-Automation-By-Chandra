@@ -1,0 +1,44 @@
+{
+    "_meta": {
+        "hostvars": {}
+    },
+    "all": {
+        "children": [
+            "atlanta",
+            "europe",
+            "tokyo",
+            "ungrouped"
+        ]
+    },
+    "atlanta": {
+        "hosts": [
+            "serverd.lab.example.com"
+        ]
+    },
+    "berlin": {
+        "hosts": [
+            "serverb.lab.example.com"
+        ]
+    },
+    "europe": {
+        "children": [
+            "berlin",
+            "london"
+        ]
+    },
+    "london": {
+        "hosts": [
+            "servera.lab.example.com"
+        ]
+    },
+    "tokyo": {
+        "hosts": [
+            "serverc.lab.example.com"
+        ]
+    },
+    "ungrouped": {
+        "hosts": [
+            "workstation.lab.example.com"
+        ]
+    }
+}

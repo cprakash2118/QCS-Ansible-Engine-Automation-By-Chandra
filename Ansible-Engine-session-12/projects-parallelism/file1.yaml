@@ -1,0 +1,7 @@
+---
+- name: Dynamic example - task-01
+  debug:
+     msg: "this is task-01 from dynamic example"
+- name: Dynamic example - task-02
+  debug:
+     msg: "this is task-02 from dynamic example"
