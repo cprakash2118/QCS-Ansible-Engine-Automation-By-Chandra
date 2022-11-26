@@ -1,0 +1,30 @@
+---
+# tasks file for apache
+- name: Install apache 
+  yum:
+   name: "{{ apache_package }}"
+   state: "{{ apache_state }}"
+
+- name: Start and enable apache service.
+  service:
+   name: "{{ apache_service }}"
+   state: started 
+   enabled: yes
+
+- name: COnfigrational changes.
+  template: 
+   src: apache.config.j2 
+   dest: /etc/httpd/conf.d/apache.conf 
+  notify:
+      - apache_restart
+
+- name: dir creation.
+  file:
+   path: /var/www/html/vhosts
+   state: directory
+
+- name: Deployment of applications (index.html).
+  copy:
+   content: "{{ apache_message_var }} - {{ inventory_hostname}} \n"
+   dest: /var/www/html/vhosts/index.html 
+...

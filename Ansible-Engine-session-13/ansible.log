@@ -1,0 +1,573 @@
+2022-11-25 21:51:18,179 p=3212 u=student n=ansible | - Role apache was created successfully
+2022-11-25 22:47:06,521 p=34419 u=student n=ansible | ERROR! failed to combine variables, expected dicts but got a 'dict' and a 'AnsibleSequence': 
+{}
+[{"apache_package": "http"}, {"apache_state": "present"}, {"apache_service": "httpd"}, {"apache_message_var": "This is my web server - "}]
+2022-11-25 22:48:18,430 p=34469 u=student n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/student/work/roles/apache/vars/main.yml': line 4, column 38, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+apache_package: http
+apache_state: present  apache_service: httpd
+                                     ^ here
+
+2022-11-25 22:48:41,738 p=34487 u=student n=ansible | playbook: main_playbook.yaml
+2022-11-25 22:49:41,421 p=34506 u=student n=ansible | playbook: main_playbook.yaml
+2022-11-25 22:49:46,427 p=34517 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:49:46,437 p=34517 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:49:47,695 p=34517 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:49:47,700 p=34517 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:49:47,706 p=34517 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:49:47,721 p=34517 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:49:47,726 p=34517 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:49:47,733 p=34517 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:49:48,634 p=34517 u=student n=ansible | fatal: [serverb.example.com]: FAILED! => {"changed": false, "msg": "value of state must be one of: absent, installed, latest, present, removed, got: started"}
+2022-11-25 22:49:48,648 p=34517 u=student n=ansible | fatal: [servera.example.com]: FAILED! => {"changed": false, "msg": "value of state must be one of: absent, installed, latest, present, removed, got: started"}
+2022-11-25 22:49:48,649 p=34517 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:49:48,649 p=34517 u=student n=ansible | servera.example.com        : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:49:48,649 p=34517 u=student n=ansible | serverb.example.com        : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:50:46,228 p=34687 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:50:46,238 p=34687 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:50:47,138 p=34687 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:50:47,145 p=34687 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:50:47,151 p=34687 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:50:47,167 p=34687 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:50:47,171 p=34687 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:50:47,177 p=34687 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:50:48,832 p=34687 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:50:48,889 p=34687 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:50:48,896 p=34687 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:50:49,515 p=34687 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:50:49,521 p=34687 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:50:49,526 p=34687 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:50:50,105 p=34687 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:50:50,111 p=34687 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:50:50,117 p=34687 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:50:51,392 p=34687 u=student n=ansible | fatal: [serverb.example.com]: FAILED! => {"changed": false, "failures": ["No package http available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2022-11-25 22:50:51,465 p=34687 u=student n=ansible | fatal: [servera.example.com]: FAILED! => {"changed": false, "failures": ["No package http available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2022-11-25 22:50:51,466 p=34687 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:50:51,466 p=34687 u=student n=ansible | servera.example.com        : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:50:51,466 p=34687 u=student n=ansible | serverb.example.com        : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:51:14,713 p=34816 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:51:14,722 p=34816 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:51:15,648 p=34816 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:51:15,672 p=34816 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:51:15,678 p=34816 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:51:15,701 p=34816 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:51:15,703 p=34816 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:51:15,710 p=34816 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:51:17,108 p=34816 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:51:17,193 p=34816 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:51:17,199 p=34816 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:51:17,826 p=34816 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:51:17,834 p=34816 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:51:17,839 p=34816 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:51:18,449 p=34816 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:51:18,451 p=34816 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:51:18,457 p=34816 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:51:19,830 p=34816 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:51:19,872 p=34816 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:51:19,878 p=34816 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:51:20,327 p=34816 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:51:20,342 p=34816 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:51:20,350 p=34816 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:51:20,437 p=34816 u=student n=ansible | fatal: [servera.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'apache.config.j2'\nSearched in:\n\t/home/student/work/roles/apache/templates/apache.config.j2\n\t/home/student/work/roles/apache/apache.config.j2\n\t/home/student/work/roles/apache/tasks/templates/apache.config.j2\n\t/home/student/work/roles/apache/tasks/apache.config.j2\n\t/home/student/work/templates/apache.config.j2\n\t/home/student/work/apache.config.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2022-11-25 22:51:20,443 p=34816 u=student n=ansible | fatal: [serverb.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'apache.config.j2'\nSearched in:\n\t/home/student/work/roles/apache/templates/apache.config.j2\n\t/home/student/work/roles/apache/apache.config.j2\n\t/home/student/work/roles/apache/tasks/templates/apache.config.j2\n\t/home/student/work/roles/apache/tasks/apache.config.j2\n\t/home/student/work/templates/apache.config.j2\n\t/home/student/work/apache.config.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2022-11-25 22:51:20,444 p=34816 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:51:20,444 p=34816 u=student n=ansible | servera.example.com        : ok=7    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:51:20,444 p=34816 u=student n=ansible | serverb.example.com        : ok=7    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:52:49,106 p=35049 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:52:49,115 p=35049 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:52:50,239 p=35049 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:52:50,258 p=35049 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:52:50,264 p=35049 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:52:50,281 p=35049 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:52:50,292 p=35049 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:52:50,298 p=35049 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:52:51,651 p=35049 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:52:51,718 p=35049 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:52:51,725 p=35049 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:52:52,343 p=35049 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:52:52,345 p=35049 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:52:52,351 p=35049 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:52:52,910 p=35049 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:52:52,921 p=35049 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:52:52,927 p=35049 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:52:54,198 p=35049 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:52:54,201 p=35049 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:52:54,207 p=35049 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:52:54,629 p=35049 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:52:54,635 p=35049 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:52:54,642 p=35049 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:52:55,052 p=35049 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:52:55,056 p=35049 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:52:55,063 p=35049 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 22:52:55,379 p=35049 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:52:55,383 p=35049 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:52:55,389 p=35049 u=student n=ansible | TASK [Take] **************************************************************************************************************
+2022-11-25 22:52:55,405 p=35049 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:52:55,411 p=35049 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:52:55,412 p=35049 u=student n=ansible | RUNNING HANDLER [apache_restart] *****************************************************************************************
+2022-11-25 22:52:55,838 p=35049 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:52:55,853 p=35049 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:52:55,859 p=35049 u=student n=ansible | TASK [validate servers] **************************************************************************************************
+2022-11-25 22:52:55,875 p=35049 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:52:55,885 p=35049 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:52:55,887 p=35049 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:52:55,887 p=35049 u=student n=ansible | servera.example.com        : ok=12   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:52:55,887 p=35049 u=student n=ansible | serverb.example.com        : ok=12   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:53:05,399 p=35256 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:53:05,407 p=35256 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:53:06,301 p=35256 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:53:06,334 p=35256 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:53:06,340 p=35256 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:53:06,356 p=35256 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:53:06,362 p=35256 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:53:06,369 p=35256 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:53:07,737 p=35256 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:53:07,815 p=35256 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:53:07,822 p=35256 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:53:08,430 p=35256 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:53:08,433 p=35256 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:53:08,439 p=35256 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:53:09,020 p=35256 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:53:09,030 p=35256 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:53:09,036 p=35256 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:53:13,647 p=35256 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:53:14,030 p=35256 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:53:14,036 p=35256 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:53:14,770 p=35256 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:53:14,823 p=35256 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:53:14,830 p=35256 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:53:15,677 p=35256 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:53:15,680 p=35256 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:53:15,687 p=35256 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 22:53:16,328 p=35256 u=student n=ansible | fatal: [serverb.example.com]: FAILED! => {"changed": false, "checksum": "e621c94632caca1cf4f9ac56fd67b4c78020b9bb", "msg": "Destination directory /var/www/html/vhost does not exist"}
+2022-11-25 22:53:16,329 p=35256 u=student n=ansible | fatal: [servera.example.com]: FAILED! => {"changed": false, "checksum": "f505b2210ccacdf37de29b7412a786094b4ca96f", "msg": "Destination directory /var/www/html/vhost does not exist"}
+2022-11-25 22:53:16,329 p=35256 u=student n=ansible | RUNNING HANDLER [apache_restart] *****************************************************************************************
+2022-11-25 22:53:16,330 p=35256 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:53:16,330 p=35256 u=student n=ansible | servera.example.com        : ok=8    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:53:16,330 p=35256 u=student n=ansible | serverb.example.com        : ok=8    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:54:26,201 p=35514 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:54:26,209 p=35514 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:54:27,312 p=35514 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:27,329 p=35514 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:27,337 p=35514 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:54:27,355 p=35514 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:54:27,358 p=35514 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:54:27,365 p=35514 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:54:28,716 p=35514 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:28,759 p=35514 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:28,765 p=35514 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:54:29,358 p=35514 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:29,366 p=35514 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:29,372 p=35514 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:54:29,919 p=35514 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:29,936 p=35514 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:29,942 p=35514 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:54:31,188 p=35514 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:31,234 p=35514 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:31,240 p=35514 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:54:31,682 p=35514 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:31,683 p=35514 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:31,689 p=35514 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:54:32,114 p=35514 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:54:32,130 p=35514 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:54:32,136 p=35514 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 22:54:32,450 p=35514 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:54:32,467 p=35514 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:54:32,473 p=35514 u=student n=ansible | TASK [Take] **************************************************************************************************************
+2022-11-25 22:54:32,498 p=35514 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:54:32,502 p=35514 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:54:32,502 p=35514 u=student n=ansible | RUNNING HANDLER [apache_restart] *****************************************************************************************
+2022-11-25 22:54:32,931 p=35514 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:54:32,949 p=35514 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:54:32,955 p=35514 u=student n=ansible | TASK [validate servers] **************************************************************************************************
+2022-11-25 22:54:32,981 p=35514 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:54:32,983 p=35514 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:54:32,984 p=35514 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:54:32,984 p=35514 u=student n=ansible | servera.example.com        : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:54:32,984 p=35514 u=student n=ansible | serverb.example.com        : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:54:54,564 p=35722 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:54:54,572 p=35722 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:54:55,458 p=35722 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:55,471 p=35722 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:55,477 p=35722 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:54:55,494 p=35722 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:54:55,498 p=35722 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:54:55,505 p=35722 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:54:56,842 p=35722 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:56,891 p=35722 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:56,898 p=35722 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:54:57,487 p=35722 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:57,498 p=35722 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:57,504 p=35722 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:54:58,067 p=35722 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:58,069 p=35722 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:58,076 p=35722 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:54:59,356 p=35722 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:59,362 p=35722 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:59,368 p=35722 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:54:59,819 p=35722 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:54:59,826 p=35722 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:54:59,832 p=35722 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:55:00,647 p=35722 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:55:00,653 p=35722 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:55:00,660 p=35722 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 22:55:01,265 p=35722 u=student n=ansible | fatal: [serverb.example.com]: FAILED! => {"changed": false, "checksum": "e621c94632caca1cf4f9ac56fd67b4c78020b9bb", "msg": "Destination directory /var/www/html/vhost does not exist"}
+2022-11-25 22:55:01,282 p=35722 u=student n=ansible | fatal: [servera.example.com]: FAILED! => {"changed": false, "checksum": "f505b2210ccacdf37de29b7412a786094b4ca96f", "msg": "Destination directory /var/www/html/vhost does not exist"}
+2022-11-25 22:55:01,283 p=35722 u=student n=ansible | RUNNING HANDLER [apache_restart] *****************************************************************************************
+2022-11-25 22:55:01,284 p=35722 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:55:01,284 p=35722 u=student n=ansible | servera.example.com        : ok=8    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:55:01,284 p=35722 u=student n=ansible | serverb.example.com        : ok=8    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:55:55,476 p=35947 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:55:55,484 p=35947 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:55:56,374 p=35947 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:55:56,377 p=35947 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:55:56,383 p=35947 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:55:56,399 p=35947 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:55:56,404 p=35947 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:55:56,411 p=35947 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:55:57,762 p=35947 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:55:57,775 p=35947 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:55:57,782 p=35947 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:55:58,396 p=35947 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:55:58,403 p=35947 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:55:58,409 p=35947 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:55:58,972 p=35947 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:55:58,976 p=35947 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:55:58,982 p=35947 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:56:00,258 p=35947 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:56:00,276 p=35947 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:56:00,282 p=35947 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:56:00,730 p=35947 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:56:00,738 p=35947 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:56:00,744 p=35947 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:56:01,472 p=35947 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:56:01,475 p=35947 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:56:01,481 p=35947 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 22:56:02,132 p=35947 u=student n=ansible | fatal: [serverb.example.com]: FAILED! => {"changed": false, "checksum": "e621c94632caca1cf4f9ac56fd67b4c78020b9bb", "msg": "Destination directory /var/www/html/vhosts does not exist"}
+2022-11-25 22:56:02,135 p=35947 u=student n=ansible | fatal: [servera.example.com]: FAILED! => {"changed": false, "checksum": "f505b2210ccacdf37de29b7412a786094b4ca96f", "msg": "Destination directory /var/www/html/vhosts does not exist"}
+2022-11-25 22:56:02,136 p=35947 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:56:02,136 p=35947 u=student n=ansible | servera.example.com        : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:56:02,136 p=35947 u=student n=ansible | serverb.example.com        : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:58:03,447 p=36160 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:58:03,456 p=36160 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:58:04,609 p=36160 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:04,624 p=36160 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:04,631 p=36160 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:58:04,659 p=36160 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:58:04,661 p=36160 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:58:04,668 p=36160 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:58:06,034 p=36160 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:06,035 p=36160 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:06,041 p=36160 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:58:06,629 p=36160 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:06,636 p=36160 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:06,642 p=36160 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:58:07,223 p=36160 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:07,231 p=36160 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:07,237 p=36160 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:58:08,518 p=36160 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:08,536 p=36160 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:08,541 p=36160 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:58:08,980 p=36160 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:08,983 p=36160 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:08,989 p=36160 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:58:09,727 p=36160 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:09,730 p=36160 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:09,736 p=36160 u=student n=ansible | TASK [apache : dir creation.] ********************************************************************************************
+2022-11-25 22:58:10,035 p=36160 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:58:10,046 p=36160 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:58:10,052 p=36160 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 22:58:10,734 p=36160 u=student n=ansible | changed: [serverb.example.com]
+2022-11-25 22:58:10,751 p=36160 u=student n=ansible | changed: [servera.example.com]
+2022-11-25 22:58:10,757 p=36160 u=student n=ansible | TASK [Take] **************************************************************************************************************
+2022-11-25 22:58:10,786 p=36160 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:58:10,787 p=36160 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:58:10,793 p=36160 u=student n=ansible | TASK [validate servers] **************************************************************************************************
+2022-11-25 22:58:10,813 p=36160 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:58:10,821 p=36160 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:58:10,823 p=36160 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:58:10,823 p=36160 u=student n=ansible | servera.example.com        : ok=12   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:58:10,823 p=36160 u=student n=ansible | serverb.example.com        : ok=12   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:58:15,659 p=36381 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:58:15,667 p=36381 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:58:16,557 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:16,580 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:16,586 p=36381 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:58:16,617 p=36381 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:58:16,617 p=36381 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:58:16,624 p=36381 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:58:17,973 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:18,022 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:18,029 p=36381 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:58:18,645 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:18,666 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:18,673 p=36381 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:58:19,292 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:19,324 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:19,330 p=36381 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:58:20,616 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:20,683 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:20,689 p=36381 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:58:21,165 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:21,166 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:21,173 p=36381 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:58:21,925 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:21,937 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:21,943 p=36381 u=student n=ansible | TASK [apache : dir creation.] ********************************************************************************************
+2022-11-25 22:58:22,262 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:22,272 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:22,278 p=36381 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 22:58:22,841 p=36381 u=student n=ansible | ok: [serverb.example.com]
+2022-11-25 22:58:22,890 p=36381 u=student n=ansible | ok: [servera.example.com]
+2022-11-25 22:58:22,896 p=36381 u=student n=ansible | TASK [Take] **************************************************************************************************************
+2022-11-25 22:58:22,913 p=36381 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:58:22,924 p=36381 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:58:22,931 p=36381 u=student n=ansible | TASK [validate servers] **************************************************************************************************
+2022-11-25 22:58:22,956 p=36381 u=student n=ansible | ok: [servera.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:58:22,958 p=36381 u=student n=ansible | ok: [serverb.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:58:22,960 p=36381 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:58:22,960 p=36381 u=student n=ansible | servera.example.com        : ok=12   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:58:22,960 p=36381 u=student n=ansible | serverb.example.com        : ok=12   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:59:32,201 p=36630 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 22:59:32,209 p=36630 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 22:59:33,324 p=36630 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 22:59:33,343 p=36630 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 22:59:33,350 p=36630 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 22:59:33,368 p=36630 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:59:33,370 p=36630 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 22:59:33,377 p=36630 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 22:59:34,706 p=36630 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 22:59:34,735 p=36630 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 22:59:34,742 p=36630 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 22:59:35,336 p=36630 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 22:59:35,346 p=36630 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 22:59:35,352 p=36630 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 22:59:35,904 p=36630 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 22:59:35,913 p=36630 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 22:59:35,919 p=36630 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 22:59:37,178 p=36630 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 22:59:37,213 p=36630 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 22:59:37,220 p=36630 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 22:59:37,655 p=36630 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 22:59:37,656 p=36630 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 22:59:37,663 p=36630 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 22:59:38,433 p=36630 u=student n=ansible | changed: [serverb.lab.example.com]
+2022-11-25 22:59:38,455 p=36630 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 22:59:38,461 p=36630 u=student n=ansible | TASK [apache : dir creation.] ********************************************************************************************
+2022-11-25 22:59:38,864 p=36630 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 22:59:38,867 p=36630 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 22:59:38,874 p=36630 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 22:59:39,467 p=36630 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 22:59:39,469 p=36630 u=student n=ansible | changed: [serverb.lab.example.com]
+2022-11-25 22:59:39,475 p=36630 u=student n=ansible | TASK [Take] **************************************************************************************************************
+2022-11-25 22:59:39,491 p=36630 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:59:39,496 p=36630 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 22:59:39,496 p=36630 u=student n=ansible | RUNNING HANDLER [apache_restart] *****************************************************************************************
+2022-11-25 22:59:41,005 p=36630 u=student n=ansible | changed: [serverb.lab.example.com]
+2022-11-25 22:59:41,014 p=36630 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 22:59:41,020 p=36630 u=student n=ansible | TASK [validate servers] **************************************************************************************************
+2022-11-25 22:59:41,034 p=36630 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:59:41,040 p=36630 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 22:59:41,041 p=36630 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 22:59:41,041 p=36630 u=student n=ansible | servera.lab.example.com    : ok=13   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 22:59:41,041 p=36630 u=student n=ansible | serverb.lab.example.com    : ok=13   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 23:04:22,368 p=37106 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 23:04:22,377 p=37106 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 23:04:23,543 p=37106 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:04:23,557 p=37106 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:04:23,563 p=37106 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 23:04:23,591 p=37106 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 23:04:23,594 p=37106 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 23:04:23,601 p=37106 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 23:04:24,982 p=37106 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:04:24,991 p=37106 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:04:24,997 p=37106 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 23:04:25,612 p=37106 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:04:25,614 p=37106 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:04:25,621 p=37106 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 23:04:26,201 p=37106 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:04:26,204 p=37106 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:04:26,211 p=37106 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 23:04:27,491 p=37106 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:04:27,502 p=37106 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:04:27,508 p=37106 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 23:04:27,938 p=37106 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:04:27,953 p=37106 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:04:27,960 p=37106 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 23:04:28,732 p=37106 u=student n=ansible | changed: [serverb.lab.example.com]
+2022-11-25 23:04:28,737 p=37106 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 23:04:28,743 p=37106 u=student n=ansible | TASK [apache : dir creation.] ********************************************************************************************
+2022-11-25 23:04:29,153 p=37106 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:04:29,156 p=37106 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:04:29,163 p=37106 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 23:04:29,723 p=37106 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:04:29,728 p=37106 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:04:29,733 p=37106 u=student n=ansible | TASK [Take] **************************************************************************************************************
+2022-11-25 23:04:29,750 p=37106 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 23:04:29,756 p=37106 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 23:04:29,757 p=37106 u=student n=ansible | RUNNING HANDLER [apache_restart] *****************************************************************************************
+2022-11-25 23:04:31,260 p=37106 u=student n=ansible | changed: [serverb.lab.example.com]
+2022-11-25 23:04:31,276 p=37106 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 23:04:31,282 p=37106 u=student n=ansible | TASK [validate servers] **************************************************************************************************
+2022-11-25 23:04:31,309 p=37106 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 23:04:31,311 p=37106 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 23:04:31,312 p=37106 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 23:04:31,313 p=37106 u=student n=ansible | servera.lab.example.com    : ok=13   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 23:04:31,313 p=37106 u=student n=ansible | serverb.lab.example.com    : ok=13   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 23:05:39,907 p=37457 u=student n=ansible | PLAY [Calling apache workflow] *******************************************************************************************
+2022-11-25 23:05:39,916 p=37457 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 23:05:41,054 p=37457 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:05:41,061 p=37457 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:05:41,067 p=37457 u=student n=ansible | TASK [Take precheck] *****************************************************************************************************
+2022-11-25 23:05:41,082 p=37457 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 23:05:41,089 p=37457 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "Precheck taken"
+}
+2022-11-25 23:05:41,095 p=37457 u=student n=ansible | TASK [Install firewalld] *************************************************************************************************
+2022-11-25 23:05:42,467 p=37457 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:05:42,469 p=37457 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:05:42,476 p=37457 u=student n=ansible | TASK [Start and enable firewalld service.] *******************************************************************************
+2022-11-25 23:05:43,070 p=37457 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:05:43,074 p=37457 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:05:43,080 p=37457 u=student n=ansible | TASK [adding rules to firewalld] *****************************************************************************************
+2022-11-25 23:05:43,650 p=37457 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:05:43,654 p=37457 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:05:43,660 p=37457 u=student n=ansible | TASK [Install apache] ****************************************************************************************************
+2022-11-25 23:05:44,935 p=37457 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:05:44,939 p=37457 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:05:44,946 p=37457 u=student n=ansible | TASK [Start and enable apache service.] **********************************************************************************
+2022-11-25 23:05:45,392 p=37457 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:05:45,394 p=37457 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:05:45,401 p=37457 u=student n=ansible | TASK [apache : COnfigrational changes.] **********************************************************************************
+2022-11-25 23:05:46,141 p=37457 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:05:46,147 p=37457 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:05:46,153 p=37457 u=student n=ansible | TASK [apache : dir creation.] ********************************************************************************************
+2022-11-25 23:05:46,485 p=37457 u=student n=ansible | ok: [serverb.lab.example.com]
+2022-11-25 23:05:46,501 p=37457 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:05:46,509 p=37457 u=student n=ansible | TASK [apache : Deployment of applications (index.html).] *****************************************************************
+2022-11-25 23:05:47,208 p=37457 u=student n=ansible | changed: [serverb.lab.example.com]
+2022-11-25 23:05:47,211 p=37457 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 23:05:47,217 p=37457 u=student n=ansible | TASK [Take] **************************************************************************************************************
+2022-11-25 23:05:47,235 p=37457 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 23:05:47,239 p=37457 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "Task perform using task option."
+}
+2022-11-25 23:05:47,246 p=37457 u=student n=ansible | TASK [validate servers] **************************************************************************************************
+2022-11-25 23:05:47,269 p=37457 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 23:05:47,276 p=37457 u=student n=ansible | ok: [serverb.lab.example.com] => {
+    "msg": "validation done"
+}
+2022-11-25 23:05:47,277 p=37457 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 23:05:47,277 p=37457 u=student n=ansible | servera.lab.example.com    : ok=12   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 23:05:47,277 p=37457 u=student n=ansible | serverb.lab.example.com    : ok=12   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

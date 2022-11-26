@@ -1,0 +1,7 @@
+---
+# vars file for apache
+apache_package: httpd
+apache_state: present  
+apache_service: httpd
+apache_message_var: "This is my web server - " 
+
