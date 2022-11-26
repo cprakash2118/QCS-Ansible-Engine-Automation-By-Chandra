@@ -1,0 +1,105 @@
+2022-11-25 23:32:54,500 p=39300 u=student n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/student/troubleshoot-playbook/samba.yml': line 8, column 30, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    install_state: installed
+    random_var: This is colon: test
+                             ^ here
+
+2022-11-25 23:33:53,372 p=39326 u=student n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/student/troubleshoot-playbook/samba.yml': line 44, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: deliver samba config
+   ^ here
+
+2022-11-25 23:34:36,609 p=39345 u=student n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to be in '/home/student/troubleshoot-playbook/samba.yml': line 14, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      name: samba
+      state: {{ install_state }}
+              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2022-11-25 23:35:11,789 p=39372 u=student n=ansible | playbook: samba.yml
+2022-11-25 23:35:29,381 p=39390 u=student n=ansible | playbook: samba.yml
+2022-11-25 23:35:39,833 p=39402 u=student n=ansible | PLAY [Install a samba server] ********************************************************************************************
+2022-11-25 23:35:39,841 p=39402 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 23:36:01,327 p=39402 u=student n=ansible | fatal: [servera.lab.exammple.com]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host servera.lab.exammple.com port 22: Connection timed out", "unreachable": true}
+2022-11-25 23:36:01,328 p=39402 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 23:36:01,328 p=39402 u=student n=ansible | servera.lab.exammple.com   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-25 23:36:28,796 p=39444 u=student n=ansible | PLAY [Install a samba server] ********************************************************************************************
+2022-11-25 23:36:28,804 p=39444 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 23:36:30,059 p=39444 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:36:30,065 p=39444 u=student n=ansible | TASK [install samba] *****************************************************************************************************
+2022-11-25 23:36:33,218 p=39444 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 23:36:33,224 p=39444 u=student n=ansible | TASK [install firewalld] *************************************************************************************************
+2022-11-25 23:36:34,612 p=39444 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:36:34,618 p=39444 u=student n=ansible | TASK [debug install_state variable] **************************************************************************************
+2022-11-25 23:36:34,656 p=39444 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "The state for the samba service is installed"
+}
+2022-11-25 23:36:34,662 p=39444 u=student n=ansible | TASK [start samba] *******************************************************************************************************
+2022-11-25 23:36:35,995 p=39444 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 23:36:36,002 p=39444 u=student n=ansible | TASK [start firewalld] ***************************************************************************************************
+2022-11-25 23:36:36,469 p=39444 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:36:36,475 p=39444 u=student n=ansible | TASK [configure firewall for samba] **************************************************************************************
+2022-11-25 23:36:37,105 p=39444 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 23:36:37,112 p=39444 u=student n=ansible | TASK [deliver samba config] **********************************************************************************************
+2022-11-25 23:36:37,202 p=39444 u=student n=ansible | fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'samba.j2'\nSearched in:\n\t/home/student/troubleshoot-playbook/templates/samba.j2\n\t/home/student/troubleshoot-playbook/samba.j2\n\t/home/student/troubleshoot-playbook/templates/samba.j2\n\t/home/student/troubleshoot-playbook/samba.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2022-11-25 23:36:37,204 p=39444 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 23:36:37,204 p=39444 u=student n=ansible | servera.lab.example.com    : ok=7    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-11-25 23:37:11,473 p=39547 u=student n=ansible | PLAY [Install a samba server] ********************************************************************************************
+2022-11-25 23:37:11,480 p=39547 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************
+2022-11-25 23:37:12,389 p=39547 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:37:12,396 p=39547 u=student n=ansible | TASK [install samba] *****************************************************************************************************
+2022-11-25 23:37:13,755 p=39547 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:37:13,762 p=39547 u=student n=ansible | TASK [install firewalld] *************************************************************************************************
+2022-11-25 23:37:15,037 p=39547 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:37:15,044 p=39547 u=student n=ansible | TASK [debug install_state variable] **************************************************************************************
+2022-11-25 23:37:15,080 p=39547 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "The state for the samba service is installed"
+}
+2022-11-25 23:37:15,087 p=39547 u=student n=ansible | TASK [start samba] *******************************************************************************************************
+2022-11-25 23:37:15,709 p=39547 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:37:15,715 p=39547 u=student n=ansible | TASK [start firewalld] ***************************************************************************************************
+2022-11-25 23:37:16,149 p=39547 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:37:16,156 p=39547 u=student n=ansible | TASK [configure firewall for samba] **************************************************************************************
+2022-11-25 23:37:16,702 p=39547 u=student n=ansible | ok: [servera.lab.example.com]
+2022-11-25 23:37:16,708 p=39547 u=student n=ansible | TASK [deliver samba config] **********************************************************************************************
+2022-11-25 23:37:17,466 p=39547 u=student n=ansible | changed: [servera.lab.example.com]
+2022-11-25 23:37:17,468 p=39547 u=student n=ansible | PLAY RECAP ***************************************************************************************************************
+2022-11-25 23:37:17,468 p=39547 u=student n=ansible | servera.lab.example.com    : ok=8    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
